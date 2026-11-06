@@ -1,0 +1,38 @@
+name: X scanner
+# Searches X for new posts from watchlist accounts 15 minutes before each drafting run.
+on:
+  schedule:
+    - cron: "45 2-23/3 * * *"
+  workflow_dispatch:
+concurrency:
+  group: x-system-write
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Qatar
+      X_ENV: ${{ secrets.X_ENV }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Load X keys
+        run: printf '%s\n' "$X_ENV" > .env
+      - name: Scan watchlist
+        run: python tools/scan.py
+      - name: Save results
+        run: |
+          git config user.name "x-poster-bot"
+          git config user.email "x-poster-bot@users.noreply.github.com"
+          git add -A scans logs
+          git diff --cached --quiet && exit 0
+          git commit -m "scan: $(date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1

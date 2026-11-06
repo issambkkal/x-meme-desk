@@ -1,0 +1,38 @@
+name: X poster
+# Publishes due posts from queue/ every 15 minutes (GitHub may delay scheduled runs by a few minutes).
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: x-system-write
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Qatar
+      X_ENV: ${{ secrets.X_ENV }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Load X keys
+        run: printf '%s\n' "$X_ENV" > .env
+      - name: Post due items
+        run: python tools/poster.py
+      - name: Save results
+        run: |
+          git config user.name "x-poster-bot"
+          git config user.email "x-poster-bot@users.noreply.github.com"
+          git add -A queue posted failed analytics logs
+          git diff --cached --quiet && exit 0
+          git commit -m "poster: $(date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
