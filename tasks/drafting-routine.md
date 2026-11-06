@@ -28,22 +28,37 @@ keys: never try to post, reply, like or follow on X, and never run tools/scan.py
 - Re-read queued posts due in the next 12 hours: if the story moved on (a teased name was
   revealed, a number changed, "today" is no longer true), edit the post or set `status: hold`.
 
-## 2. Research
-- Read today's and yesterday's `scans/YYYY-MM-DD.md` (fresh posts from the watchlist accounts).
-- WebSearch for meme coin news from the last ~6 hours: rugs, exploits, insider/bundled
-  launches, big winners, Pump.fun and launchpad data, meme coin market moves, regulation.
-  Prefer the watchlist sleuths, on-chain tools (Bubblemaps, Arkham, Dune, DexScreener,
-  CoinGecko meme category, CoinGlass) and major outlets (CoinDesk, The Block, Cointelegraph,
-  Decrypt, Reuters, Bloomberg).
-- WebFetch every page you will cite (X post URLs from the scan files count as sources).
-  Confirm each number. Breaking claims need two sources, or a watchlist sleuth plus the
-  on-chain evidence they link.
+## 2. Research (be thorough: at least 8 searches and 6 full articles read per run)
+- Read today's and yesterday's `scans/YYYY-MM-DD.md` (alerts, news AND macro groups) and
+  the last 2 days of `research/*.md` (earlier runs' notes and the event calendar).
+- Search the last ~6 hours across ALL of these (WebSearch; use mode "extended" when
+  standard results are thin, old or generic):
+  1. Meme coins: rugs, exploits, insider/bundled launches, big winners and losers,
+     Pump.fun/launchpad data, CoinGecko meme category moves.
+  2. Crypto market: BTC/ETH/SOL, ETF flows, stablecoins, liquidations, funding.
+  3. Global economy & finance: Fed and central banks, CPI/jobs/PMIs, yields, dollar, oil,
+     stocks, AI/tech selloffs.
+  4. Industry & trade: factories, tariffs, China/US data, supply chains, energy, chips.
+  5. Politics & regulation: Congress/SEC/CFTC, stablecoin and market-structure bills,
+     elections, sanctions, wars, Polymarket odds.
+  For every macro item, find the crypto link with data (what BTC/SOL/meme coins did).
+- Prefer primary sources (BLS, Fed, NBS China, ISM, Farside, CoinGlass, CoinGecko, SEC,
+  Congress.gov), watchlist sleuths and on-chain tools (Bubblemaps, Arkham, Dune,
+  DexScreener), and major outlets (Reuters, Bloomberg, FT, WSJ, CoinDesk, The Block).
+- WebFetch and read in full every page you will cite (X post URLs from the scan files count
+  as sources). Confirm each number. Breaking claims need two sources, or a watchlist
+  sleuth plus the on-chain evidence they link.
+- Append what you learned to `research/YYYY-MM-DD.md` under `## HH:MM run`: bullet facts
+  (number, date, source URL), including ones you didn't post, plus any dated upcoming
+  events under `## Calendar`. Later runs and the daily deep-dive build on this notebook.
 
 ## 3. Queue posts
 Fill free slots from config.yaml for about the next 24 hours, up to max_posts_per_day, but
 write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
-Keep the pillar mix in STRATEGY.md (scam alerts and red flags first). On Sundays the 20:00
-slot is a 4–7 post thread.
+The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
+use it. Keep the pillar mix in STRATEGY.md: every run should include at least one
+"Macro → crypto" post if there is real news, and scam alerts first among meme items.
+Before a scheduled data release (CPI, jobs, FOMC, PMI), queue a short heads-up post.
 
 One file per item: `queue/YYYY-MM-DD-HHMM-short-slug.md`:
 
@@ -51,7 +66,7 @@ One file per item: `queue/YYYY-MM-DD-HHMM-short-slug.md`:
 ---
 post_at: 2026-11-07 09:00
 status: ready                # "draft" instead if config mode is approve
-pillar: scam                 # scam | winners | guide | data | personal
+pillar: scam                 # scam | macro | winners | guide | data | personal
 image: charts/2026-11-07-slug.png          # optional, first post only
 queued_at: <now in Doha, YYYY-MM-DD HH:MM>
 sources:
