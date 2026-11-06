@@ -1,0 +1,44 @@
+# Legitimate meme-coin / on-chain accounts, verified via the X API on 2026-11-06.
+# The scanner reads their posts; the drafting task quotes, reposts and suggests replies from them.
+#
+# repost_ok: the poster may repost or quote these accounts automatically (data, scam alerts).
+# Accounts not marked repost_ok are only for reading and manual replies (they promote
+# products or coins, so reposting them could look like shilling).
+
+sleuths:        # scam hunters and on-chain investigators: best for "get away from scams" content
+  - {handle: zachxbt,         followers: 1116229, repost_ok: true,  note: "on-chain investigator, rug and theft exposés"}
+  - {handle: bubblemaps,      followers: 289128,  repost_ok: true,  note: "wallet clusters, insider supply, bundled launches"}
+  - {handle: realScamSniffer, followers: 88270,   repost_ok: true,  note: "drainers, phishing, stolen funds"}
+  - {handle: PeckShieldAlert, followers: 95621,   repost_ok: true,  note: "hacks, exploits, rug pulls"}
+  - {handle: CertiKAlert,     followers: 67740,   repost_ok: true,  note: "hacks, scams, exit scams"}
+
+onchain:        # smart-money and whale trackers: best for "winners" and "who made money" content
+  - {handle: lookonchain,     followers: 710987,  repost_ok: true,  note: "smart money, meme coin wins and losses"}
+  - {handle: OnchainLens,     followers: 47500,   repost_ok: true,  note: "whale and meme coin trades"}
+  - {handle: OnchainDataNerd, followers: 70366,   repost_ok: true,  note: "whale moves"}
+  - {handle: EmberCN,         followers: 151312,  repost_ok: false, note: "Chinese; great data, has referral links"}
+  - {handle: ai_9684xtpa,     followers: 137187,  repost_ok: false, note: "Chinese; on-chain stories"}
+  - {handle: coinglass_com,   followers: 119381,  repost_ok: true,  note: "liquidations, open interest"}
+
+news:
+  - {handle: whale_alert,     followers: 2843830, repost_ok: true,  note: "large transfers; mostly BTC/USDT, so keyword-filtered"}
+  - {handle: WuBlockchain,    followers: 559155,  repost_ok: true,  note: "Asia crypto news"}
+  - {handle: SolanaFloor,     followers: 135216,  repost_ok: true,  note: "Solana and meme coin news"}
+  - {handle: WatcherGuru,     followers: 4917202, repost_ok: false, note: "breaking headlines; huge reply audience"}
+  - {handle: Cointelegraph,   followers: 2929409, repost_ok: false, note: "news"}
+
+platforms:      # read only: product accounts, never repost (promotional)
+  - {handle: Pumpfun,         followers: 747127,  repost_ok: false, note: "meme coin launchpad"}
+  - {handle: dexscreener,     followers: 238696,  repost_ok: false, note: "DEX charts, trending"}
+  - {handle: gmgnai,          followers: 144202,  repost_ok: false, note: "meme trading tool"}
+  - {handle: Dune,            followers: 837002,  repost_ok: false, note: "dashboards"}
+  - {handle: arkham,          followers: 1480466, repost_ok: false, note: "entity labels"}
+  - {handle: coingecko,       followers: 2422516, repost_ok: false, note: "prices, meme category data"}
+
+traders:        # big meme coin voices: reply targets only, never repost or quote their calls
+  - {handle: blknoiz06,       followers: 1442285, repost_ok: false, note: "Ansem; very large meme audience"}
+
+# Search words the scanner adds to the account list
+keywords: [meme, memecoin, memecoins, rug, rugged, "rug pull", scam, insider, insiders,
+           sniper, snipers, bundled, dev, pump, pumpfun, "pump.fun", solana, launch, drainer,
+           exploit, whale, "smart money", "made $", "turned $", lost]

@@ -1,0 +1,32 @@
+# Settings for the X posting system. Times are local (Doha, UTC+3).
+
+# auto    = posts with status "ready" go out on their own
+# approve = only posts you change to status "approved" go out
+mode: auto
+
+# true = never call X, just log what would be posted (also forced when .env has no keys)
+dry_run: false
+
+# A queued post must wait this long before it can go out,
+# so you can open the queue and delete it or set status: hold.
+min_lead_minutes: 60
+
+max_posts_per_day: 6
+min_gap_minutes: 120
+
+# Automatic reposts (only accounts with repost_ok: true in watchlist.yaml)
+max_reposts_per_day: 2
+min_repost_gap_minutes: 60
+
+# Preferred time slots used by the drafting task to pick post_at.
+slots: ["09:00", "13:00", "16:30", "20:00", "23:00", "02:00"]
+
+# Account is not Premium, so posts are capped at 280 weighted characters.
+max_chars: 280
+
+handle: "@issam0pc4u"
+
+# X API search of watchlist accounts. Each post returned costs $0.005.
+# 60 reads/day ≈ $0.30/day ≈ $9/month. Set 0 to turn the scanner off.
+scan_max_reads_per_day: 60
+scan_reads_per_run: 10
