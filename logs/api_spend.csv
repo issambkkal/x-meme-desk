@@ -1,0 +1,5 @@
+date,time,kind,reads,cost_usd
+2026-11-06,16:47,scan:alerts,10,0.050
+2026-11-06,16:50,follow-watchlist,0,0.496
+2026-11-06,18:26,scan:news,10,0.050
+2026-11-07,02:07,scan:alerts,7,0.035
