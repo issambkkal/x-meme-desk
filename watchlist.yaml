@@ -27,6 +27,21 @@ news:
   - {handle: WatcherGuru,     followers: 4917202, repost_ok: false, note: "breaking headlines; huge reply audience"}
   - {handle: Cointelegraph,   followers: 2929409, repost_ok: false, note: "news"}
 
+macro:          # global economy, markets, policy and politics (keyword-filtered by the scanner)
+  - {handle: DeItaone,        followers: 1970784,  repost_ok: false, note: "Walter Bloomberg: fastest macro headlines"}
+  - {handle: KobeissiLetter,  followers: 2734695,  repost_ok: false, note: "macro charts and market threads"}
+  - {handle: zerohedge,       followers: 3431048,  repost_ok: false, note: "markets/macro; verify claims elsewhere"}
+  - {handle: Reuters,         followers: 26442405, repost_ok: false, note: "global news wire"}
+  - {handle: business,        followers: 10490884, repost_ok: false, note: "Bloomberg"}
+  - {handle: FT,              followers: 7113626,  repost_ok: false, note: "Financial Times"}
+  - {handle: WSJmarkets,      followers: 1471343,  repost_ok: false, note: "WSJ markets"}
+  - {handle: federalreserve,  followers: 1602758,  repost_ok: false, note: "official Fed account"}
+  - {handle: NickTimiraos,    followers: 494948,   repost_ok: false, note: "WSJ Fed reporter"}
+  - {handle: MacroAlf,        followers: 466079,   repost_ok: false, note: "macro/liquidity analysis"}
+  - {handle: CoinDesk,        followers: 4079759,  repost_ok: false, note: "crypto news"}
+  - {handle: EleanorTerrett,  followers: 295130,   repost_ok: false, note: "US crypto policy and Congress scoops"}
+  - {handle: Polymarket,      followers: 2046354,  repost_ok: false, note: "election and policy odds"}
+
 platforms:      # read only: product accounts, never repost (promotional)
   - {handle: Pumpfun,         followers: 747127,  repost_ok: false, note: "meme coin launchpad"}
   - {handle: dexscreener,     followers: 238696,  repost_ok: false, note: "DEX charts, trending"}
@@ -37,6 +52,11 @@ platforms:      # read only: product accounts, never repost (promotional)
 
 traders:        # big meme coin voices: reply targets only, never repost or quote their calls
   - {handle: blknoiz06,       followers: 1442285, repost_ok: false, note: "Ansem; very large meme audience"}
+
+# Search words for the macro group (economy, finance, industry, politics that move crypto)
+macro_keywords: [bitcoin, crypto, stablecoin, Fed, rates, "rate cut", inflation, CPI, jobs,
+                 payrolls, tariff, tariffs, China, PMI, factory, manufacturing, dollar, yields,
+                 recession, oil, SEC, Congress, "market structure", election, liquidity, Treasury]
 
 # Search words the scanner adds to the account list
 keywords: [meme, memecoin, memecoins, rug, rugged, "rug pull", scam, insider, insiders,

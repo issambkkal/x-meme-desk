@@ -11,15 +11,15 @@ dry_run: false
 # so you can open the queue and delete it or set status: hold.
 min_lead_minutes: 60
 
-max_posts_per_day: 6
-min_gap_minutes: 120
+max_posts_per_day: 8
+min_gap_minutes: 90
 
 # Automatic reposts (only accounts with repost_ok: true in watchlist.yaml)
 max_reposts_per_day: 2
 min_repost_gap_minutes: 60
 
 # Preferred time slots used by the drafting task to pick post_at.
-slots: ["09:00", "13:00", "16:30", "20:00", "23:00", "02:00"]
+slots: ["08:00", "10:30", "13:00", "15:30", "17:00", "20:00", "23:00", "02:00"]
 
 # Account is not Premium, so posts are capped at 280 weighted characters.
 max_chars: 280
@@ -27,6 +27,6 @@ max_chars: 280
 handle: "@issam0pc4u"
 
 # X API search of watchlist accounts. Each post returned costs $0.005.
-# 60 reads/day ≈ $0.30/day ≈ $9/month. Set 0 to turn the scanner off.
-scan_max_reads_per_day: 60
+# 90 reads/day ≈ $0.45/day ≈ $13.5/month. Set 0 to turn the scanner off.
+scan_max_reads_per_day: 90
 scan_reads_per_run: 10
