@@ -1,0 +1,2 @@
+{"type":"columns","title":"Yearly fees on $2,000 a month","subtitle":"Spot trading, standard rates","source":"Data: exchange fee schedules (Oct 2026)","out":"charts/example-columns.png",
+"items":[{"label":"Binance+BNB","value":18,"text":"$18"},{"label":"Binance","value":24,"text":"$24"},{"label":"Coinbase Adv.","value":144,"text":"$144"},{"label":"Kraken","value":192,"text":"$192"},{"label":"Coinbase buy","value":480,"text":"$480","highlight":true}]}
