@@ -25,6 +25,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Load X keys
         run: printf '%s\n' "$X_ENV" > .env
+      - name: Check X keys (names and lengths only)
+        run: python tools/keycheck.py
       - name: Scan watchlist
         run: python tools/scan.py
       - name: Save results
