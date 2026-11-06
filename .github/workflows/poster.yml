@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "x-poster-bot"
           git config user.email "x-poster-bot@users.noreply.github.com"
-          git add -A queue posted failed analytics logs
+          git add -A
           git diff --cached --quiet && exit 0
           git commit -m "poster: $(date '+%Y-%m-%d %H:%M')"
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
