@@ -35,9 +35,12 @@ jobs:
         run: |
           git config user.name "x-poster-bot"
           git config user.email "x-poster-bot@users.noreply.github.com"
-          end=$((SECONDS + LOOP_SECONDS))
+          end=$((SECONDS + LOOP_SECONDS)); n=0
           while [ $SECONDS -lt $end ]; do
             git pull --rebase --quiet origin main || git rebase --abort || true
+            n=$((n + 1))
+            # Every 3rd check (~15 min): read new mentions, answer simple asks, inbox the rest.
+            [ $((n % 3)) -eq 1 ] && { python tools/mentions.py || echo "mentions step failed"; }
             python tools/poster.py || echo "poster run failed, will retry"
             git add -A
             if ! git diff --cached --quiet; then
