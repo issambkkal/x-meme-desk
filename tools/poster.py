@@ -50,6 +50,8 @@ def history(kind="post"):
 
 
 def limits(config, kind):
+    if kind == "reply":
+        return int(config.get("max_replies_per_day", 40)), 0
     if kind == "repost":
         return int(config.get("max_reposts_per_day", 2)), int(config.get("min_repost_gap_minutes", 60))
     return int(config.get("max_posts_per_day", 4)), int(config.get("min_gap_minutes", 120))
@@ -133,7 +135,8 @@ def publish(post, client, dry):
     quote = post.target("quote")[1]
     # `continue_thread: <status id>` finishes a thread that broke midway: the first post
     # replies to the last post that went out.
-    ids, reply_to = [], (str(post.meta["continue_thread"]) if post.meta.get("continue_thread") else None)
+    first = post.meta.get("continue_thread") or post.meta.get("reply_to")
+    ids, reply_to = [], (str(first) if first else None)
     for n, t in enumerate(post.tweets, 1):
         imgs = [post.image_path(i) for i in t["images"]]
         if dry:
@@ -163,7 +166,7 @@ def record(post, ids, posted_at):
         "tweet_ids": ids, "url": f"https://x.com/i/status/{ids[0]}",
         "meta": meta, "first_text": post.tweets[0]["text"],
     }, indent=2, ensure_ascii=False))
-    if post.kind == "repost":
+    if post.kind in ("repost", "reply"):
         return
     ANALYTICS.mkdir(exist_ok=True)
     csv_path = ANALYTICS / "posts.csv"
@@ -223,14 +226,19 @@ def main():
     dry = "--dry-run" in args or bool(config.get("dry_run")) or not has_keys
     t = now()
 
-    acted = set()
+    acted, replies = set(), 0
     for path in queue_posts():
         try:
             post = Post(path)
         except Exception as e:
             log(f"skip {path.name}: unreadable ({e})")
             continue
-        if post.kind in acted or eligible(post, config, t) or (
+        if post.kind == "reply":
+            # Answers to people who talk to us: up to 4 per run, no spacing, daily cap only.
+            if replies >= 4 or eligible(post, config, t) or blocked(config, "reply", t):
+                continue
+            replies += 1
+        elif post.kind in acted or eligible(post, config, t) or (
                 not (post.meta.get("continue_thread") or post.meta.get("fast")) and blocked(config, post.kind, t)):
             continue
         errs = post.problems(config)
@@ -239,7 +247,8 @@ def main():
             continue
         log(f"{'DRY-RUN ' if dry else ''}posting {path.name}"
             + ("" if has_keys else "  (no X keys in .env yet)"))
-        acted.add(post.kind)
+        if post.kind != "reply":
+            acted.add(post.kind)
         if dry:
             publish(post, None, True)
             continue

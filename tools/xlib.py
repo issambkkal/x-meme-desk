@@ -117,7 +117,8 @@ class Post:
 
     @property
     def kind(self):
-        return "repost" if str(self.meta.get("type", "post")).lower() == "repost" else "post"
+        t = str(self.meta.get("type", "post")).lower()
+        return t if t in ("repost", "reply") else "post"
 
     def target(self, key):
         """(username, tweet_id) from a front-matter x.com status URL, or (None, None)."""
@@ -139,6 +140,24 @@ class Post:
                     errs.append(f"'{key}' must be a full post URL like https://x.com/user/status/123")
                 elif user.lower() not in repost_ok_handles():
                     errs.append(f"@{user} is not repost_ok in watchlist.yaml, so it can't be {'quoted' if key == 'quote' else 'reposted'}")
+        if self.kind == "reply":
+            # A reply to someone who mentioned us or replied to our post (the X API refuses
+            # replies to anyone else).
+            if not re.fullmatch(r"\d{5,25}", str(self.meta.get("reply_to") or "")):
+                errs.append("type: reply needs 'reply_to: <status id>'")
+            if self.status not in ("draft", "ready", "approved", "hold"):
+                errs.append(f"status must be draft, ready, approved or hold (got {self.status!r})")
+            try:
+                self.post_at
+            except Exception:
+                errs.append("post_at must look like 2026-11-07 10:00")
+            if len(self.tweets) != 1 or not self.tweets[0]["text"]:
+                errs.append("a reply is exactly one non-empty post")
+            elif x_length(self.tweets[0]["text"]) > int(config.get("max_chars", 280)):
+                errs.append(f"reply is {x_length(self.tweets[0]['text'])} chars")
+            if not self.meta.get("allow_links") and any(URL.search(t["text"]) for t in self.tweets):
+                errs.append("reply contains a link ($0.20 via the API)")
+            return errs
         if self.kind == "repost":
             if not self.meta.get("repost"):
                 errs.append("type: repost needs 'repost: <post URL>'")
