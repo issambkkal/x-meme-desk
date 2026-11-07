@@ -68,6 +68,12 @@ def find_chat():
     if CHAT_FILE.exists():
         return json.loads(CHAT_FILE.read_text())["chat_id"]
     r = requests.get(f"https://api.telegram.org/bot{TOKEN}/getUpdates", timeout=20).json()
+    if not r.get("ok"):
+        raise RuntimeError(f"Telegram refused the token: {r.get('error_code')} {r.get('description')}")
+    me = requests.get(f"https://api.telegram.org/bot{TOKEN}/getMe", timeout=20).json().get("result", {})
+    seen = sorted({((u.get(k) or {}).get("chat") or {}).get("title") or "?" for u in r["result"]
+                   for k in ("my_chat_member", "message") if u.get(k)})
+    print(f"bot @{me.get('username')}: {len(r['result'])} pending updates; chats seen: {seen}")
     for u in reversed(r.get("result", [])):
         for key in ("my_chat_member", "message", "channel_post"):
             chat = (u.get(key) or {}).get("chat") or {}
@@ -123,4 +129,7 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        main()
+    except Exception as e:  # never break the tracker run because of Telegram
+        print(f"Telegram step skipped: {e}")
