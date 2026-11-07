@@ -65,6 +65,10 @@ class Post:
             text = IMAGE_TAG.sub("", chunk).strip()
             if i == 0 and self.meta.get("image"):
                 images.insert(0, self.meta["image"])
+            # X turns bare domains like "Pump.fun" into links (less reach, $0.20 API price).
+            # Fix them instead of blocking the post: "Pump.fun" -> "Pump fun".
+            if not self.meta.get("allow_links"):
+                text = BARE_DOMAIN.sub(lambda m: m.group(0).replace(".", " "), text)
             self.tweets.append({"text": text, "images": images})
         # `tip: true` (or a deep-dive thread with `article:`) adds the tip post from
         # config.yaml as the last post of the thread.
