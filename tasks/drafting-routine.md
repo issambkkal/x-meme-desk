@@ -74,7 +74,7 @@ queued_at: <now in Doha, YYYY-MM-DD HH:MM>
 sources:
   - https://full-url-of-each-page-or-x-post-backing-a-number
 ---
-First post (max 280 chars, NO links, at most 2 cashtags)
+First post (max 280 chars, NO links, at most 1 cashtag)
 ===
 Optional 2nd post of a thread
 [image: charts/other.png]

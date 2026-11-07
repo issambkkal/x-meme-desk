@@ -64,7 +64,7 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 ## Format rules
 
 - Max 280 characters per post (no Premium). Threads 3–7 posts. Hook in line 1.
-- At most 2 emojis. Cashtags ($WIF) are fine; at most 2 per post.
+- At most 2 emojis. Cashtags ($WIF) are fine; X API allows only ONE per post (a 403 stopped the Nov 7 thread).
 - No links anywhere in posts: the API charges $0.20 instead of $0.015, and X shows link
   posts to fewer people. Name the source in words; the URL goes in `sources`.
 - No referral links until 1,000+ followers; then one disclosed referral in the bio only.
@@ -99,3 +99,4 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 - 2026-11-06: switched focus from general crypto/markets to meme coins.
 - 2026-11-07: owner wants deeper research and the global economy/finance/industry/politics
   angle on every big crypto move; added macro pillar and the daily deep-dive article.
+- 2026-11-07: X API rejects posts with more than one cashtag (403 stopped the three-hits thread at post 4); tools/xlib.py now keeps only the first $TICKER.
