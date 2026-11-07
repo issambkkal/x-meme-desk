@@ -28,6 +28,30 @@ keys: never try to post, reply, like or follow on X, and never run tools/scan.py
 - Re-read queued posts due in the next 12 hours: if the story moved on (a teased name was
   revealed, a number changed, "today" is no longer true), edit the post or set `status: hold`.
 
+## 1b. Answer people first (owner's priority: interaction 24/7)
+`mentions/inbox.json` lists people who mentioned @issam0pc4u or replied to our posts and need
+a real answer (tools/mentions.py already answered simple "CA?/link?/thanks" ones instantly
+and dropped spam). For every item with `"handled": false` (newest first, max 15 per run):
+- Read it (and the post it replies to, via the URL in the scan files or WebFetch if needed).
+- Write one helpful reply, under 260 characters, in the account's voice: answer the question
+  with a real number or source when you can, admit uncertainty, no links, no bare domains,
+  no "buy", no hashtags. Disagreement is fine; be polite. If it's hostile or pointless, skip.
+- Queue it as `queue/<YYYY-MM-DD-HHMM>-reply-<id>.md` with this front matter (Doha time now):
+  ```
+  ---
+  type: reply
+  reply_to: <id>
+  post_at: <now>
+  status: ready
+  fast: true
+  max_delay_minutes: 240
+  queued_at: <now>
+  ---
+  <reply text>
+  ```
+- Set `"handled": true` (and `"answer": "<text>"` or `"skipped": "<why>"`) on the item in
+  mentions/inbox.json and commit both files.
+
 ## 2. Research (be thorough: at least 8 searches and 6 full articles read per run)
 - Read today's and yesterday's `scans/YYYY-MM-DD.md` (alerts, news AND macro groups) and
   the last 2 days of `research/*.md` (earlier runs' notes and the event calendar).
