@@ -59,6 +59,8 @@ The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md
 use it. Keep the pillar mix in STRATEGY.md: every run should include at least one
 "Macro → crypto" post if there is real news, and scam alerts first among meme items.
 Before a scheduled data release (CPI, jobs, FOMC, PMI), queue a short heads-up post.
+On Mondays and Thursdays, if no service post is queued for that day, queue one "open for
+work" post in the 15:30 slot as described in SERVICES.md (pillar: services; no links).
 
 One file per item: `queue/YYYY-MM-DD-HHMM-short-slug.md`:
 
