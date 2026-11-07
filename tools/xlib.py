@@ -87,8 +87,12 @@ class Post:
             self.tweets.append({"text": text, "images": images})
         # `tip: true` (or a deep-dive thread with `article:`) adds the tip post from
         # config.yaml as the last post of the thread.
-        if (self.meta.get("tip") or self.meta.get("article")) and self.kind == "post":
-            tip = str(load_config().get("tip_post") or "").strip()
+        # X API refuses crypto addresses for the first 7 days after an app is authorized,
+        # so config `tip_pause_until: YYYY-MM-DD` holds the tip post back until then.
+        cfg = load_config() if (self.meta.get("tip") or self.meta.get("article")) else {}
+        paused = str(cfg.get("tip_pause_until") or "") > dt.date.today().isoformat()
+        if (self.meta.get("tip") or self.meta.get("article")) and self.kind == "post" and not paused:
+            tip = str(cfg.get("tip_post") or "").strip()
             if tip and not any(tip in t["text"] for t in self.tweets):
                 self.tweets.append({"text": tip, "images": []})
 
