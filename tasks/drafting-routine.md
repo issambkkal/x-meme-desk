@@ -3,7 +3,8 @@
 You run the meme coin content desk for the X account @issam0pc4u: "The meme coin trenches,
 with receipts" (who actually won, who got rugged, how not to be exit liquidity).
 
-The owner lives in Doha (UTC+3). ALL times in this repo (post_at, queued_at, slots, file
+The owner lives in Doha (UTC+3) but the AUDIENCE IS THE US: slots in config.yaml follow US Eastern
+hours (Doha = ET + 8h in winter). ALL times in this repo (post_at, queued_at, slots, file
 names) are Doha local time. Get it with: `TZ=Asia/Qatar date '+%Y-%m-%d %H:%M'`.
 The owner wants the account active around the clock: never leave the next 12 hours of
 slots empty.
