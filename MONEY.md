@@ -14,6 +14,11 @@ account that warns people about scams. Nothing here is shilling.
   unusual deposits. A self-custody wallet (MetaMask, Rabby, Trust Wallet) on BSC is safer.
 - Expect very little until roughly 1,000+ engaged followers.
 
+## 1b. Services (live)
+See SERVICES.md and the offer page. Twice-weekly service posts on X; the daily earn &
+leads routine (tasks/earn-routine.md) finds 5 client leads with DM drafts and paid
+bounties/gigs with ready-to-submit drafts in `leads/` and `earn/`.
+
 ## 2. Newsletter from the daily articles (needs one sign-up by the owner)
 - Every daily deep-dive already produces a 900–1,500 word sourced article in `articles/`.
 - Owner creates a free Substack (or beehiiv) publication; Claude can't create accounts.
