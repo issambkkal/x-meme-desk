@@ -1,0 +1,36 @@
+name: Daily smart-money report
+# Every day ~17:15 Doha: builds "what 42 smart-money wallets bought today" chart + thread and
+# queues it (~70 min later) for the poster.
+on:
+  schedule:
+    - cron: "15 14 * * *"
+  workflow_dispatch:
+concurrency:
+  group: smartmoney
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Qatar
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Build report
+        run: python tools/smartmoney_report.py && python tools/check.py
+      - name: Save results
+        run: |
+          git config user.name "x-poster-bot"
+          git config user.email "x-poster-bot@users.noreply.github.com"
+          git add -A queue charts
+          git diff --cached --quiet && exit 0
+          git commit -q -m "smartmoney report: $(date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase --quiet origin main && git push --quiet && exit 0; sleep 5; done
+          exit 1
