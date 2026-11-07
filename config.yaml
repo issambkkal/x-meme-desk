@@ -12,6 +12,7 @@ dry_run: false
 min_lead_minutes: 60
 
 max_posts_per_day: 12
+max_replies_per_day: 40
 tip_pause_until: 2026-11-15   # X blocks crypto addresses for 7 days after app authorization
 min_gap_minutes: 60
 
