@@ -65,6 +65,12 @@ class Post:
             if i == 0 and self.meta.get("image"):
                 images.insert(0, self.meta["image"])
             self.tweets.append({"text": text, "images": images})
+        # `tip: true` (or a deep-dive thread with `article:`) adds the tip post from
+        # config.yaml as the last post of the thread.
+        if (self.meta.get("tip") or self.meta.get("article")) and self.kind == "post":
+            tip = str(load_config().get("tip_post") or "").strip()
+            if tip and not any(tip in t["text"] for t in self.tweets):
+                self.tweets.append({"text": tip, "images": []})
 
     @property
     def status(self):
