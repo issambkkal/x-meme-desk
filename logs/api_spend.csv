@@ -6,3 +6,4 @@ date,time,kind,reads,cost_usd
 2026-11-07,02:47,scan:news,7,0.035
 2026-11-07,06:12,scan:macro,10,0.050
 2026-11-07,14:55,scan:alerts,10,0.050
+2026-11-07,21:31,scan:news,5,0.025
