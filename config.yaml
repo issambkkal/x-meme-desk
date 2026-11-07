@@ -11,7 +11,7 @@ dry_run: false
 # so you can open the queue and delete it or set status: hold.
 min_lead_minutes: 60
 
-max_posts_per_day: 10
+max_posts_per_day: 12
 min_gap_minutes: 60
 
 # Automatic reposts (only accounts with repost_ok: true in watchlist.yaml)
