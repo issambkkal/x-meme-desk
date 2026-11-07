@@ -19,7 +19,12 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 SIGNALS = ROOT / "smartmoney" / "signals.json"
 STATE = ROOT / "smartmoney" / "telegram_state.json"
-TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+import re as _re
+_raw = os.environ.get("TELEGRAM_BOT_TOKEN") or ""
+_m = _re.search(r"\d{6,12}:[A-Za-z0-9_-]{30,}", _raw)  # tolerate spaces/newlines/extra text around it
+TOKEN = _m.group(0) if _m else (_raw.strip() or None)
+if _raw and not _m:
+    print(f"TELEGRAM_BOT_TOKEN doesn't look like a bot token ({len(_raw.strip())} chars, no 'digits:letters' part)")
 CHAT = os.environ.get("TELEGRAM_CHAT_ID")
 REPOST_HOURS = 24
 DANGER = ("already selling", "micro cap", "late", "no DEX pair")
