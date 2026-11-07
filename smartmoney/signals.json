@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-07T15:41+03:00",
+  "generated": "2026-11-07T20:01+03:00",
   "window_hours": 6.0,
-  "sol_usd": 89.71,
+  "sol_usd": 89.56,
   "signals": [
     {
       "mint": "iW4XP2BWd3iqf1LMZvpsKidb49wVAh3S8SfNUsDpump",
@@ -10,50 +10,23 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 406.57,
+      "smart_buy_usd": 405.89,
       "first_buy": "2026-11-07T11:18:09+00:00",
-      "avg_entry_usd": 7.89981117350634e-05,
-      "price_usd": 0.0003155,
-      "change_since_entry_pct": 299.4,
-      "liquidity_usd": 45996.45,
-      "market_cap": 303702,
-      "pair_age_h": 1.7,
-      "volume_24h": 738809.9,
-      "change_1h": 205,
-      "top10_pct": 22.8,
+      "avg_entry_usd": 7.886602259494236e-05,
+      "price_usd": 0.0002299,
+      "change_since_entry_pct": 191.5,
+      "liquidity_usd": 40114.87,
+      "market_cap": 221261,
+      "pair_age_h": 6.0,
+      "volume_24h": 1415761.63,
+      "change_1h": 34.37,
+      "top10_pct": 27.9,
       "red_flags": [
-        "already +299.4% above smart entries (late)",
+        "already +191.5% above smart entries (late)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/4ld38vl83ktpxakjxzrss2fpknwsdy1mwy59htf9zkma",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/iW4XP2BWd3iqf1LMZvpsKidb49wVAh3S8SfNUsDpump"
-    },
-    {
-      "mint": "7RGyPRTXcNPvv6gofmF6MtLHVYAfockuZ7K3T39Ypump",
-      "symbol": "GAYTECH",
-      "name": "gaytech",
-      "wallets": 3,
-      "core_wallets": 0,
-      "score": 3,
-      "smart_buy_usd": 472.66,
-      "first_buy": "2026-11-07T08:26:25+00:00",
-      "avg_entry_usd": 5.0660310737487905e-06,
-      "price_usd": 2.51e-06,
-      "change_since_entry_pct": -50.5,
-      "liquidity_usd": null,
-      "market_cap": 2510.44,
-      "pair_age_h": 4.3,
-      "volume_24h": 11974.81,
-      "change_1h": null,
-      "top10_pct": 100.0,
-      "red_flags": [
-        "still on a launch bonding curve (no pool liquidity yet)",
-        "top-10 accounts hold 100.0% (includes pools; check on Bubblemaps)",
-        "micro cap ($2,510)",
-        "3 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/f5nsuyadgheoxvnq3bb9oaxhdak1sdj8adcfqmyyuzmg",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/7RGyPRTXcNPvv6gofmF6MtLHVYAfockuZ7K3T39Ypump"
     }
   ]
 }
