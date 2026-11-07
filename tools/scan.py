@@ -28,9 +28,12 @@ GROUPS = {
     # news, platforms and big traders: only meme-related posts
     "news": {"sections": ["news", "platforms", "traders"], "keywords": True},
     # global economy, finance, industry and politics: only posts that touch crypto-moving topics
-    "macro": {"sections": ["macro"], "keywords": True, "keyword_list": "macro_keywords"},
+    # (2026-11-07: no keyword gate any more: economy and politics are topics in their own right)
+    "macro": {"sections": ["macro"], "keywords": False},
+    # politics, world events and big business news
+    "world": {"sections": ["world"], "keywords": False},
 }
-ORDER = ["alerts", "news", "macro"]
+ORDER = ["alerts", "news", "macro", "world"]
 
 
 def spent_today():
