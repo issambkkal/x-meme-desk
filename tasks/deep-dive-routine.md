@@ -11,6 +11,11 @@ turn it into a thread. Take your time: depth beats speed. All times are Doha tim
 config.yaml, watchlist.yaml, the last 7 days of `research/*.md`, `articles/*.md` titles,
 and `posted/*.json` first lines (don't repeat a topic from the last 7 days).
 
+Topic choice (owner's rule): the article does NOT have to be about crypto. Pick the
+day's biggest story among economy & markets, politics & world events, and crypto/meme
+coins; across a week at least 4 of 7 articles should be economy or politics/world.
+Mention crypto only where the link is real.
+
 ## 1. Map the last 24–48 hours (aim for 15+ searches, use WebSearch mode "extended")
 Cover ALL of these, then decide which thread ties them together:
 1. Meme coins: biggest gainers/losers (CoinGecko meme category), Pump.fun/launchpad data,

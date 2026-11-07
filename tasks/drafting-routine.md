@@ -63,9 +63,12 @@ and dropped spam). For every item with `"handled": false` (newest first, max 15 
   3. Global economy & finance: Fed and central banks, CPI/jobs/PMIs, yields, dollar, oil,
      stocks, AI/tech selloffs.
   4. Industry & trade: factories, tariffs, China/US data, supply chains, energy, chips.
-  5. Politics & regulation: Congress/SEC/CFTC, stablecoin and market-structure bills,
-     elections, sanctions, wars, Polymarket odds.
-  For every macro item, find the crypto link with data (what BTC/SOL/meme coins did).
+  5. Politics & regulation: governments and elections, Congress/SEC/CFTC, stablecoin and
+     market-structure bills, sanctions, wars, Polymarket odds.
+  6. World events: wars and ceasefires, diplomacy and summits, energy/OPEC, disasters,
+     big company news (AI, chips, autos, banks), anything trending on Reuters/AP/BBC.
+  Economy, politics and world stories are posts in their own right (STRATEGY.md pillars):
+  explain them with numbers; add a crypto link only when it is real.
 - Prefer primary sources (BLS, Fed, NBS China, ISM, Farside, CoinGlass, CoinGecko, SEC,
   Congress.gov), watchlist sleuths and on-chain tools (Bubblemaps, Arkham, Dune,
   DexScreener), and major outlets (Reuters, Bloomberg, FT, WSJ, CoinDesk, The Block).
@@ -81,7 +84,9 @@ Fill free slots from config.yaml for about the next 24 hours, up to max_posts_pe
 write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
 use it. Keep the pillar mix in STRATEGY.md: every run should include at least one
-"Macro → crypto" post if there is real news, and scam alerts first among meme items.
+"Economy & markets" post AND one "Politics & world events" post whenever there is real
+news (there almost always is), plus scam alerts first among meme items. Across a day,
+roughly half of the account's posts should be economy/politics/world, half crypto/meme.
 
 Telegram growth (owner's priority): once per Doha day, queue ONE post that invites people
 to the free Telegram group imbi MOON, built on a real, checkable example from
@@ -101,7 +106,7 @@ One file per item: `queue/YYYY-MM-DD-HHMM-short-slug.md`:
 ---
 post_at: 2026-11-07 09:00
 status: ready                # "draft" instead if config mode is approve
-pillar: scam                 # scam | macro | winners | guide | data | personal
+pillar: scam                 # economy | politics | scam | winners | guide | data | personal
 image: charts/2026-11-07-slug.png          # optional, first post only
 queued_at: <now in Doha, YYYY-MM-DD HH:MM>
 sources:
