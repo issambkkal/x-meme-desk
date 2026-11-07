@@ -1,21 +1,25 @@
 name: X poster
-# Publishes due posts from queue/ every 15 minutes, off the busy :00 minute (GitHub delays those).
+# Runs a loop that checks queue/ every 5 minutes for almost 6 hours, then the hourly
+# schedule starts the next loop (only one runs at a time; the next one waits its turn).
+# This works around GitHub skipping short scheduled runs. Free on public repos.
 on:
   schedule:
-    - cron: "4,19,34,49 * * * *"
+    - cron: "4 * * * *"
   workflow_dispatch:
 concurrency:
-  group: x-system-write
+  group: x-poster-loop
   cancel-in-progress: false
 permissions:
   contents: write
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
     env:
       TZ: Asia/Qatar
       X_ENV: ${{ secrets.X_ENV }}
+      LOOP_SECONDS: "20400"   # 5h40m of checking, then hand over to the next run
+      EVERY_SECONDS: "300"    # check the queue every 5 minutes
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,14 +31,18 @@ jobs:
         run: printf '%s\n' "$X_ENV" > .env
       - name: Check X keys (names and lengths only)
         run: python tools/keycheck.py
-      - name: Post due items
-        run: python tools/poster.py
-      - name: Save results
+      - name: Post due items every 5 minutes
         run: |
           git config user.name "x-poster-bot"
           git config user.email "x-poster-bot@users.noreply.github.com"
-          git add -A
-          git diff --cached --quiet && exit 0
-          git commit -m "poster: $(date '+%Y-%m-%d %H:%M')"
-          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
-          exit 1
+          end=$((SECONDS + LOOP_SECONDS))
+          while [ $SECONDS -lt $end ]; do
+            git pull --rebase --quiet origin main || git rebase --abort || true
+            python tools/poster.py || echo "poster run failed, will retry"
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit -q -m "poster: $(date '+%Y-%m-%d %H:%M')"
+              for i in 1 2 3; do git pull --rebase --quiet origin main && git push --quiet && break; sleep 5; done
+            fi
+            sleep $EVERY_SECONDS
+          done
