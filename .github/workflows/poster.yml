@@ -1,8 +1,10 @@
 name: X poster
-# Publishes due posts from queue/ every 15 minutes (GitHub may delay scheduled runs by a few minutes).
+# Publishes due posts from queue/ every 30 minutes, on off-peak minutes (:07 and :37).
+# GitHub delays or drops runs scheduled on :00/:15/:30/:45 when busy; odd minutes are more reliable.
+# Every 30 min keeps a private repo inside the free 2,000 Actions minutes a month (~1,440 + scanner).
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 concurrency:
   group: x-system-write
