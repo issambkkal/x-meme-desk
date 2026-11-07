@@ -74,8 +74,11 @@ def eligible(post, config, t):
         return f"scheduled for {post.post_at:%Y-%m-%d %H:%M}"
     if t - post.post_at > dt.timedelta(hours=STALE_HOURS):
         return "stale"
+    # Time-sensitive items (live smart-money signals) give up instead of going out late.
+    if post.meta.get("max_delay_minutes") and t - post.post_at > dt.timedelta(minutes=int(post.meta["max_delay_minutes"])):
+        return "stale"
     lead = dt.timedelta(minutes=int(config.get("min_lead_minutes", 60)))
-    if t - post.queued_at < lead:
+    if not post.meta.get("fast") and t - post.queued_at < lead:
         return f"waiting for review window until {post.queued_at + lead:%H:%M}"
     return None
 
@@ -228,7 +231,7 @@ def main():
             log(f"skip {path.name}: unreadable ({e})")
             continue
         if post.kind in acted or eligible(post, config, t) or (
-                not post.meta.get("continue_thread") and blocked(config, post.kind, t)):
+                not (post.meta.get("continue_thread") or post.meta.get("fast")) and blocked(config, post.kind, t)):
             continue
         errs = post.problems(config)
         if errs:
