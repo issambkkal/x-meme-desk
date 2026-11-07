@@ -28,6 +28,11 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Track smart-money wallets
         run: python tools/smartmoney.py
+      - name: Post new signals to Telegram (imbi MOON)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python tools/telegram_signals.py
       - name: Save results
         run: |
           git config user.name "x-poster-bot"
