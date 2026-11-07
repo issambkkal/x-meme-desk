@@ -42,6 +42,19 @@ macro:          # global economy, markets, policy and politics (keyword-filtered
   - {handle: EleanorTerrett,  followers: 295130,   repost_ok: false, note: "US crypto policy and Congress scoops"}
   - {handle: Polymarket,      followers: 2046354,  repost_ok: false, note: "election and policy odds"}
 
+world:          # politics, governments, wars, diplomacy, big world and business news (no keyword filter)
+  - {handle: AP,              repost_ok: false, note: "Associated Press wire"}
+  - {handle: BBCBreaking,     repost_ok: false, note: "BBC breaking news"}
+  - {handle: AFP,             repost_ok: false, note: "AFP wire"}
+  - {handle: AJEnglish,       repost_ok: false, note: "Al Jazeera English, Middle East/Gulf"}
+  - {handle: politico,        repost_ok: false, note: "US/EU politics"}
+  - {handle: axios,           repost_ok: false, note: "US politics and business"}
+  - {handle: CNBC,            repost_ok: false, note: "business and markets"}
+  - {handle: TheEconomist,    repost_ok: false, note: "economy and world analysis"}
+  - {handle: spectatorindex,  repost_ok: false, note: "world stats and headlines; verify elsewhere"}
+  - {handle: unusual_whales,  repost_ok: false, note: "markets, politics and trading news"}
+  - {handle: Kalshi,          repost_ok: false, note: "event odds"}
+
 platforms:      # read only: product accounts, never repost (promotional)
   - {handle: Pumpfun,         followers: 747127,  repost_ok: false, note: "meme coin launchpad"}
   - {handle: dexscreener,     followers: 238696,  repost_ok: false, note: "DEX charts, trending"}

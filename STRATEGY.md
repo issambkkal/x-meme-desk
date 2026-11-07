@@ -1,4 +1,4 @@
-# @issam0pc4u — X strategy (meme coins)
+# @issam0pc4u — X strategy (meme coins + economy + politics + world events)
 
 The drafting task reads this file before every run. The weekly analysis updates the
 **Learnings** section. Edit anything here and the system follows it from the next run.
@@ -9,6 +9,12 @@ The drafting task reads this file before every run. The weekly analysis updates 
 won, who got rugged, how to not be the exit liquidity, and how the global economy,
 finance, industry and politics push money into and out of crypto and meme coins.
 Every claim backed by on-chain data or a named source.
+
+The owner's rule (2026-11-07): the account is NOT only crypto. Politics, the economy and
+big world events are core topics in their own right: elections and governments, wars and
+diplomacy, sanctions and trade, central banks, inflation and jobs, stocks and big
+companies, oil and energy, AI and tech. Cover them every day with numbers and sources;
+connect them to crypto only when the link is real, never forced.
 
 The edge: most meme accounts only look at charts; most macro accounts ignore meme coins.
 We connect them: "Fed cut odds fell → dollar up → risk-off → meme coins bled first."
@@ -22,12 +28,17 @@ We connect them: "Fed cut odds fell → dollar up → risk-off → meme coins bl
 
 | Pillar | Share | Example |
 |---|---|---|
-| Scam alert / red flags | 25% | "Bubblemaps: 40% of $XYZ supply sat in 12 linked wallets before launch. Here's how to check any coin in 30 seconds." |
-| Macro → crypto (economy, finance, industry, politics) | 25% | "China's factory PMI fell to 48.6 and the dollar jumped. Last 3 times that happened, SOL meme coins lost X% in a week." Fed, CPI, jobs, yields, dollar, oil, tariffs, China/US factories, elections, SEC/Congress, stablecoin laws, ETF flows. Always end with what it means for crypto/meme traders. |
-| Winners, with receipts | 20% | "A wallet turned $285 into $627K on one coin in a day (Lookonchain). Here's how many tried the same and lost." |
-| Survival guide / how it works | 15% | "5 checks before you ape: holders, dev wallet, LP, bundles, socials." |
-| Trenches data | 10% | Pump.fun launches per day, survival rate, platform revenue, liquidations |
+| Economy & markets | 25% | Fed, ECB, CPI, jobs, yields, the dollar, oil, gold, stock indexes, big company earnings, AI/tech, trade, factories/PMIs. "US productivity +3.5% in Q3 while unit labor costs fell 0.7%: what that means for rate cuts." Crypto angle only if real. |
+| Politics & world events | 20% | Elections, Congress/government decisions, wars and ceasefires, sanctions, summits, tariffs, regulation, disasters that move energy or supply chains. Explain what happened, the numbers, what it changes for money and people, what's next (dates). Neutral and factual. |
+| Scam alert / red flags | 20% | "Bubblemaps: 40% of $XYZ supply sat in 12 linked wallets before launch. Here's how to check any coin in 30 seconds." |
+| Winners & smart money, with receipts | 15% | Tracker data, whale moves, "a wallet turned $285 into $627K... here's how many lost". (Signal/trap posts from tools/x_signals.py count here.) |
+| Survival guide / trenches data | 15% | "5 checks before you ape", Pump fun survival rate, liquidations, platform revenue. |
 | Personal / community | 5% | "Be honest: how many meme coins have you bought this year?" |
+
+Politics rules: report, don't campaign. No cheering for a party or politician, no insults,
+no unverified claims. Use primary sources (official statements, vote records, Reuters/AP,
+government data), give both sides when something is contested, and focus on what changes
+for money, prices, markets and ordinary people.
 
 ## Daily deep-dive article (one per day, 07:00 Doha research → 17:00 thread)
 
@@ -44,8 +55,9 @@ The account is not Premium, so no X "Article" format; the full text stays in the
 - Read the full article for every source you cite (WebFetch), not just search snippets.
 - For any macro claim, get the official or primary number (BLS, Fed, ECB, PBoC, NBS China,
   Caixin/S&P PMI, EIA, Treasury, SEC/Congress.gov, company filings) plus one major outlet.
-- Always answer "so what for crypto?" with data: BTC/ETH/SOL moves, meme coin index or top
-  meme coins, ETF flows, stablecoin supply, liquidations, funding rates.
+- Always answer "so what?" with data: for markets (stocks, oil, dollar, yields), for people
+  (prices, jobs, rates), and for crypto when the link is real (BTC/ETH/SOL moves, ETF flows,
+  stablecoin supply, liquidations). Don't force a crypto angle onto a politics or economy story.
 - Track the economic calendar (CPI, PPI, jobs, FOMC, PMIs, China data, big elections or
   votes, token unlocks) and write a heads-up post before, and a result post after.
 
