@@ -1,0 +1,56 @@
+name: Keep-alive
+# GitHub's timer skips most scheduled runs on this repo (the 20-minute tracker ran once in 4 hours).
+# This job stays up ~5h50m, starts the other workflows on time itself, then starts its own next run.
+# Starting workflows with the built-in token is allowed for workflow_dispatch. Free on public repos.
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+permissions:
+  actions: write
+  contents: read
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      TZ: UTC
+    steps:
+      - name: Start the other workflows on time
+        run: |
+          end=$((SECONDS + 21000))
+          last_post=0; last_sm=0; last_scan=0
+          active() { gh run list -w "$1" -L 10 --json status -q '[.[] | select(.status != "completed")] | length' 2>/dev/null || echo 1; }
+          while [ $SECONDS -lt $end ]; do
+            now=$(date +%s)
+            # Poster: keep one ~6h checking loop running at all times.
+            if [ $((now - last_post)) -ge 600 ]; then
+              [ "$(active poster.yml)" = "0" ] && gh workflow run poster.yml && echo "$(date '+%F %H:%M') started poster"
+              last_post=$now
+            fi
+            # Smart-money tracker (and Telegram signals) every 20 minutes.
+            if [ $((now - last_sm)) -ge 1200 ]; then
+              [ "$(active smartmoney.yml)" = "0" ] && gh workflow run smartmoney.yml && echo "$(date '+%F %H:%M') started tracker"
+              last_sm=$now
+            fi
+            # News scanner every 3 hours (it has its own daily read budget).
+            if [ $((now - last_scan)) -ge 10800 ]; then
+              gh workflow run scanner.yml && echo "$(date '+%F %H:%M') started scanner"
+              last_scan=$now
+            fi
+            # Daily smart-money report after 14:15 UTC (17:15 Doha) if it hasn't run today.
+            d=$(date +%F); hm=$(date +%H%M)
+            if [ "$hm" -ge 1415 ] && [ "$hm" -lt 2000 ]; then
+              n=$(gh run list -w smartmoney-report.yml -L 10 --json createdAt -q "[.[] | select(.createdAt >= \"${d}T00:00\")] | length" 2>/dev/null || echo 1)
+              [ "$n" = "0" ] && gh workflow run smartmoney-report.yml && echo "$(date '+%F %H:%M') started daily report"
+            fi
+            sleep 60
+          done
+      - name: Start the next keep-alive run
+        if: always()
+        run: gh workflow run keepalive.yml
