@@ -1,0 +1,21 @@
+{
+  "file": "2026-11-08-0200-trump-new-low.md",
+  "kind": "post",
+  "posted_at": "2026-11-08T02:32",
+  "tweet_ids": [
+    "2119211374194929749"
+  ],
+  "url": "https://x.com/i/status/2119211374194929749",
+  "meta": {
+    "post_at": "2026-11-08 02:00",
+    "status": "ready",
+    "pillar": "data",
+    "image": "charts/2026-11-08-trump-ath.png",
+    "queued_at": "2026-11-07 02:20",
+    "sources": [
+      "https://www.coingecko.com/en/coins/official-trump",
+      "https://futurism.com/future-society/trump-coin-crypto-investors-screwed-midterms"
+    ]
+  },
+  "first_text": "$TRUMP hit a new all-time low on Thursday: $1.12 (CoinGecko).\n\nThe peak was $73.43 in January 2025.\n\n$1,000 bought at the top is worth about $16 today.\n\nCelebrity coins don't always need a rug. Sometimes the chart just does it slowly."
+}
