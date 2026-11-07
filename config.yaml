@@ -1,4 +1,4 @@
-# Settings for the X posting system. Times are local (Doha, UTC+3).
+# Settings for the X posting system. Times are stored in Doha time (UTC+3); slots target US Eastern hours (see below).
 
 # auto    = posts with status "ready" go out on their own
 # approve = only posts you change to status "approved" go out
@@ -21,7 +21,16 @@ max_reposts_per_day: 2
 min_repost_gap_minutes: 60
 
 # Preferred time slots used by the drafting task to pick post_at.
-slots: ["08:00", "10:30", "13:00", "15:30", "17:00", "20:00", "23:00", "02:00"]
+# Audience is the US, so slots follow US Eastern time (EST = UTC-5 from Nov 1, 2026; Doha = ET + 8h).
+# Stored in Doha time like everything else in this repo. 90 min apart so the 60-min gap never delays them.
+#   15:30 = 7:30am ET (pre-market, commute)   17:00 = 9:00am ET (daily deep-dive thread)
+#   18:30 = 10:30am ET (smart-money report)   20:00 = 12:00pm ET (lunch)
+#   21:30 = 1:30pm ET                          23:00 = 3:00pm ET (last hour of trading)
+#   00:30 = 4:30pm ET (after the close)        02:00 = 6:00pm ET (evening)
+#   04:00 = 8:00pm ET (US evening, crypto crowd)
+# US data releases (CPI, jobs) come out at 8:30am ET = 16:30 Doha: put previews at 15:30 and
+# the reaction post right after the release.
+slots: ["15:30", "17:00", "18:30", "20:00", "21:30", "23:00", "00:30", "02:00", "04:00"]
 
 # Account is not Premium, so posts are capped at 280 weighted characters.
 max_chars: 280
