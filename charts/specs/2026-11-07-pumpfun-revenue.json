@@ -1,0 +1,2 @@
+{"type":"columns","title":"Pump.fun's daily revenue is down about 37%","subtitle":"Average revenue per day, Oct vs Nov 1–6, 2026","source":"Data: DefiLlama (Oct $62.42M; Nov 1–6 $7.54M). Daily averages calculated.","out":"charts/2026-11-07-pumpfun-revenue.png",
+"items":[{"label":"October avg/day","value":2.01,"text":"$2.01M"},{"label":"Nov 1–6 avg/day","value":1.26,"text":"$1.26M","highlight":true}]}
