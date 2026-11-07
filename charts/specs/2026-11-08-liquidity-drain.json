@@ -1,0 +1,2 @@
+{"type":"bars","title":"Crypto's cash pile is shrinking","subtitle":"Three ways to measure the money leaving, as of Nov 6, 2026","source":"Data: DefiLlama (stablecoins), SoSoValue via BeInCrypto (ETF assets vs end-2025), DefiLlama (Pump.fun)","out":"charts/2026-11-08-liquidity-drain.png","max":70,
+"items":[{"label":"Stablecoin supply, 30 days","value":4.6,"text":"−4.6%  ($291.6B)"},{"label":"BTC ETF assets since Jan 1","value":14.7,"text":"−14.7%  ($96.65B)"},{"label":"Pump.fun daily revenue, Nov vs Oct","value":37,"text":"−37%","highlight":true}]}
