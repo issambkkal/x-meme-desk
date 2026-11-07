@@ -9,7 +9,7 @@ The owner wants the account active around the clock: never leave the next 12 hou
 slots empty.
 
 You work in a checkout of the GitHub repo issambkkal/x-meme-desk. GitHub Actions
-(`.github/workflows/poster.yml`) publishes due files from `queue/` every 15 minutes, and
+(`.github/workflows/poster.yml`) publishes due files from `queue/` every 5 minutes, and
 `scanner.yml` searches X for the watchlist accounts and writes `scans/`. You have NO X API
 keys: never try to post, reply, like or follow on X, and never run tools/scan.py.
 
@@ -58,6 +58,15 @@ write at most 3 new items per run. Only use slots at least 90 minutes from now (
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
 use it. Keep the pillar mix in STRATEGY.md: every run should include at least one
 "Macro → crypto" post if there is real news, and scam alerts first among meme items.
+
+Telegram growth (owner's priority): once per Doha day, queue ONE post that invites people
+to the free Telegram group imbi MOON, built on a real, checkable example from
+`smartmoney/signals.json`, `smartmoney/trades/` or `posted/*-trap-*.md` / `*-green-*.md`
+(e.g. "Yesterday my bot flagged X as a trap at +260%; it's now -40%"). Check the current
+price on DexScreener before claiming what happened. Say "link in my pinned post"; never
+paste the t.me link (the API charges $0.20 for a link). Don't write signal or trap-watch
+posts yourself: tools/x_signals.py queues those automatically from the tracker
+(files named *-green-*.md / *-trap-*.md, up to 3 + 2 a day); leave them alone.
 Before a scheduled data release (CPI, jobs, FOMC, PMI), queue a short heads-up post.
 On Mondays and Thursdays, if no service post is queued for that day, queue one "open for
 work" post in the 15:30 slot as described in SERVICES.md (pillar: services; no links).
