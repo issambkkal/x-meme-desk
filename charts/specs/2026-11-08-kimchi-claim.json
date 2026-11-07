@@ -1,0 +1,2 @@
+{"type":"bars","title":"The rumor vs the wallets","subtitle":"Kimchi's $TRUMP profit: rumored vs what Bubblemaps could trace (USD millions)","source":"Data: Bubblemaps KOL investigation (Nov 5–6, 2026). Estimates; other wallets may exist.","out":"charts/2026-11-08-kimchi-claim.png",
+"items":[{"label":"Rumored","value":40,"text":"~$40M"},{"label":"Traced by Bubblemaps","value":6,"text":"~$6M","highlight":true}]}

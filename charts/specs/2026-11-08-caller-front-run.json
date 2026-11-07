@@ -1,0 +1,2 @@
+{"type":"progress","title":"Calls that were front-run","subtitle":"Share of one KOL's 534 token calls with a linked wallet buying first (Bubblemaps, Oct 2026)","source":"Data: Bubblemaps (Oct 15, 2026), via TechFlow. Bubblemaps estimate.","out":"charts/2026-11-08-caller-front-run.png","max":100,
+"items":[{"label":"Calls analysed","value":100,"text":"534"},{"label":"Bought first, linked wallets","value":61,"text":"61%","highlight":true}]}
