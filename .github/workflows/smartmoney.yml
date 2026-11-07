@@ -1,0 +1,39 @@
+name: Smart-money tracker
+# Reads tracked wallets' new swaps and updates smartmoney/signals.md every ~20 minutes.
+# Optional secret SOLANA_RPC_URL (e.g. a free Helius RPC URL) makes it faster and more reliable;
+# without it the public Solana RPC is used.
+on:
+  schedule:
+    - cron: "8,28,48 * * * *"
+  workflow_dispatch:
+concurrency:
+  group: smartmoney
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TZ: Asia/Qatar
+      SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+      SM_MAX_TX_PER_WALLET: "25"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Track smart-money wallets
+        run: python tools/smartmoney.py
+      - name: Save results
+        run: |
+          git config user.name "x-poster-bot"
+          git config user.email "x-poster-bot@users.noreply.github.com"
+          git add -A smartmoney
+          git diff --cached --quiet && exit 0
+          git commit -q -m "smartmoney: $(date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull --rebase --quiet origin main && git push --quiet && exit 0; sleep 5; done
+          exit 1
