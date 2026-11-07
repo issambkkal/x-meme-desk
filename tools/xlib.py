@@ -15,6 +15,7 @@ ANALYTICS = ROOT / "analytics"
 TWEET_SPLIT = re.compile(r"^\s*===\s*$", re.M)
 IMAGE_TAG = re.compile(r"^\s*\[image:\s*(.+?)\s*\]\s*$", re.M)
 URL = re.compile(r"https?://\S+")
+BARE_DOMAIN = re.compile(r"(?<![@\w$])[A-Za-z0-9-]+\.(?:fun|io|xyz|com|app|so|ai|net|org|gg|trade|finance|exchange|money|wtf|co|me|tv)\b", re.I)
 TIME_FMT = "%Y-%m-%d %H:%M"
 
 
@@ -155,6 +156,13 @@ class Post:
                     errs.append(f"image not found: {img}")
         if self.tweets and URL.search(self.tweets[0]["text"]):
             errs.append("no links in the first post (put them in a reply under it)")
+        # Bare domains like "Pump.fun" are auto-linked by X: the post becomes a link post
+        # (less reach, $0.20 API price). Write "Pump fun" / "Pumpfun" instead.
+        for n, t in enumerate(self.tweets, 1):
+            m = BARE_DOMAIN.search(t["text"])
+            if m and not self.meta.get("allow_links"):
+                errs.append(f"post {n} contains '{m.group(0)}', which X turns into a link; "
+                            f"write it without the dot (e.g. 'Pump fun')")
         # X API bills a post containing a URL at $0.20 instead of $0.015 (13x).
         if not self.meta.get("allow_links") and any(URL.search(t["text"]) for t in self.tweets):
             errs.append("a post contains a link: costs $0.20 via the API instead of $0.015; "
