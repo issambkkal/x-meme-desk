@@ -27,7 +27,10 @@ GROUPS = {
     "alerts": {"sections": ["sleuths", "onchain"], "keywords": False},
     # news, platforms and big traders: only meme-related posts
     "news": {"sections": ["news", "platforms", "traders"], "keywords": True},
+    # global economy, finance, industry and politics: only posts that touch crypto-moving topics
+    "macro": {"sections": ["macro"], "keywords": True, "keyword_list": "macro_keywords"},
 }
+ORDER = ["alerts", "news", "macro"]
 
 
 def spent_today():
@@ -53,7 +56,7 @@ def build_query(watch, group):
     q = "(" + " OR ".join(f"from:{h}" for h in handles) + ") -is:retweet -is:reply"
     if group["keywords"]:
         words = []
-        for k in watch.get("keywords", []):
+        for k in watch.get(group.get("keyword_list", "keywords"), []):
             term = f'"{k}"' if " " in k or "$" in k or "." in k else k
             trial = q + " (" + " OR ".join(words + [term]) + ")"
             if len(trial) > MAX_QUERY:
@@ -87,7 +90,8 @@ def main():
 
     watch = yaml.safe_load((ROOT / "watchlist.yaml").read_text())
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
-    name = "news" if state.get("last_group") == "alerts" else "alerts"
+    last = state.get("last_group")
+    name = ORDER[(ORDER.index(last) + 1) % len(ORDER)] if last in ORDER else ORDER[0]
     query = build_query(watch, GROUPS[name])
 
     kwargs = dict(query=query, max_results=per_run, user_auth=True,
