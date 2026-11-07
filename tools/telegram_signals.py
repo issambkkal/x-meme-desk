@@ -99,7 +99,12 @@ def main():
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
     now = time.time()
     sent = 0
+    first_time = TOKEN and not CHAT_FILE.exists() and not CHAT
     chat = find_chat() if TOKEN else None
+    if first_time and chat:
+        chat = send(chat, "✅ <b>imbi MOON Signals bot is online.</b>\n\nI watch 42 proven meme coin wallets "
+                          "around the clock and post here when several buy the same token, or when they start "
+                          "dumping one.\n\n<i>Research, not financial advice.</i>")
     for s in data.get("signals", []):
         last = state.get(s["mint"], 0)
         if now - last < REPOST_HOURS * 3600:
