@@ -15,8 +15,18 @@ ANALYTICS = ROOT / "analytics"
 TWEET_SPLIT = re.compile(r"^\s*===\s*$", re.M)
 IMAGE_TAG = re.compile(r"^\s*\[image:\s*(.+?)\s*\]\s*$", re.M)
 URL = re.compile(r"https?://\S+")
+CASHTAG = re.compile(r"\$[A-Za-z][A-Za-z0-9_]*")
 BARE_DOMAIN = re.compile(r"(?<![@\w$])[A-Za-z0-9-]+\.(?:fun|io|xyz|com|app|so|ai|net|org|gg|trade|finance|exchange|money|wtf|co|me|tv)\b", re.I)
 TIME_FMT = "%Y-%m-%d %H:%M"
+
+
+def one_cashtag(text):
+    """The X API refuses posts with more than one cashtag: keep the first $TICKER, drop the $ on the rest."""
+    seen = []
+    def fix(m):
+        seen.append(1)
+        return m.group(0) if len(seen) == 1 else m.group(0)[1:]
+    return CASHTAG.sub(fix, text)
 
 
 def load_config():
@@ -65,6 +75,11 @@ class Post:
             text = IMAGE_TAG.sub("", chunk).strip()
             if i == 0 and self.meta.get("image"):
                 images.insert(0, self.meta["image"])
+            # X turns bare domains like "Pump.fun" into links (less reach, $0.20 API price).
+            # Fix them instead of blocking the post: "Pump.fun" -> "Pump fun".
+            if not self.meta.get("allow_links"):
+                text = BARE_DOMAIN.sub(lambda m: m.group(0).replace(".", " "), text)
+            text = one_cashtag(text)
             # X turns bare domains like "Pump.fun" into links (less reach, $0.20 API price).
             # Fix them instead of blocking the post: "Pump.fun" -> "Pump fun".
             if not self.meta.get("allow_links"):

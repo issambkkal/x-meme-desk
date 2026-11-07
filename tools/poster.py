@@ -128,7 +128,9 @@ def publish(post, client, dry):
         log(f"  reposted https://x.com/{user}/status/{tid}")
         return [tid]
     quote = post.target("quote")[1]
-    ids, reply_to = [], None
+    # `continue_thread: <status id>` finishes a thread that broke midway: the first post
+    # replies to the last post that went out.
+    ids, reply_to = [], (str(post.meta["continue_thread"]) if post.meta.get("continue_thread") else None)
     for n, t in enumerate(post.tweets, 1):
         imgs = [post.image_path(i) for i in t["images"]]
         if dry:
@@ -225,7 +227,8 @@ def main():
         except Exception as e:
             log(f"skip {path.name}: unreadable ({e})")
             continue
-        if post.kind in acted or eligible(post, config, t) or blocked(config, post.kind, t):
+        if post.kind in acted or eligible(post, config, t) or (
+                not post.meta.get("continue_thread") and blocked(config, post.kind, t)):
             continue
         errs = post.problems(config)
         if errs:
