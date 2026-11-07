@@ -67,7 +67,10 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 - At most 2 emojis. Cashtags ($WIF) are fine; at most 2 per post.
 - No links anywhere in posts: the API charges $0.20 instead of $0.015, and X shows link
   posts to fewer people. Name the source in words; the URL goes in `sources`.
-- No referral links until 1,000+ followers.
+- No referral links until 1,000+ followers; then one disclosed referral in the bio only.
+- Tips: never add the wallet address to normal posts. It appears in the bio, the pinned
+  post, and automatically as the last post of each daily deep-dive thread (`tip: true`).
+  See MONEY.md for the full earning plan.
 - Charts: 1600×900 dark style via `tools/chart.py`. At least half of posts carry one.
 
 ## Truth rules (non-negotiable)

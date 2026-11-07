@@ -30,3 +30,15 @@ handle: "@issam0pc4u"
 # 90 reads/day ≈ $0.45/day ≈ $13.5/month. Set 0 to turn the scanner off.
 scan_max_reads_per_day: 90
 scan_reads_per_run: 10
+
+# Tips. Any queue file with `tip: true` gets this as its last post (the daily deep-dive
+# thread always does). Network matters: BNB Smart Chain (BEP-20) only.
+tip_address: "0x9b4d1d2030e39095c4b6ff80dcf50b77d79af36c"
+tip_network: "BNB Smart Chain (BEP-20)"
+tip_post: |-
+  If this thread helped you, you can support the research with a tip.
+
+  BNB Smart Chain (BEP-20) only:
+  0x9b4d1d2030e39095c4b6ff80dcf50b77d79af36c
+
+  No coins shilled here, ever.
