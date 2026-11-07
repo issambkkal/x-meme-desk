@@ -1,0 +1,2 @@
+{"type":"bars","title":"Money left Bitcoin ETFs 3 of 4 days","subtitle":"US spot Bitcoin ETF net flows, Nov 2–5, 2026 (bar = size of the move)","source":"Data: Farside Investors; crypto.news (Nov 6, 2026)","out":"charts/2026-11-07-etf-flows.png",
+"items":[{"label":"Mon Nov 2","value":398.6,"text":"−$398.6M"},{"label":"Tue Nov 3 (election)","value":115.6,"text":"−$115.6M"},{"label":"Wed Nov 4","value":74.6,"text":"+$74.6M in"},{"label":"Thu Nov 5 (AI rout)","value":430.2,"text":"−$430.2M","highlight":true}]}
