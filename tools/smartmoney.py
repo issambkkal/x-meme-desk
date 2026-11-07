@@ -35,6 +35,8 @@ RPC = os.environ.get("SOLANA_RPC_URL") or "https://api.mainnet-beta.solana.com"
 WINDOW_H = float(os.environ.get("SM_WINDOW_HOURS", "6"))
 MAX_TX = int(os.environ.get("SM_MAX_TX_PER_WALLET", "25"))
 BACKFILL = os.environ.get("SM_BACKFILL") == "1"
+MIN_USD = float(os.environ.get("SM_MIN_USD", "300"))      # ignore dust convergence
+MIN_MC = float(os.environ.get("SM_MIN_MCAP", "50000"))    # flag micro caps below this
 WSOL = "So11111111111111111111111111111111111111112"
 USDC = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 USDT = "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
@@ -203,7 +205,8 @@ def build_signals(trades, sol_price):
     cands = []
     for mint, g in by_mint.items():
         score = sum(2 if tier == "core" else 1 for tier in g["wallets"].values())
-        if len(g["wallets"]) >= 2:
+        approx_usd = g["usd"] + g["sol"] * (sol_price or 0)
+        if len(g["wallets"]) >= 2 and approx_usd >= MIN_USD:
             cands.append((mint, g, score))
     info = dexscreener([m for m, _, _ in cands]) if cands else {}
     signals = []
@@ -218,8 +221,11 @@ def build_signals(trades, sol_price):
         age_h = round((time.time() * 1000 - created) / 3.6e6, 1) if created else None
         top10 = top10_share(mint)
         flags = []
-        if liq is None:
+        mc = p.get("marketCap") or p.get("fdv")
+        if not p:
             flags.append("no DEX pair found")
+        elif liq is None:
+            flags.append("still on a launch bonding curve (no pool liquidity yet)")
         elif liq < 30000:
             flags.append(f"thin liquidity (${liq:,.0f})")
         if age_h is not None and age_h < 1:
@@ -228,6 +234,8 @@ def build_signals(trades, sol_price):
             flags.append(f"top-10 accounts hold {top10}% (includes pools; check on Bubblemaps)")
         if since_entry is not None and since_entry > 100:
             flags.append(f"already +{since_entry}% above smart entries (late)")
+        if mc is not None and mc < MIN_MC:
+            flags.append(f"micro cap (${mc:,.0f})")
         if mint in sells:
             flags.append(f"{len(sells[mint])} tracked wallet(s) already selling")
         signals.append({
