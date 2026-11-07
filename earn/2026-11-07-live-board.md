@@ -16,5 +16,19 @@ free Superteam Earn profile (owner signs up; Claude can't create accounts).
 ## Recommended next steps
 1. Owner: create a Solana wallet + Superteam Earn profile (bio: crypto research, scam red-flag
    checks, data charts; link the offer page and @issam0pc4u).
-2. Best odds: MozaikPay (7 entries, 5 days) and KriptoK (13 entries, 11 days) after a red-flag check.
+2. After a detailed check, neither MozaikPay nor KriptoK is worth entering (see below; the
+   "7" and "13" on the board were comment counts, not entries).
 3. Weekly: the earn routine re-checks the board once the cloud environment allows earn.superteam.fun.
+
+## Checked in detail (2026-11-07 ~04:00 Doha)
+- **MozaikPay — not eligible.** Requires a 30–60s Spanish TikTok/Reels video showing your own
+  MozaikPay account; the app serves bank users in Argentina, Chile and Colombia. Real prize
+  pool 150/125/75 + 3×50 USDC, 28 submissions.
+- **KriptoK — skip.** Really 139 submissions for 50/35/25/20/20 USDC. KriptoK (@KriptoK, created
+  2025-07, ~1.3K followers, business-verified) is a leveraged perps / "pre-IPO" synthetic perps /
+  gacha trading app; no public audit, team or funding info found. Promoting leverage and gacha
+  conflicts with the account's anti-leverage, anti-scam positioning. Low odds, low pay.
+- **Superteam Projects (paid gigs):** none open.
+- Rule for the earn routine: prefer bounties that pay ≥100 USDC per winner with <50
+  submissions, that fit research/charts/threads, and that don't promote leverage, gacha or
+  meme coin launches.
