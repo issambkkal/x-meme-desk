@@ -31,7 +31,14 @@ ROOT = Path(__file__).resolve().parent.parent
 SM = ROOT / "smartmoney"
 STATE = SM / "state.json"
 TRADES = SM / "trades"
-RPC = os.environ.get("SOLANA_RPC_URL") or "https://api.mainnet-beta.solana.com"
+PUBLIC_RPC = "https://api.mainnet-beta.solana.com"
+_rpc_setting = (os.environ.get("SOLANA_RPC_URL") or "").strip()
+if _rpc_setting and not _rpc_setting.startswith("http"):
+    # a bare Helius API key was saved instead of the full RPC URL
+    _rpc_setting = f"https://mainnet.helius-rpc.com/?api-key={_rpc_setting}"
+RPC = _rpc_setting or PUBLIC_RPC
+RPC_LABEL = "Helius (from secret)" if "helius" in RPC else ("custom RPC (from secret)" if _rpc_setting else "public Solana RPC")
+_fails = {"n": 0}
 WINDOW_H = float(os.environ.get("SM_WINDOW_HOURS", "6"))
 MAX_TX = int(os.environ.get("SM_MAX_TX_PER_WALLET", "25"))
 BACKFILL = os.environ.get("SM_BACKFILL") == "1"
@@ -44,23 +51,40 @@ QUOTES = {WSOL, USDC, USDT}
 session = requests.Session()
 
 
-def rpc(method, params, tries=5):
+def rpc(method, params, tries=4):
+    global RPC, RPC_LABEL
+    last = "unknown"
     for i in range(tries):
         try:
             r = session.post(RPC, json={"jsonrpc": "2.0", "id": 1, "method": method, "params": params}, timeout=30)
             if r.status_code == 429:
+                last = "rate limited"
                 time.sleep(2 + 2 * i)
                 continue
+            if r.status_code in (401, 403):
+                last = f"HTTP {r.status_code} (bad or missing API key)"
+                break
             data = r.json()
             if "error" in data:
                 if data["error"].get("code") in (-32429, 429, -32005):
+                    last = "rate limited"
                     time.sleep(2 + 2 * i)
                     continue
-                raise RuntimeError(data["error"])
+                if method == "getTransaction":  # a real answer about this tx, not an RPC failure
+                    raise LookupError(data["error"])
+                last = str(data["error"])[:120]
+                break
+            _fails["n"] = 0
             return data["result"]
-        except (requests.RequestException, ValueError):
-            time.sleep(1 + i)
-    raise RuntimeError(f"RPC {method} failed after {tries} tries")
+        except (requests.RequestException, ValueError) as e:
+            last = type(e).__name__
+            time.sleep(0.5 + i)
+    _fails["n"] += 1
+    if _fails["n"] >= 3 and RPC != PUBLIC_RPC:
+        print(f"  ! {RPC_LABEL} keeps failing ({last}); switching to the public Solana RPC for this run", flush=True)
+        RPC, RPC_LABEL = PUBLIC_RPC, "public Solana RPC (fallback)"
+        _fails["n"] = 0
+    raise RuntimeError(f"RPC {method} failed: {last}")
 
 
 def sol_usd():
@@ -294,7 +318,7 @@ def main():
     wallets = [w for w in yaml.safe_load((SM / "wallets.yaml").read_text())["wallets"]
                if w.get("tier") in ("core", "watch")]
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
-    print(f"Scanning {len(wallets)} wallets via {RPC.split('?')[0]}")
+    print(f"Scanning {len(wallets)} wallets via {RPC_LABEL}", flush=True)
     new = scan_wallets(wallets, state)
     STATE.write_text(json.dumps(state, indent=1))
     if new:
