@@ -74,6 +74,17 @@ and no joke repeats within 14 days.
 - Low-value, repetitive or clickbait posts earn "not interested"/mute, which costs far more
   than a like earns. If a post would not make someone stop scrolling, don't post it.
 
+Owner's ideas (2026-11-08), now regular formats:
+- **Reaction videos** (people winning or losing money: traders, liquidations, bets, "I was wrong" moments):
+  find them anywhere (X, YouTube, Reddit, TikTok, news), but post ONLY by quoting the original X post
+  in the browser (if the clip isn't on X, skip it; never download and re-upload someone's video).
+  Our quote adds the context and a number: what happened, how much, what it means. 1–2 a day.
+  The cloud routines can't quote: they list candidates in `ideas/videos.md` (URL, views, the
+  context line to add) and Claude posts them during sessions.
+- **Weird bets** (Kalshi / Polymarket): "People are betting real money on this" cards (tools/meme.py
+  layout "list") with live odds and volume from the market pages, 2–3 a week. Skip markets about
+  crimes, deaths, tragedies or private people. Not advice; never tell anyone to bet.
+
 Recurring series (people follow for a dependable thing):
 - **Smart money today** — the daily report thread (18:30 Doha = 10:30am ET).
 - **Trap of the day** — the automatic trap post from tools/x_signals.py.
