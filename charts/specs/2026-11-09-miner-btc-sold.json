@@ -1,0 +1,2 @@
+{"type":"bars","title":"Miners sold their bitcoin to build for AI","subtitle":"Bitcoin held on the balance sheet, before and after (BTC)","source":"Data: Riot Q3 2026 results via CoinDesk/TokenPost; Core Scientific Q3 2026 results via Cointelegraph/CryptoBriefing","out":"charts/2026-11-09-miner-btc-sold.png",
+"items":[{"label":"Riot, Jun 30","value":11380,"text":"11,380"},{"label":"Riot, Sep 30","value":2418,"text":"2,418","highlight":true},{"label":"Core Sci., Dec 31 '25","value":2537,"text":"2,537"},{"label":"Core Sci., Sep 30","value":32,"text":"32","highlight":true}]}
