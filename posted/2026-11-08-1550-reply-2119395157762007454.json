@@ -1,0 +1,19 @@
+{
+  "file": "2026-11-08-1550-reply-2119395157762007454.md",
+  "kind": "reply",
+  "posted_at": "2026-11-08T15:53",
+  "tweet_ids": [
+    "2119413042807206205"
+  ],
+  "url": "https://x.com/i/status/2119413042807206205",
+  "meta": {
+    "type": "reply",
+    "reply_to": 2119395157762007454,
+    "post_at": "2026-11-08 15:50",
+    "status": "ready",
+    "fast": true,
+    "max_delay_minutes": 240,
+    "queued_at": "2026-11-08 15:50"
+  },
+  "first_text": "Talis sounds useful. Honest question: is the hard part sourcing clean numbers or knowing which ones matter? That's my bottleneck too."
+}
