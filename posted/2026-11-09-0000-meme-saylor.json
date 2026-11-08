@@ -1,0 +1,23 @@
+{
+  "file": "2026-11-09-0000-meme-saylor.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T00:01",
+  "tweet_ids": [
+    "2119535693416305046"
+  ],
+  "url": "https://x.com/i/status/2119535693416305046",
+  "meta": {
+    "post_at": "2026-11-09 00:00",
+    "status": "ready",
+    "pillar": "personal",
+    "format": "meme",
+    "fast": true,
+    "max_delay_minutes": 120,
+    "image": "charts/2026-11-09-meme-saylor.png",
+    "queued_at": "2026-11-08 23:26",
+    "sources": [
+      "https://x.com/explore/tabs/news"
+    ]
+  },
+  "first_text": "Michael Saylor hinted at more Bitcoin buys again today.\n\nSome people have Sunday brunch. Some people have Sunday \"chart hints\". 📈"
+}
