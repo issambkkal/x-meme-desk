@@ -100,6 +100,14 @@ trending right now (X Explore "News" topics appear in scans; also search the day
 market story). Open the PNG and check it reads in one second on a phone. 80%+ of posts carry an
 image. No random web images; Wikimedia Commons photos only with the credit (tools/commons.py).
 
+REACTION VIDEOS + WEIRD BETS (owner's ideas, STRATEGY.md): each run, append 2–3 candidates to
+`ideas/videos.md`: X post URLs of videos of people reacting to winning/losing money (search X via the
+scans, WebSearch for YouTube/Reddit/TikTok clips and then find the same clip posted on X), with views,
+date, and a one-line context with a sourced number. Don't queue them (the API can't quote). Twice a
+week, if kalshi.com or polymarket.com loads, queue a "People are betting real money on this" card
+(tools/meme.py layout "list") with 4–5 of the strangest markets, odds and volume; skip markets about
+crimes, deaths or private people.
+
 Fill free slots from config.yaml for about the next 24 hours, up to max_posts_per_day, but
 write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never

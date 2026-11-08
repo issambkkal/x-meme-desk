@@ -52,3 +52,8 @@ got 1–7 views each. New accounts' replies rank near the bottom unless they are
   X rate-limited us after 15 quick follows on 2026-11-08: if "rate limited" or "unable to follow" shows, stop
   follows for 1 hour. Never unfollow-churn.
 - Record each reply's views 1–2 hours later (with_replies tab) to learn which accounts/topics pay off.
+
+## 2026-11-08 10:20 update: replies are being hidden — paused
+First-minute sniper replies under posts with 14K–18K views got 1–3 views, so X is hiding this account's replies
+from other viewers. No reply rounds or sniper loops until a re-test shows replies reaching 20+ views.
+Re-test: 2–3 slow, hand-paced replies a day on posts in our niche, check views after 2 hours. Follows: max 10/day.
