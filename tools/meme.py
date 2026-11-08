@@ -20,6 +20,10 @@ Spec (JSON), "out" relative to the repo root:
    "lines": ["Nobody:", "", "Smart money at +173%:"], "punch": "thanks for the exit liquidity",
    "bg": "charts/some-chart.png"}                      # optional image under the text
 
+  {"layout": "list", "out": "charts/x.png", "title": "People are betting real money on:",
+   "rows": [["Godzilla's Rotten Tomatoes score above 89", "74%", "$1.9M bet"], ...],
+   "source": "Kalshi, Nov 8"}
+
   {"layout": "stages", "out": "charts/x.png", "title": "Every meme coin, ever",
    "steps": ["Launch", "\"Next 100x\"", "Insiders sell", "\"Community takeover\"", "-98%"]}
 
@@ -191,7 +195,26 @@ def stages(s):
     return img
 
 
-LAYOUTS = {"choice": choice, "versus": versus, "caption": caption, "nobody": nobody, "stages": stages}
+def listing(s):
+    rows = s["rows"]
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+    text_in_box(d, s.get("title", ""), (60, 30, W - 60, 140), start=72, weight="Black")
+    top, bottom = 165, H - 80
+    rh = (bottom - top) / len(rows)
+    for i, r in enumerate(rows):
+        y0 = top + i * rh
+        d.rounded_rectangle((60, y0 + 8, W - 60, y0 + rh - 8), 22, fill=PANEL)
+        text_in_box(d, r[0], (95, y0 + 16, W - 520, y0 + rh - 16), start=48, weight="Bold", align="left")
+        if len(r) > 1:
+            text_in_box(d, r[1], (W - 500, y0 + 16, W - 290, y0 + rh - 16), color=YELLOW, start=64, weight="Black")
+        if len(r) > 2:
+            text_in_box(d, r[2], (W - 280, y0 + 16, W - 90, y0 + rh - 16), color=GREY, start=40, weight="Semibold")
+    footer(d, s.get("source"))
+    return img
+
+
+LAYOUTS = {"list": listing, "choice": choice, "versus": versus, "caption": caption, "nobody": nobody, "stages": stages}
 
 
 def main():
