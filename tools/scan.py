@@ -33,7 +33,8 @@ GROUPS = {
     # politics, world events and big business news
     "world": {"sections": ["world"], "keywords": False},
 }
-ORDER = ["alerts", "news", "macro", "world"]
+# Weighted rotation (2026-11-08): news moves fastest in world/macro, so they get 2 of every 6 runs each.
+ORDER = ["world", "macro", "alerts", "world", "macro", "news"]
 
 
 def spent_today():
@@ -93,8 +94,8 @@ def main():
 
     watch = yaml.safe_load((ROOT / "watchlist.yaml").read_text())
     state = json.loads(STATE.read_text()) if STATE.exists() else {}
-    last = state.get("last_group")
-    name = ORDER[(ORDER.index(last) + 1) % len(ORDER)] if last in ORDER else ORDER[0]
+    step = int(state.get("step", -1)) + 1
+    name = ORDER[step % len(ORDER)]
     query = build_query(watch, GROUPS[name])
 
     kwargs = dict(query=query, max_results=per_run, user_auth=True,
@@ -108,6 +109,7 @@ def main():
     users = {u.id: u.username for u in (resp.includes or {}).get("users", [])}
 
     state["last_group"] = name
+    state["step"] = step % len(ORDER)
     if tweets:
         state[f"since_{name}"] = str(max(int(t.id) for t in tweets))
     STATE.write_text(json.dumps(state, indent=2))
