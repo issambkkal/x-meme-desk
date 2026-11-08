@@ -7,3 +7,4 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 - [ ] https://x.com/theallinpod/status/2119215114109030408 · 166K · Nov 8 · Chamath: "I got it totally wrong" on the election and the economy → add Sept CPI 3.7% y/y, gasoline +34.2% (BLS)
 - [ ] https://x.com/CryptoFeras/status/2117005836568691095 · 62K · Nov 2 · "my reaction when Binance got hacked" → $6.3B taken Oct 29, FBI blames North Korea's TraderTraitor
 - [ ] (no new verified clips this run: network search returned only stale items; check X Explore in the next session)
+- [ ] (15:55 run: no new verified clips; network search returned only stale items)
