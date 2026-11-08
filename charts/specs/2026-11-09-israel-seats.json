@@ -1,0 +1,2 @@
+{"type":"bars","title":"Israel's election: nobody has 61","subtitle":"Seats won in the 120-seat Knesset. 61 needed for a majority.","source":"Data: Arab News and Khaleej Times election reports, Oct 30-31 2026. Bloc totals as reported.","out":"charts/2026-11-09-israel-seats.png",
+"items":[{"label":"Netanyahu bloc","value":53,"text":"53"},{"label":"Eisenkot bloc","value":48,"text":"48"},{"label":"Needed for majority","value":61,"text":"61","highlight":true}]}
