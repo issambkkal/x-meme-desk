@@ -36,6 +36,9 @@ def usd(x):
     return f"${x:,.0f}" if x >= 1 else f"${x:.8f}".rstrip("0")
 
 
+TIP_SOL = "Ho4ZQy1iX7MyKHftLBBN3VoVrkG6rz4AnvNYK3Fw6Wr"
+
+
 def message(s):
     flags = s.get("red_flags") or []
     danger = any(any(k in f for k in DANGER) for f in flags) or (s.get("change_since_entry_pct") or 0) < -30
@@ -58,7 +61,8 @@ def message(s):
     if s.get("dexscreener"):
         links.append(f'<a href="{s["dexscreener"]}">Chart</a>')
     links.append(f'<a href="{s["bubblemaps"]}">Bubblemaps</a>')
-    lines += [" · ".join(links), "", "<i>Research, not financial advice. Smart wallets lose too. Never risk money you can't lose.</i>"]
+    lines += [" · ".join(links), "", "<i>Research, not financial advice. Smart wallets lose too. Never risk money you can't lose.</i>",
+              "", f"☕ This group is free. Tips (Solana): <code>{TIP_SOL}</code>"]
     return "\n".join(lines)
 
 
