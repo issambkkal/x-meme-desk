@@ -1,0 +1,24 @@
+{
+  "file": "2026-11-08-1615-meme-buffett.md",
+  "kind": "post",
+  "posted_at": "2026-11-08T16:18",
+  "tweet_ids": [
+    "2119419410326622353"
+  ],
+  "url": "https://x.com/i/status/2119419410326622353",
+  "meta": {
+    "post_at": "2026-11-08 16:15",
+    "status": "ready",
+    "pillar": "economy",
+    "format": "meme",
+    "fast": true,
+    "max_delay_minutes": 120,
+    "image": "charts/2026-11-08-meme-buffett.png",
+    "queued_at": "2026-11-08 10:08",
+    "sources": [
+      "https://x.com/KobeissiLetter/status/2119079789751414924",
+      "https://commons.wikimedia.org/wiki/File:Warren_Buffett_at_the_2015_SelectUSA_Investment_Summit.jpg"
+    ]
+  },
+  "first_text": "Everyone chased AI stocks.\n\nBerkshire spent $9.6B buying back its own shares in Q3, double the quarter before (per @KobeissiLetter).\n\nIs boring still undefeated?"
+}
