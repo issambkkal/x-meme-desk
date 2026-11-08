@@ -53,10 +53,20 @@ Mix every day:
 
 | Format | Share | Rules |
 |---|---|---|
-| Headline post | 60% | Starts `BREAKING:` / `JUST IN:` / `RECORD:` / `NEW:` (only when it is genuinely new, <3h old) or a plain one-line fact. ONE striking number + ONE line on why it matters. Under ~200 characters, single post, no thread. Credit the source in words ("per Reuters", "per @bubblemaps"). |
+| Headline post | 40% | Starts `BREAKING:` / `JUST IN:` / `RECORD:` / `NEW:` (only when it is genuinely new, <3h old) or a plain one-line fact. ONE striking number + ONE line on why it matters. Under ~200 characters, single post, no thread. Credit the source in words ("per Reuters", "per @bubblemaps"). Attach an image whenever possible (stat card from tools/chart.py type "stat", or a photo). |
+| Meme | 25% | Owner's rule (2026-11-08): be creative, catch attention, never the same thing twice. Made with `tools/meme.py` (layouts: choice, versus, caption, nobody, stages). Humour built on a REAL number or a feeling every trader knows (late entries, "bottom is in", exit liquidity, Fed days, AI hype). Post text: one line + the number + often a question. Never mock a named private person; no hate, no politics jokes about groups of people. |
 | Shareable chart / data | 25% | Something people save or send: rankings, record comparisons, "who's buying", scoreboards. Chart attached. Line 1 states the finding. |
-| Question | 10% | Starts an argument people answer: "Long or short from here?", "Which breaks first: oil at $110 or BTC at $70K?", "Rate hike in December: yes or no?" One fact + the question. |
+| Question | 5% | Starts an argument people answer: "Long or short from here?", "Rate hike in December: yes or no?" One fact + the question (memes can carry the question too). |
 | Telegram / community CTA | 5% | At most one a day (the drafting routine's invite post) plus the automatic signal/trap posts. Never add a CTA line to ordinary posts. |
+
+Images (owner's rule 2026-11-08: "add pictures, be creative"): 80%+ of posts carry an image.
+Sources of images, in order: our own memes/charts (tools/meme.py, tools/chart.py); free-licence photos
+from Wikimedia Commons via `tools/commons.py "<search>" --get N` (public domain / CC BY / CC BY-SA only,
+credit line on the image: put it in the spec's "credit"); never random Google/news images or other
+people's memes (copyright claims can get the account suspended). Cloud routines may not reach Wikimedia;
+then use meme.py layouts that need no photo, or a photo already in `images/`.
+Rotate layouts and topics: check `posted/` and `queue/` so the same layout isn't used twice in a row
+and no joke repeats within 14 days.
 
 - Threads only for the daily deep dive, and its FIRST post must work alone as a headline post.
 - Never post the same story twice in 24h unless there is a real update (say "UPDATE:").
