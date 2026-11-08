@@ -1,6 +1,6 @@
-# Smart-money signals — 2026-11-08 16:43 Doha
+# Smart-money signals — 2026-11-08 16:54 Doha
 
-Window: last 6h · 135 buys and 140 sells by tracked wallets · SOL ≈ $89
+Window: last 6h · 138 buys and 139 sells by tracked wallets · SOL ≈ $89
 
 Research only, not financial advice. Convergence = 2+ tracked wallets bought the same token (core wallets count double). Always check red flags and the Bubblemaps link before anything.
 
