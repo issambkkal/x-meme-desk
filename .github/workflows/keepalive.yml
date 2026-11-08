@@ -38,8 +38,11 @@ jobs:
               [ "$(active smartmoney.yml)" = "0" ] && gh workflow run smartmoney.yml && echo "$(date '+%F %H:%M') started tracker"
               last_sm=$now
             fi
-            # News scanner every 3 hours (it has its own daily read budget).
-            if [ $((now - last_scan)) -ge 10800 ]; then
+            # News scanner: every hour at :40 in US hours (12-02 UTC = 7am-9pm ET), so the hourly
+            # breaking desk (:55) reads fresh posts; every 3 hours otherwise. Daily read budget in config.
+            h=$((10#$(date +%H))); m=$((10#$(date +%M)))
+            if [ $h -ge 12 ] || [ $h -lt 3 ]; then every=3300; else every=10800; fi
+            if [ $((now - last_scan)) -ge $every ] && { [ $every -eq 10800 ] || [ $m -ge 40 ]; }; then
               gh workflow run scanner.yml && echo "$(date '+%F %H:%M') started scanner"
               last_scan=$now
             fi
