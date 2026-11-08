@@ -38,3 +38,17 @@ inside the thread, so POSITION is everything. Premium replies rank higher, and t
 7. Posting: open the status, like it, click the reply box, type, click Reply, verify an
    @issam0pc4u article appears; 10–15 s between replies.
 8. Report: replies posted, followers vs last round, and the best reply's views from the last round.
+
+## Sniper mode (2026-11-08, after the data said rounds were invisible)
+Evidence: 11 replies under 16K–40K-view posts, sent 40–60 min after the post (46+ replies already there),
+got 1–7 views each. New accounts' replies rank near the bottom unless they are among the FIRST few.
+- Only reply where the post is under ~10 minutes old AND has fewer than ~5 replies, from accounts whose
+  posts reach 20K+ views (Mario Nawfal, FirstSquawk, Kobeissi, Watcher Guru, Spectator Index, zerohedge,
+  unusual_whales, Polymarket, lookonchain, Cointelegraph, BNONews, DeItaone, gurgavin, AshCrypto, cryptorover…).
+  Check with the live search `(from:A OR from:B …) -filter:replies` and the time/reply counts.
+- 1–3 replies per check, at least 2–3 minutes apart. Max ~40 sniper replies a day.
+- Use the post's own numbers plus one of ours; a sharp question is fine when we have no extra fact. Never invent.
+- Follows: people who reposted lookonchain/Kobeissi/OnchainLens posts (real, active), max ~10 per 30 minutes.
+  X rate-limited us after 15 quick follows on 2026-11-08: if "rate limited" or "unable to follow" shows, stop
+  follows for 1 hour. Never unfollow-churn.
+- Record each reply's views 1–2 hours later (with_replies tab) to learn which accounts/topics pay off.

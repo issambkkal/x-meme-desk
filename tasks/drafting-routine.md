@@ -93,6 +93,13 @@ Series to keep up (see STRATEGY.md): "Week ahead" on Sundays (23:00 slot), "Scor
 Mondays (15:30 slot): last week's signal/trap posts from posted/ and what the price did since
 (DexScreener), wins and losses both.
 
+MEMES AND IMAGES (owner's rule 2026-11-08): every run queues at least ONE meme made with
+`python3 tools/meme.py charts/specs/<slug>.json` (see the docstring for layouts and STRATEGY.md →
+Growth formats), built on a real number from research/, scans/ or smartmoney/ and on what is
+trending right now (X Explore "News" topics appear in scans; also search the day's biggest
+market story). Open the PNG and check it reads in one second on a phone. 80%+ of posts carry an
+image. No random web images; Wikimedia Commons photos only with the credit (tools/commons.py).
+
 Fill free slots from config.yaml for about the next 24 hours, up to max_posts_per_day, but
 write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
@@ -143,8 +150,8 @@ Optional 2nd post of a thread
   credit them. Never post contract addresses, buy links or "this will pump" calls.
   Personal-pillar posts must not invent the owner's trades or life events.
 
-## 4. Charts
-At least half of posts carry a chart: write `charts/specs/<slug>.json` and run
+## 4. Charts and memes
+At least 80% of posts carry an image (meme, chart or credited free photo). Charts: write `charts/specs/<slug>.json` and run
 `python3 tools/chart.py charts/specs/<slug>.json` (types: bars, progress, columns, stat; see
 examples/chart-*.json). The source line names data source and date. Open the PNG and fix
 overlaps or cut-off text.

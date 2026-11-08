@@ -37,7 +37,8 @@ Format (STRATEGY.md → Growth formats):
 - Politics: neutral, facts only, no cheering or insults.
 - Breaking claims (attacks, hacks, arrests, deaths, resignations) need a wire/official source
   or two independent outlets. Never guess a number.
-- A chart only if it is quick and clearly better (tools/chart.py, type "stat" or "bars").
+- Add an image when it takes under 2 minutes: a "stat" card (tools/chart.py) with the one number,
+  or a meme (tools/meme.py: versus / choice / caption with a photo already in images/).
 
 Queue file `queue/<YYYY-MM-DD-HHMM>-brk-<slug>.md` (Doha time now):
 ```
