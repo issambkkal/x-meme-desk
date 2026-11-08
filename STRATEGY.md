@@ -40,6 +40,42 @@ no unverified claims. Use primary sources (official statements, vote records, Re
 government data), give both sides when something is contested, and focus on what changes
 for money, prices, markets and ordinary people.
 
+## Growth formats (owner approved 2026-11-08 — HOW we post; pillars above are WHAT)
+
+X's open-sourced ranking (xai-org/x-algorithm, param.rs) scores each post by predicted actions:
+copy-link share 20, reply 5, quote 5, DM share 5, follow-from-post 4, repost 1, like 0.7,
+and punishes "not interested" −53, mute −59, block −31, report −234. Posts older than 48h
+drop out; non-followers see us less; repeated posts from one author in a feed are discounted.
+The accounts winning in our niches (Spectator Index, Kobeissi, Watcher Guru, Unusual Whales)
+post one short headline with one striking number, minutes after the news, often with a chart.
+
+Mix every day:
+
+| Format | Share | Rules |
+|---|---|---|
+| Headline post | 60% | Starts `BREAKING:` / `JUST IN:` / `RECORD:` / `NEW:` (only when it is genuinely new, <3h old) or a plain one-line fact. ONE striking number + ONE line on why it matters. Under ~200 characters, single post, no thread. Credit the source in words ("per Reuters", "per @bubblemaps"). |
+| Shareable chart / data | 25% | Something people save or send: rankings, record comparisons, "who's buying", scoreboards. Chart attached. Line 1 states the finding. |
+| Question | 10% | Starts an argument people answer: "Long or short from here?", "Which breaks first: oil at $110 or BTC at $70K?", "Rate hike in December: yes or no?" One fact + the question. |
+| Telegram / community CTA | 5% | At most one a day (the drafting routine's invite post) plus the automatic signal/trap posts. Never add a CTA line to ordinary posts. |
+
+- Threads only for the daily deep dive, and its FIRST post must work alone as a headline post.
+- Never post the same story twice in 24h unless there is a real update (say "UPDATE:").
+- Space posts out (60+ minutes): back-to-back posts from us get discounted in feeds.
+- Low-value, repetitive or clickbait posts earn "not interested"/mute, which costs far more
+  than a like earns. If a post would not make someone stop scrolling, don't post it.
+
+Recurring series (people follow for a dependable thing):
+- **Smart money today** — the daily report thread (18:30 Doha = 10:30am ET).
+- **Trap of the day** — the automatic trap post from tools/x_signals.py.
+- **Week ahead** (Sunday 23:00 Doha = 3pm ET Sunday): the dates that move markets next week, chart.
+- **Scorecard** (Monday 15:30 Doha): last week's signals and traps, what happened since, wins AND losses.
+
+## Breaking desk
+
+`tasks/breaking-desk.md` runs every hour in US hours (15:00–05:00 Doha). It queues 0–2
+headline posts with `fast: true` and `max_delay_minutes: 90` about news from the last ~2 hours.
+Fast beats perfect, but the truth rules below still apply: two sources or one wire/official source.
+
 ## Daily deep-dive article (one per day, 07:00 Doha research → 17:00 thread)
 
 Every day one researched article in `articles/YYYY-MM-DD-slug.md` (900–1,500 words,
@@ -47,8 +83,8 @@ Every day one researched article in `articles/YYYY-MM-DD-slug.md` (900–1,500 w
 e.g. "Why meme coins died this week: the dollar, the AI selloff and a $1.27B liquidation".
 Structure: hook · what happened (numbers) · why (macro/politics/industry chain) · what
 on-chain data shows · who won / who lost · what to watch next week (dates) · sources.
-It goes out on X as a 6–10 post thread at 17:00 Doha (US open), with 1–3 charts.
-The account is not Premium, so no X "Article" format; the full text stays in the repo.
+It goes out on X as a 6–10 post thread at 17:00 Doha (9:00am ET), with 1–3 charts. Post 1 must
+stand alone as a headline post (one number, under ~200 characters). The full text stays in the repo.
 
 ## Research depth (non-negotiable)
 
@@ -75,7 +111,7 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 
 ## Format rules
 
-- Max 280 characters per post (no Premium). Threads 3–7 posts. Hook in line 1.
+- Max 280 characters per post (config max_chars). Headline posts under ~200. Hook in line 1.
 - At most 2 emojis. Cashtags ($WIF) are fine; X API allows only ONE per post (a 403 stopped the Nov 7 thread).
 - No links anywhere in posts: the API charges $0.20 instead of $0.015, and X shows link
   posts to fewer people. Name the source in words; the URL goes in `sources`.
@@ -95,13 +131,14 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 
 ## Cadence
 
-- Up to 8 posts a day, 90+ minutes apart, around the clock for US, Europe and Asia.
-  Slots (Doha, UTC+3): 08:00, 10:30, 13:00, 15:30, 17:00, 20:00, 23:00, 02:00.
-  17:00 is reserved for the daily deep-dive thread.
+- Up to 12 posts a day, 60+ minutes apart, in US hours. Slots (Doha = ET + 8h):
+  15:30, 17:00, 18:30, 20:00, 21:30, 23:00, 00:30, 02:00, 04:00 (7:30am–8pm ET).
+  17:00 is reserved for the daily deep-dive thread. Breaking-desk posts go out between slots.
 - Up to 2 automatic reposts a day, only from `repost_ok: true` accounts, only scam
   alerts or hard data.
-- Replies, likes and follows are done by hand (X bans automating them), using
-  `replies/<date>.md`. 20–30 minutes a day, on watchlist accounts first.
+- Replies under strangers' posts are done in the browser in "reply rounds" the owner asks
+  for (tasks/reply-rounds.md), ideally 3 a day: ~16:30, ~20:00, ~00:00 Doha (8:30am, noon,
+  4pm ET). Replies to people who mention us are automatic (tools/mentions.py + drafting routine).
 
 ## Learnings (updated weekly from real numbers)
 
@@ -112,3 +149,5 @@ our own post crediting the source ("per @bubblemaps") and add a number, chart or
 - 2026-11-07: owner wants deeper research and the global economy/finance/industry/politics
   angle on every big crypto move; added macro pillar and the daily deep-dive article.
 - 2026-11-07: X API rejects posts with more than one cashtag (403 stopped the three-hits thread at post 4); tools/xlib.py now keeps only the first $TICKER.
+- 2026-11-08: research-based growth plan applied (GROWTH-PLAN.md): headline-first formats, hourly
+  breaking desk, US-hours slots, 3 reply rounds a day, recurring series. Baseline: 19 followers, posts 1–47 views.

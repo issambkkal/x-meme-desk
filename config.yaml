@@ -11,7 +11,7 @@ dry_run: false
 # so you can open the queue and delete it or set status: hold.
 min_lead_minutes: 60
 
-max_posts_per_day: 12
+max_posts_per_day: 20
 max_replies_per_day: 40
 tip_pause_until: 2026-11-15   # X blocks crypto addresses for 7 days after app authorization
 min_gap_minutes: 60
@@ -38,8 +38,8 @@ max_chars: 280
 handle: "@issam0pc4u"
 
 # X API search of watchlist accounts. Each post returned costs $0.005.
-# 90 reads/day ≈ $0.45/day ≈ $13.5/month. Set 0 to turn the scanner off.
-scan_max_reads_per_day: 90
+# Hourly in US hours (2026-11-08): 160 reads/day max ≈ $0.80/day ≈ $24/month. Set 0 to turn the scanner off.
+scan_max_reads_per_day: 160
 scan_reads_per_run: 10
 
 # Tips. Any queue file with `tip: true` gets this as its last post (the daily deep-dive
