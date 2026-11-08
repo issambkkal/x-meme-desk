@@ -81,6 +81,18 @@ and dropped spam). For every item with `"handled": false` (newest first, max 15 
   events under `## Calendar`. Later runs and the daily deep-dive build on this notebook.
 
 ## 3. Queue posts
+FORMATS FIRST (STRATEGY.md → Growth formats; owner approved 2026-11-08): most items must be
+short single headline posts (`BREAKING:`/`JUST IN:` only when <3h old, else a plain one-line
+fact) with ONE striking number and one line on why it matters, under ~200 characters. Each run
+also aims for one shareable chart/data post and, once a day, one question post that invites
+replies. No threads except the deep dive. No CTA lines on ordinary posts.
+The hourly breaking desk (tasks/breaking-desk.md) covers fresh news; this run covers the
+bigger picture, charts, questions, series and the next 24h of slots. Don't duplicate a story
+the breaking desk already queued or posted (check queue/ and posted/ for the last 24h).
+Series to keep up (see STRATEGY.md): "Week ahead" on Sundays (23:00 slot), "Scorecard" on
+Mondays (15:30 slot): last week's signal/trap posts from posted/ and what the price did since
+(DexScreener), wins and losses both.
+
 Fill free slots from config.yaml for about the next 24 hours, up to max_posts_per_day, but
 write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
@@ -113,7 +125,7 @@ queued_at: <now in Doha, YYYY-MM-DD HH:MM>
 sources:
   - https://full-url-of-each-page-or-x-post-backing-a-number
 ---
-First post (max 280 chars, NO links, at most 1 cashtag)
+First post (headline posts under ~200 chars; max 280; NO links, at most 1 cashtag)
 ===
 Optional 2nd post of a thread
 [image: charts/other.png]
@@ -141,11 +153,12 @@ overlaps or cut-off text.
 `TZ=Asia/Qatar python3 tools/check.py` and fix every BAD line. Never leave a failing file
 in queue/.
 
-## 6. Reply list (the owner posts these by hand or asks Claude to)
-Append to `replies/YYYY-MM-DD.md` a section `## HH:MM run` with 3–5 of the most-engaged
-fresh posts from the scans (watchlist accounts, especially sleuths and big traders):
-account, post URL, and a suggested reply under 200 characters that adds a number, a red
-flag or a sharp take, never a shill.
+## 6. Reply list (the owner asks Claude to post these in reply rounds)
+Append to `replies/YYYY-MM-DD.md` a section `## HH:MM run` with 5–8 of the most-engaged
+posts from the last ~2 hours in the scans, from DIFFERENT accounts (big news and markets
+accounts plus mid-size 5K–100K ones, any topic: economy, politics, world, stocks, crypto):
+account, post URL, views, and a suggested reply under 220 characters that adds one real
+number or a sharp, sourced take. Never a shill, never the same stat twice.
 
 ## 7. Save
 ```

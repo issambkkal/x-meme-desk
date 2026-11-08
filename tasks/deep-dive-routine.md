@@ -57,7 +57,9 @@ calendar) · Sources. Plain words, short paragraphs, no hype, no buy calls, not 
 `queue/YYYY-MM-DD-1700-slug.md` in the normal queue format (see tasks/drafting-routine.md),
 with `tip: true` in the front matter (the poster then adds the tip post from config.yaml as
 the final post; don't write the address yourself):
-6–10 posts, each ≤280 chars, no links, ≤2 cashtags per post, first post is the hook,
+6–10 posts, each ≤280 chars, no links, at most 1 cashtag per post (X API rule), first post is the hook
+and must work ALONE as a headline post (one striking number, under ~200 characters; most
+people only see post 1),
 last post says what to watch next. Make 1–3 charts with tools/chart.py (spec in
 charts/specs/) and attach them with `image:` / `[image: ...]`. Read every PNG and fix
 layout problems. If 17:00 today is less than 90 minutes away or already taken by a
