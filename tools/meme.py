@@ -53,7 +53,7 @@ def fit(draw, text, max_w, max_h, start=110, weight="Black", spacing=8, min_size
         f = font(size, weight)
         avg = max(1, draw.textlength("abcdefghijklmnopqrstuvwxyz", font=f) / 26)
         cols = max(4, int(max_w / avg))
-        wrapped = "\n".join(textwrap.fill(p, cols) if p else "" for p in text.split("\n"))
+        wrapped = "\n".join(textwrap.fill(p, cols, break_long_words=False, break_on_hyphens=False) if p else "" for p in text.split("\n"))
         box = draw.multiline_textbbox((0, 0), wrapped, font=f, spacing=spacing)
         if box[2] - box[0] <= max_w and box[3] - box[1] <= max_h:
             return f, wrapped
