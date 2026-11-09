@@ -8,7 +8,8 @@
   "created_at": "2026-11-09 16:40:00+00:00",
   "conversation_id": "2119828880374530058",
   "replying_to_us": true,
-  "handled": false
+  "handled": true,
+  "skipped": "thanks/chatter, no question"
  },
  {
   "id": "2119832682787921946",
@@ -19,7 +20,8 @@
   "created_at": "2026-11-09 16:41:10+00:00",
   "conversation_id": "2119828880374530058",
   "replying_to_us": true,
-  "handled": false
+  "handled": true,
+  "skipped": "thanks/chatter, no question"
  },
  {
   "id": "2119844990335782989",
@@ -30,7 +32,8 @@
   "created_at": "2026-11-09 17:30:05+00:00",
   "conversation_id": "2119828880374530058",
   "replying_to_us": true,
-  "handled": false
+  "handled": true,
+  "skipped": "thanks/chatter, no question"
  },
  {
   "id": "2119720783685861564",

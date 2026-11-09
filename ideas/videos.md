@@ -29,3 +29,7 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 
 ## 2026-11-09 15:55 run
 - [ ] https://x.com/lookonchain/status/2119706895233712386 · Nov 9 · 45K views · 20x NVDA short on Aster, $315K, +332% ROI. Context: ~$52K unrealized on $315K.
+
+## 2026-11-09 22:05 run
+- [ ] https://x.com/Cointelegraph/status/2119611114354823292 · 39K · Nov 9 · futures -$300B in 1 minute, +$350B six minutes later on Huang news (Kobeissi)
+- [ ] https://x.com/lookonchain/status/2119706895233712386 · 45K · Nov 9 · 20x NVDA short on Aster, $315K, +332% ROI
