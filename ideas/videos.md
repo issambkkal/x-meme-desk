@@ -14,3 +14,7 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 
 ## 2026-11-09 04:10 run
 - No verified reaction-video candidates found (search stale, hosts blocked). Next run: check X scans for liquidation/loss clips.
+
+## 2026-11-09 07:20 run
+- [ ] https://x.com/lookonchain/status/2119602813194088905 · 18K · Nov 9 · Machi fully liquidated again in the crash, withdrew last $16.61K (Lookonchain); add $1.1B+ liquidated in 24h after the Nov 5 drop
+- [ ] https://x.com/coinglass_com/status/2119578096277794822 · 20K · Nov 8 · "1.65B in a single candle" (CoinGlass liquidation map) — verify what it shows before quoting
