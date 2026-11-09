@@ -1,0 +1,22 @@
+{
+  "file": "2026-11-09-2056-brk-dow-1000.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T22:05",
+  "tweet_ids": [
+    "2119868919703855109"
+  ],
+  "url": "https://x.com/i/status/2119868919703855109",
+  "meta": {
+    "post_at": "2026-11-09 22:05",
+    "status": "ready",
+    "pillar": "economy",
+    "fast": true,
+    "max_delay_minutes": 90,
+    "queued_at": "2026-11-09 20:56",
+    "sources": [
+      "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+      "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+    ]
+  },
+  "first_text": "JUST IN: The Dow is up more than 1,000 points today, per CNBC.\n\nOil is down about 5% on hopes of US-Iran diplomacy, and tech is rebounding after last week's AI sell-off."
+}
