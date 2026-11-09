@@ -1,0 +1,24 @@
+{
+  "file": "2026-11-08-2300-week-ahead.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T09:07",
+  "tweet_ids": [
+    "2119673231422468508"
+  ],
+  "url": "https://x.com/i/status/2119673231422468508",
+  "meta": {
+    "post_at": "2026-11-08 23:00",
+    "status": "ready",
+    "pillar": "economy",
+    "image": "charts/2026-11-08-week-ahead.png",
+    "queued_at": "2026-11-08 15:58",
+    "sources": [
+      "https://www.fxstreet.com/analysis/forecasting-the-upcoming-week-when-it-comes-to-us-inflation-size-matters-202611061844",
+      "https://cnbc.com/2026/11/06/stock-market-next-week-outlook-for-nov-9-13-2026.html",
+      "https://tradingeconomics.com/china/calendar",
+      "https://www.pickaxe.io/resources/news/bitcoin-mining-hashrate-holds-steady-amid-difficulty-shift",
+      "https://coinalertnews.com/news/2026/11/07/bitcoin-ethereum-jobs-data-drop"
+    ]
+  },
+  "first_text": "Week ahead: Tuesday's October CPI is the big one.\n\nForecasts sit near 3.9% y/y vs 3.7% in September, with Fed hike odds for Dec 9 around 76%.\n\nAlso: China trade data Tuesday, three Fed speakers, and a bitcoin difficulty cut near Friday."
+}
