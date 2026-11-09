@@ -1,0 +1,20 @@
+{
+  "file": "2026-11-08-2000-bundle-check.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T06:06",
+  "tweet_ids": [
+    "2119627781038276762"
+  ],
+  "url": "https://x.com/i/status/2119627781038276762",
+  "meta": {
+    "post_at": "2026-11-08 20:00",
+    "status": "ready",
+    "pillar": "guide",
+    "queued_at": "2026-11-07 12:55",
+    "sources": [
+      "https://blog.bubblemaps.io/how-to-spot-a-rug-pull-using-bubblemaps-before-it-happens/",
+      "https://cointelegraph.com/news/bubblemaps-rugproof-launchpad-alleged-rug-pull"
+    ]
+  },
+  "first_text": "Free rug check in 30 seconds: open the coin on Bubblemaps.\n\nLook for clusters of wallets linked to each other that hold a big share of supply. Bubblemaps flagged 50% of one launchpad's tokens as bundled at launch.\n\nLinked wallets can all sell at once. You can't sell first."
+}
