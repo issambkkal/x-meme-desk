@@ -1,0 +1,25 @@
+{
+  "file": "2026-11-08-2300-smartmoney-report.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T08:07",
+  "tweet_ids": [
+    "2119658049472278536",
+    "2119658063934218416",
+    "2119658077687251438",
+    "2119658091276902579",
+    "2119658105025765655"
+  ],
+  "url": "https://x.com/i/status/2119658049472278536",
+  "meta": {
+    "post_at": "2026-11-08 23:00",
+    "status": "ready",
+    "pillar": "data",
+    "image": "charts/2026-11-08-smartmoney.png",
+    "queued_at": "2026-11-08 21:50",
+    "sources": [
+      "https://github.com/issambkkal/x-meme-desk/tree/main/smartmoney",
+      "https://gmgn.ai/trade?chain=sol&tab=smart_degen"
+    ]
+  },
+  "first_text": "I track 42 of the most profitable meme coin wallets on Solana. Here's what they did in the last 24h 🧵\n\n944 buys, 970 sells, 40 different tokens.\n\nSmart money in: $18.9K. Out: $23.6K."
+}
