@@ -1,0 +1,21 @@
+{
+  "file": "2026-11-08-1300-caller-check.md",
+  "kind": "post",
+  "posted_at": "2026-11-09T05:06",
+  "tweet_ids": [
+    "2119612655061094730"
+  ],
+  "url": "https://x.com/i/status/2119612655061094730",
+  "meta": {
+    "post_at": "2026-11-09 00:30",
+    "status": "ready",
+    "pillar": "guide",
+    "image": "charts/2026-11-08-caller-front-run.png",
+    "queued_at": "2026-11-07 09:50",
+    "sources": [
+      "https://www.techflowpost.com/en-US/article/34592",
+      "https://www.odaily.news/zh-CN/newsflash/531135"
+    ]
+  },
+  "first_text": "Per @bubblemaps, one KOL had linked wallets buy before ~61% of 534 token calls, then sold fast (~$130K est.).\n\n30-second caller check:\n1. Their buy time vs post time\n2. Fresh wallets buying just before\n3. Selling while still promoting\n\nCan't see it? Assume you're the exit."
+}
