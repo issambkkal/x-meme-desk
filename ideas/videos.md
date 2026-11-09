@@ -11,3 +11,6 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 
 ## 2026-11-08 18:50 run
 - No verified clip candidates found this run (search returned nothing dated this week).
+
+## 2026-11-09 04:10 run
+- No verified reaction-video candidates found (search stale, hosts blocked). Next run: check X scans for liquidation/loss clips.
