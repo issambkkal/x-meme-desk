@@ -40,3 +40,4 @@ date,time,kind,reads,cost_usd
 2026-11-09,14:24,scan:macro,10,0.050
 2026-11-09,15:40,scan:alerts,10,0.050
 2026-11-09,16:40,scan:world,10,0.050
+2026-11-09,17:20,scan:macro,10,0.050
