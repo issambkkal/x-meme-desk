@@ -18,3 +18,7 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 ## 2026-11-09 07:20 run
 - [ ] https://x.com/lookonchain/status/2119602813194088905 · 18K · Nov 9 · Machi fully liquidated again in the crash, withdrew last $16.61K (Lookonchain); add $1.1B+ liquidated in 24h after the Nov 5 drop
 - [ ] https://x.com/coinglass_com/status/2119578096277794822 · 20K · Nov 8 · "1.65B in a single candle" (CoinGlass liquidation map) — verify what it shows before quoting
+
+## 2026-11-09 09:55 run
+- [ ] https://x.com/Cointelegraph/status/2119663964992815195 · 12K · Nov 9 · whale opened a 10x short on 30,000 $NVDA (~$5.4M) on Hyperliquid after the Huang news (check clip/chart before use)
+- [ ] https://x.com/coinglass_com/status/2119595398188962195 · Nov 9 · "Ohh Jensen" liquidation view during the Huang move (verify what it shows)
