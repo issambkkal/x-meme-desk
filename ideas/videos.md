@@ -26,3 +26,6 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 ## 2026-11-09 12:58 run
 - Whale 10x short on 30,000 NVDA (~$5.4M) on Hyperliquid after Huang news, https://x.com/Cointelegraph/status/2119663964992815195 (12K views, Nov 9). Context: $5.4M bet on one stock.
 - Futures -$300B then +$350B in 6 minutes, https://x.com/Cointelegraph/status/2119611114354823292 (39K views, Nov 9).
+
+## 2026-11-09 15:55 run
+- [ ] https://x.com/lookonchain/status/2119706895233712386 · Nov 9 · 45K views · 20x NVDA short on Aster, $315K, +332% ROI. Context: ~$52K unrealized on $315K.
