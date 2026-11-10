@@ -1,0 +1,23 @@
+{
+  "file": "2026-11-10-1830-uxlink-long.md",
+  "kind": "post",
+  "posted_at": "2026-11-11T02:23",
+  "tweet_ids": [
+    "2120296269495333218"
+  ],
+  "url": "https://x.com/i/status/2120296269495333218",
+  "meta": {
+    "post_at": "2026-11-10 18:30",
+    "status": "ready",
+    "pillar": "scam",
+    "format": "meme",
+    "image": "charts/2026-11-10-uxlink-hacker.png",
+    "queued_at": "2026-11-09 15:58",
+    "sources": [
+      "https://x.com/OnchainLens/status/2119746079638118496",
+      "https://x.com/PeckShieldAlert/status/2119739225553932621",
+      "https://x.com/EmberCN/status/2119697975832154130"
+    ]
+  },
+  "first_text": "A wallet linked to the UXLink exploiter holds a 15x ETH long, per PeckShield and OnchainLens.\n\nIt's down $864K in total after paying $1.47M in funding. Even hackers get chopped by leverage."
+}
