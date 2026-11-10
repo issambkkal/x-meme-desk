@@ -1,0 +1,22 @@
+{
+  "file": "2026-11-09-2300-ballots.md",
+  "kind": "post",
+  "posted_at": "2026-11-10T04:06",
+  "tweet_ids": [
+    "2119959854609814000"
+  ],
+  "url": "https://x.com/i/status/2119959854609814000",
+  "meta": {
+    "post_at": "2026-11-09 23:00",
+    "status": "ready",
+    "pillar": "politics",
+    "format": "meme",
+    "image": "charts/2026-11-09-ballots-meme.png",
+    "queued_at": "2026-11-09 07:20",
+    "sources": [
+      "https://x.com/unusual_whales/status/2119574185588539712",
+      "https://expertbeacon.com/data-center-ballot-measures-2026/"
+    ]
+  },
+  "first_text": "Of 45 data center ballot measures in the Nov 3 elections, 44 went against the industry, per Fortune.\n\nThe one exception: Harwood, North Dakota, a town of about 940 people.\n\nThe AI build-out has a voter problem."
+}
