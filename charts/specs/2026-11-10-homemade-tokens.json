@@ -1,0 +1,2 @@
+{"type":"bars","title":"North Korea's homemade tokens","subtitle":"Money moved through tokens the launderers minted or used for themselves, US$ millions","source":"Data: Elliptic (Bybit 2025; NEAR, Nov 9, 2026); TRM Labs (Tron, Nov 2026)","out":"charts/2026-11-10-homemade-tokens.png","max":110,
+"items":[{"label":"Bybit hack, 2025: one Tron token","value":24,"text":"$24M+"},{"label":"Binance hack: one Tron token, in 1 minute","value":100,"text":"~$100M","highlight":true},{"label":"Binance hack: six NEAR meme coins","value":0.43,"text":"$0.43M"}]}

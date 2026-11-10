@@ -1,0 +1,2 @@
+{"type":"bars","title":"Where the Binance haul sits now","subtitle":"Binance theft of Oct 29, 2026, US$ billions, per Elliptic (Nov 7–9)","source":"Data: Elliptic; Tether/Circle freezes via CoinDesk, Wikipedia (Oct 29–Nov 9, 2026)","out":"charts/2026-11-10-binance-haul.png","max":7,
+"items":[{"label":"Stolen","value":6.43,"text":"$6.43B"},{"label":"Frozen or seized","value":2.85,"text":"$2.85B (44%)"},{"label":"Still in theft wallets","value":3.11,"text":"$3.11B, likely still North Korea's","highlight":true}]}

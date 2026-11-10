@@ -1,0 +1,2 @@
+{"type":"columns","title":"North Korea now steals most of crypto's hacked money","subtitle":"North Korea's share of all crypto hack value, by year","source":"Data: TRM Labs (2026 to Oct 29); Chainalysis puts 2026 at ~89%","out":"charts/2026-11-10-dprk-share.png","max":100,
+"items":[{"label":"2024","value":39,"text":"39%"},{"label":"2025","value":63,"text":"63%"},{"label":"2026","value":85,"text":"85%","highlight":true}]}
