@@ -81,17 +81,22 @@ and dropped spam). For every item with `"handled": false` (newest first, max 15 
   events under `## Calendar`. Later runs and the daily deep-dive build on this notebook.
 
 ## 3. Queue posts
-FORMATS FIRST (STRATEGY.md → Growth formats; owner approved 2026-11-08): most items must be
-short single headline posts (`BREAKING:`/`JUST IN:` only when <3h old, else a plain one-line
-fact) with ONE striking number and one line on why it matters, under ~200 characters. Each run
-also aims for one shareable chart/data post and, once a day, one question post that invites
-replies. No threads except the deep dive. No CTA lines on ordinary posts.
-The hourly breaking desk (tasks/breaking-desk.md) covers fresh news; this run covers the
-bigger picture, charts, questions, series and the next 24h of slots. Don't duplicate a story
-the breaking desk already queued or posted (check queue/ and posted/ for the last 24h).
+FORMATS FIRST (STRATEGY.md -> "Viral formats", owner's order 2026-11-10; it wins over
+"Growth formats"): write at most 2 new items per run and at most 8 regular posts per Doha day
+(count queue/ and posted/ first; if 8 are already there, write nothing new). At least one item
+per run is a JOKE about the story people are joking about right now, in one of the joke shapes
+listed there (trap-watch or trade-review parody, greentext, double standard, myth-busting with
+a joke, money pain), with a tools/meme.py card when it helps. Punchline last, under ~200
+characters, no "per <source>" and no JUST IN inside jokes (sources go in front matter).
+Dry headline posts are the exception now: only for a genuinely big story, and never about a
+story the internet is already joking about. No threads except the deep dive. No CTA lines.
+The hourly breaking desk (tasks/breaking-desk.md) covers fresh news; don't duplicate it
+(check queue/ and posted/ for the last 24h).
 Series to keep up (see STRATEGY.md): "Week ahead" on Sundays (23:00 slot), "Scorecard" on
 Mondays (15:30 slot): last week's signal/trap posts from posted/ and what the price did since
 (DexScreener), wins and losses both.
+Also append 1-2 quote candidates per run to `ideas/quotes.md` (viral post URL under 3h old,
+views, our one-line joke) for Claude to quote-post in sessions.
 
 MEMES AND IMAGES (owner's rule 2026-11-08): every run queues at least ONE meme made with
 `python3 tools/meme.py charts/specs/<slug>.json` (see the docstring for layouts and STRATEGY.md →
@@ -109,7 +114,7 @@ week, if kalshi.com or polymarket.com loads, queue a "People are betting real mo
 crimes, deaths or private people.
 
 Fill free slots from config.yaml for about the next 24 hours, up to max_posts_per_day, but
-write at most 3 new items per run. Only use slots at least 90 minutes from now (Doha time).
+write at most 2 new items per run (see FORMATS FIRST). Only use slots at least 90 minutes from now (Doha time).
 The 17:00 slot belongs to the daily deep-dive thread (tasks/deep-dive-routine.md): never
 use it. Keep the pillar mix in STRATEGY.md: every run should include at least one
 "Economy & markets" post AND one "Politics & world events" post whenever there is real
