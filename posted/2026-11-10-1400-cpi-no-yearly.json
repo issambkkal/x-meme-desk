@@ -1,0 +1,22 @@
+{
+  "file": "2026-11-10-1400-cpi-no-yearly.md",
+  "kind": "post",
+  "posted_at": "2026-11-10T14:03",
+  "tweet_ids": [
+    "2120110060835664367"
+  ],
+  "url": "https://x.com/i/status/2120110060835664367",
+  "meta": {
+    "post_at": "2026-11-10 14:00",
+    "status": "ready",
+    "pillar": "economy",
+    "format": "headline",
+    "image": "charts/2026-11-10-cpi-gap.png",
+    "queued_at": "2026-11-09 22:05",
+    "sources": [
+      "https://www.business-standard.com/world-news/us-inflation-set-to-cool-in-october-after-two-months-of-sharp-increases-126110800246_1.html",
+      "https://www.morningstar.com/economy/october-cpi-forecasts-show-inflation-softening-december-rate-hike-still-looks-likely"
+    ]
+  },
+  "first_text": "Tuesday's CPI (8:30am ET) will have no yearly inflation rate. Oct 2025 prices were never collected during the shutdown.\n\nEconomists expect about +0.3% monthly, per Bloomberg's survey. A December Fed hike is still priced above 65%."
+}
