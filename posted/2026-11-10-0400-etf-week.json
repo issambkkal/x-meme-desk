@@ -1,0 +1,21 @@
+{
+  "file": "2026-11-10-0400-etf-week.md",
+  "kind": "post",
+  "posted_at": "2026-11-10T09:02",
+  "tweet_ids": [
+    "2120034376079507627"
+  ],
+  "url": "https://x.com/i/status/2120034376079507627",
+  "meta": {
+    "post_at": "2026-11-10 04:00",
+    "status": "ready",
+    "pillar": "data",
+    "format": "chart",
+    "image": "charts/2026-11-10-etf-week.png",
+    "queued_at": "2026-11-09 09:58",
+    "sources": [
+      "https://www.cryptotimes.io/2026/11/07/bitcoin-price-today-btc-holds-near-76000-as-spot-etfs-shed-411-9-million/"
+    ]
+  },
+  "first_text": "US spot Bitcoin ETFs lost about $1.28B last week, per Farside data.\n\nNearly $842M of it left in two days (Thursday and Friday). Are ETF buyers capitulating or is this the shakeout?"
+}
