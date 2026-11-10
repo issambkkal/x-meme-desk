@@ -1,53 +1,37 @@
-# Smart-money signals — 2026-11-10 10:56 Doha
+# Smart-money signals — 2026-11-10 11:16 Doha
 
-Window: last 6h · 137 buys and 157 sells by tracked wallets · SOL ≈ $86
+Window: last 6h · 123 buys and 140 sells by tracked wallets · SOL ≈ $86
 
 Research only, not financial advice. Convergence = 2+ tracked wallets bought the same token (core wallets count double). Always check red flags and the Bubblemaps link before anything.
 
 ## WIENER — score 5 (4 wallets, 1 core)
 - Mint: `ED3qnMtYYqRRC6Fyx98gWwySAYiJfBmNSH65wkhFpump`
-- Smart money in: $1,469 since 2026-11-10 03:30 UTC
-- Avg smart entry $0.00001265 → now $0.00002175 (71.9% since entry)
-- Liquidity $10,290 · MC $21,057 · age 3.5h · 24h vol $322,064 · 1h -7.79% · top-10 55.1%
-- Red flags: thin liquidity ($10,290), top-10 accounts hold 55.1% (includes pools; check on Bubblemaps), micro cap ($21,057), 4 tracked wallet(s) already selling
+- Smart money in: $1,463 since 2026-11-10 03:30 UTC
+- Avg smart entry $0.00001261 → now $0.0000172 (36.5% since entry)
+- Liquidity $8,973 · MC $16,645 · age 3.8h · 24h vol $323,481 · 1h -16.22% · top-10 57.7%
+- Red flags: thin liquidity ($8,973), top-10 accounts hold 57.7% (includes pools; check on Bubblemaps), micro cap ($16,645), 4 tracked wallet(s) already selling
 - https://dexscreener.com/solana/6dwg2fbgng33zfadeyxxrt7yyh8dj1gqzqn5h8fnw8hm · https://app.bubblemaps.io/sol/token/ED3qnMtYYqRRC6Fyx98gWwySAYiJfBmNSH65wkhFpump
-
-## Xcoin — score 4 (4 wallets, 0 core)
-- Mint: `KhMyQbLBpeAGo9HurAY82QYYGBeFvBW8YJGJEnJpump`
-- Smart money in: $820 since 2026-11-10 02:00 UTC
-- Avg smart entry $0.00003152 → now $0.00000279 (-91.1% since entry)
-- Liquidity $2,839 · MC $2,697 · age 5.9h · 24h vol $632,670 · 1h -4.32% · top-10 88.1%
-- Red flags: thin liquidity ($2,839), top-10 accounts hold 88.1% (includes pools; check on Bubblemaps), micro cap ($2,697), 3 tracked wallet(s) already selling
-- https://dexscreener.com/solana/dgdrzvqir7warv6jrwerrapgfesjpcwihuu7brziodyt · https://app.bubblemaps.io/sol/token/KhMyQbLBpeAGo9HurAY82QYYGBeFvBW8YJGJEnJpump
-
-## TITCOIN — score 3 (3 wallets, 0 core)
-- Mint: `84aBhBHxQ37bDvpXTKwSGvDYycNt2u2pzBEsgsGhpump`
-- Smart money in: $612 since 2026-11-10 01:58 UTC
-- Avg smart entry $0.00000755 → now $0.00000309 (-59.1% since entry)
-- Liquidity ? · MC $3,091 · age 6.0h · 24h vol $30,855 · 1h None% · top-10 100.0%
-- Red flags: still on a launch bonding curve (no pool liquidity yet), top-10 accounts hold 100.0% (includes pools; check on Bubblemaps), micro cap ($3,091), 3 tracked wallet(s) already selling
-- https://dexscreener.com/solana/fceh2tcybdqkeynf3wrus5xhurxxnc9kawrr4r3v6ga · https://app.bubblemaps.io/sol/token/84aBhBHxQ37bDvpXTKwSGvDYycNt2u2pzBEsgsGhpump
 
 ## Russell — score 2 (2 wallets, 0 core)
 - Mint: `BPcmv1ZDK99FienyWpeFo2zvY6EndeHCQ5zzBhKJpump`
-- Smart money in: $693 since 2026-11-10 03:13 UTC
-- Avg smart entry $0.0000086 → now $0.00000533 (-38.1% since entry)
-- Liquidity ? · MC $5,329 · age 76.8h · 24h vol $17,904 · 1h None% · top-10 89.3%
+- Smart money in: $691 since 2026-11-10 03:13 UTC
+- Avg smart entry $0.00000857 → now $0.00000533 (-37.8% since entry)
+- Liquidity ? · MC $5,329 · age 77.1h · 24h vol $17,904 · 1h None% · top-10 89.3%
 - Red flags: still on a launch bonding curve (no pool liquidity yet), top-10 accounts hold 89.3% (includes pools; check on Bubblemaps), micro cap ($5,329), 2 tracked wallet(s) already selling
 - https://dexscreener.com/solana/bgcvm7p5bmp9hmaikrip7a3ix4khqlh7btkjgjuom4mg · https://app.bubblemaps.io/sol/token/BPcmv1ZDK99FienyWpeFo2zvY6EndeHCQ5zzBhKJpump
 
 ## Mei — score 2 (2 wallets, 0 core)
 - Mint: `4etoZaNKFjM8v2DrByfskDkcrd6NFu6xHSdRDNFJpump`
-- Smart money in: $863 since 2026-11-10 03:16 UTC
-- Avg smart entry $0.00004167 → now $0.00003276 (-21.4% since entry)
-- Liquidity $12,698 · MC $30,659 · age 2046.7h · 24h vol $23,703 · 1h -5.65% · top-10 52.6%
-- Red flags: thin liquidity ($12,698), top-10 accounts hold 52.6% (includes pools; check on Bubblemaps), micro cap ($30,659), 2 tracked wallet(s) already selling
+- Smart money in: $860 since 2026-11-10 03:16 UTC
+- Avg smart entry $0.00004152 → now $0.0000321 (-22.7% since entry)
+- Liquidity $12,555 · MC $30,040 · age 2047.0h · 24h vol $23,808 · 1h -7.56% · top-10 53.1%
+- Red flags: thin liquidity ($12,555), top-10 accounts hold 53.1% (includes pools; check on Bubblemaps), micro cap ($30,040), 2 tracked wallet(s) already selling
 - https://dexscreener.com/solana/7jrrjauwogpife1gm4nmd2p3ohf3nig2h3akuykhyqpw · https://app.bubblemaps.io/sol/token/4etoZaNKFjM8v2DrByfskDkcrd6NFu6xHSdRDNFJpump
 
 ## Saxon — score 2 (2 wallets, 0 core)
 - Mint: `4oTTAyEQDzmJbFumLPAYxPoNaqwceZyYgvS8ruBDpump`
-- Smart money in: $1,727 since 2026-11-10 03:21 UTC
-- Avg smart entry $0.00002987 → now $0.00000321 (-89.2% since entry)
-- Liquidity $2,909 · MC $2,926 · age 4.6h · 24h vol $72,263 · 1h -2.6% · top-10 98.2%
-- Red flags: thin liquidity ($2,909), top-10 accounts hold 98.2% (includes pools; check on Bubblemaps), micro cap ($2,926), 2 tracked wallet(s) already selling
+- Smart money in: $1,720 since 2026-11-10 03:21 UTC
+- Avg smart entry $0.00002976 → now $0.00000352 (-88.2% since entry)
+- Liquidity $3,111 · MC $3,202 · age 4.9h · 24h vol $73,025 · 1h 7.43% · top-10 95.3%
+- Red flags: thin liquidity ($3,111), top-10 accounts hold 95.3% (includes pools; check on Bubblemaps), micro cap ($3,202), 2 tracked wallet(s) already selling
 - https://dexscreener.com/solana/aftaghupbxsb6biv6ax9jrmejjy2qznd84memllmpg8o · https://app.bubblemaps.io/sol/token/4oTTAyEQDzmJbFumLPAYxPoNaqwceZyYgvS8ruBDpump
