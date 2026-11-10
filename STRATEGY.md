@@ -40,6 +40,46 @@ no unverified claims. Use primary sources (official statements, vote records, Re
 government data), give both sides when something is contested, and focus on what changes
 for money, prices, markets and ordinary people.
 
+## Viral formats (2026-11-10, owner's order: "funny and viral". This section WINS over "Growth formats" below)
+
+Why this exists: after 321 posts the best one had 119 views and the median was about 10.
+Newswire posts ("JUST IN: ... per Reuters") averaged ~12 views. In the same 48 hours the posts
+that reached 100K to 4.6M views on OUR topics were one-line jokes about the story of the week
+(the Nvidia CEO scandal), for example:
+- "Nvidia stock fell 12% because of election and another 10% because of erection" (4.6M views)
+- ">Guy cheats on his wife >300 billion dollars gets deleted / Money isn't real." (864K)
+- "Bro had access to the most advanced AI in human history and still couldn't identify a red flag" (376K)
+- A 796-follower account got 375K views with a quote-post joke.
+We covered the same story as "JUST IN: Nvidia launched a probe..." and got 9 views.
+
+Rules for every routine:
+1. First find THE story people are joking about today (scans/, X Explore topics, WebSearch
+   "<topic> memes" / "reactions"). At least 60% of the posts you write are jokes about that story
+   or the #2 story. A dry headline about the day's meme story is a wasted post.
+2. Joke shapes that work (rotate, never the same shape twice in a row):
+   - Our own formats pointed at the news: "Trap watch: <public figure or company>",
+     "Trade review: <person>" (Due diligence / Position size / Stop loss / Result),
+     "Crypto X vs real-world X" (tools/meme.py versus or list card).
+   - Greentext: ">thing happens >absurd result" + a 3-word verdict.
+   - "<Someone> right now:" / "<Someone> realizing <thing>" + our own card.
+   - Wordplay one-liner under 100 characters.
+   - Double standard: "Nvidia holders sue over one hidden relationship. In crypto the founder
+     is a cartoon frog and we ape in anyway."
+   - Myth-busting with a joke: a viral false claim + the receipts ("best meme coin of the week:
+     great narrative, zero fundamentals, 650K people aped in").
+   - Money pain everyone knows: landlord, rent, salary, fees, "the dip had a dip".
+3. Writing: the punchline is the LAST line. Under 200 characters when possible. No "per Reuters",
+   no "JUST IN", no hashtags inside a joke (sources go in the `sources:` front matter and on the
+   card footer). One number at most. End with a question only if it is part of the joke.
+4. Targets: the actions of public figures, companies and institutions. Never private people,
+   never a spouse or victim, never looks, ethnicity, religion or groups of people. Say "alleged"
+   for anything unproven. Every fact inside a joke must still be true and sourced.
+5. Volume: at most 8 regular posts per Doha day in total (deep dive and smart-money report
+   included). Headline posts ("JUST IN"/"BREAKING") at most 3 per day, only for news big enough
+   to lead X's News tab. If a post would not make a stranger stop scrolling, do not queue it.
+6. Cloud routines cannot quote-post. Add quote candidates to `ideas/quotes.md` (URL of a viral
+   post under 3 hours old, its views, our one-line joke); Claude posts them in sessions.
+
 ## Growth formats (owner approved 2026-11-08 — HOW we post; pillars above are WHAT)
 
 X's open-sourced ranking (xai-org/x-algorithm, param.rs) scores each post by predicted actions:
