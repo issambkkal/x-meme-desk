@@ -9,3 +9,7 @@
 ## 2026-11-11 00:50 run
 - https://x.com/unusual_whales/status/2120268007201296681 (36K views, UBS keeps S&P 8,900 target for 2027). Joke: "UBS says S&P 9,600 by 2028. Bitcoin is at $73K and the bank still has a price target for everything but my rent."
 - https://x.com/Kalshi/status/2120268258766925961 (6.8K views, 52% Nvidia says China 5x). Joke: "Kalshi now lets you bet on how many times a CEO says a word. Regulators: so about that."
+
+## 2026-11-11 03:50 run
+- https://x.com/coinglass_com/status/2120197580361474483 (30K views, "NOT THAT GOOD MATE" during the dump). Joke: "Coinglass posting 'not that good mate' is the only liquidation report I trust. $650M wiped out and ETH -6% by lunch."
+- https://x.com/unusual_whales/status/2120311913636868184 (41K views, Mississippi Senate race by 2,607 votes). Joke: "Mississippi is separated by 2,607 votes. My last meme coin is separated from zero by about the same number of dollars."

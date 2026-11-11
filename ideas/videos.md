@@ -36,3 +36,6 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 
 ## 2026-11-11 00:50 run
 - No verified X video URLs found this run (search returned generic results). Look next run for liquidation-reaction clips after BTC's $73.8K low (>$1B liquidated, see queue/2026-11-11-0400-dip-stages.md).
+
+## 2026-11-11 03:50 run
+- https://x.com/OnchainLens/status/2120203814749995240 (4K views): Hyperliquid whale lost $2.53M closing longs, still holds $64.95M BTC/ETH longs under 2% from liquidation, total PnL -$17.51M. Context: this is the tape, not a clip; look for a liquidation-heatmap video of it on X. No reaction clip found this run.
