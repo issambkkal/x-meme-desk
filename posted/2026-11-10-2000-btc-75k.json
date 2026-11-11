@@ -1,0 +1,20 @@
+{
+  "file": "2026-11-10-2000-btc-75k.md",
+  "kind": "post",
+  "posted_at": "2026-11-11T03:23",
+  "tweet_ids": [
+    "2120311405283065916"
+  ],
+  "url": "https://x.com/i/status/2120311405283065916",
+  "meta": {
+    "post_at": "2026-11-10 20:00",
+    "status": "ready",
+    "pillar": "personal",
+    "format": "question",
+    "queued_at": "2026-11-09 15:58",
+    "sources": [
+      "https://mitrade.com/insights/crypto-analysis/bitcoin/fxstreet-BTCUSDETHUSD-202611091604"
+    ]
+  },
+  "first_text": "Bitcoin hit $73,477 on Sunday, below the 50-week average near $75,222, per FXStreet. Five red weeks in a row.\n\nFriday's weekly close: above $75K or below? Pick one."
+}
