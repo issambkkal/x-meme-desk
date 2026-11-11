@@ -11,7 +11,7 @@ dry_run: false
 # so you can open the queue and delete it or set status: hold.
 min_lead_minutes: 60
 
-max_posts_per_day: 20
+max_posts_per_day: 4   # owner, Nov 11: fewer, better posts (trap watches + receipts only)
 max_replies_per_day: 40
 tip_pause_until: 2026-11-15   # X blocks crypto addresses for 7 days after app authorization
 min_gap_minutes: 60

@@ -1,6 +1,6 @@
 ---
 post_at: 2026-11-11 17:00
-status: ready
+status: hold
 pillar: crypto
 image: charts/2026-11-10-homemade-tokens.png
 tip: true
