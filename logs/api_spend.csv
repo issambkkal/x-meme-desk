@@ -72,3 +72,4 @@ date,time,kind,reads,cost_usd
 2026-11-11,13:09,scan:world,10,0.050
 2026-11-11,15:40,scan:macro,10,0.050
 2026-11-11,15:56,scan:news,10,0.050
+2026-11-11,16:40,scan:world,10,0.050
