@@ -39,3 +39,6 @@ Format: - [ ] URL · views · date · context line (with a sourced number)
 
 ## 2026-11-11 03:50 run
 - https://x.com/OnchainLens/status/2120203814749995240 (4K views): Hyperliquid whale lost $2.53M closing longs, still holds $64.95M BTC/ETH longs under 2% from liquidation, total PnL -$17.51M. Context: this is the tape, not a clip; look for a liquidation-heatmap video of it on X. No reaction clip found this run.
+
+## 2026-11-11 06:55 run
+- None verified this run (search returned no usable clips). Next run: look for liquidation/whale-loss reaction clips on X, e.g. around the Hyperliquid whale facing a $65M liquidation (https://x.com/OnchainLens/status/2120203814749995240, 4K views).

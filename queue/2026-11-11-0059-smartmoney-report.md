@@ -1,6 +1,6 @@
 ---
 post_at: 2026-11-11 00:59
-status: ready
+status: hold
 pillar: data
 image: charts/2026-11-10-smartmoney.png
 queued_at: 2026-11-10 23:49

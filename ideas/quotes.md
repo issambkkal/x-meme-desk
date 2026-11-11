@@ -13,3 +13,7 @@
 ## 2026-11-11 03:50 run
 - https://x.com/coinglass_com/status/2120197580361474483 (30K views, "NOT THAT GOOD MATE" during the dump). Joke: "Coinglass posting 'not that good mate' is the only liquidation report I trust. $650M wiped out and ETH -6% by lunch."
 - https://x.com/unusual_whales/status/2120311913636868184 (41K views, Mississippi Senate race by 2,607 votes). Joke: "Mississippi is separated by 2,607 votes. My last meme coin is separated from zero by about the same number of dollars."
+
+## 2026-11-11 06:55 run
+- https://x.com/coinglass_com/status/2120220157263880466 (31K views, Nov 10 18:20 UTC, "OI Increasing, not a good signal"): joke: "Open interest rising into a falling market: traders buying the dip with leverage so the dip can have a dip."
+- https://x.com/KobeissiLetter/status/2120281834047127772 (40K views): US ETFs took in $201B in October, second-largest month on record. Joke: "$201B into ETFs while BTC lost $3K in a day. Everyone is diversifying except the coins."
