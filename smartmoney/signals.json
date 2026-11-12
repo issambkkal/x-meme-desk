@@ -1,31 +1,6 @@
 {
-  "generated": "2026-11-12T10:21+03:00",
+  "generated": "2026-11-12T10:41+03:00",
   "window_hours": 6.0,
   "sol_usd": 82.68,
-  "signals": [
-    {
-      "mint": "3dqeBW7EJYAPnv9tGJeQAwBoxZsC2vomFk7ah7GrFoss",
-      "symbol": "X",
-      "name": "X Coin",
-      "wallets": 2,
-      "core_wallets": 1,
-      "score": 3,
-      "smart_buy_usd": 817.79,
-      "first_buy": "2026-11-12T01:35:56+00:00",
-      "avg_entry_usd": 8.140007060484968e-05,
-      "price_usd": 0.0001481,
-      "change_since_entry_pct": 81.9,
-      "liquidity_usd": 32345.99,
-      "market_cap": 145955,
-      "pair_age_h": 6.1,
-      "volume_24h": 2107306.74,
-      "change_1h": 6.05,
-      "top10_pct": 30.2,
-      "red_flags": [
-        "2 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/klha4xqsrezgxr6kp1vtkln783qxa1xd8mppw44dkha",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/3dqeBW7EJYAPnv9tGJeQAwBoxZsC2vomFk7ah7GrFoss"
-    }
-  ]
+  "signals": []
 }
