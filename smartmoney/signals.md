@@ -1,13 +1,13 @@
-# Smart-money signals — 2026-11-12 17:33 Doha
+# Smart-money signals — 2026-11-12 17:53 Doha
 
-Window: last 6h · 161 buys and 164 sells by tracked wallets · SOL ≈ $81
+Window: last 6h · 167 buys and 181 sells by tracked wallets · SOL ≈ $81
 
 Research only, not financial advice. Convergence = 2+ tracked wallets bought the same token (core wallets count double). Always check red flags and the Bubblemaps link before anything.
 
 ## LIQUID — score 3 (2 wallets, 1 core)
 - Mint: `71mfKdePwyWXtiF1mqu2aaCdMKnKuN664z2vEM2Xpump`
-- Smart money in: $637 since 2026-11-12 13:11 UTC
-- Avg smart entry $0.00006013 → now $0.00005968 (-0.7% since entry)
-- Liquidity $28,228 · MC $59,632 · age 6665.7h · 24h vol $62,468 · 1h -4.4% · top-10 53.4%
-- Red flags: thin liquidity ($28,228), top-10 accounts hold 53.4% (includes pools; check on Bubblemaps), 1 tracked wallet(s) already selling
+- Smart money in: $638 since 2026-11-12 13:11 UTC
+- Avg smart entry $0.00006028 → now $0.00005212 (-13.5% since entry)
+- Liquidity $26,404 · MC $52,083 · age 6666.0h · 24h vol $63,160 · 1h -18.7% · top-10 55.2%
+- Red flags: thin liquidity ($26,404), top-10 accounts hold 55.2% (includes pools; check on Bubblemaps), 1 tracked wallet(s) already selling
 - https://dexscreener.com/solana/hv7kcomcekmk4aqdtrhq2xwdemclabgsr99rwimdgcha · https://app.bubblemaps.io/sol/token/71mfKdePwyWXtiF1mqu2aaCdMKnKuN664z2vEM2Xpump
