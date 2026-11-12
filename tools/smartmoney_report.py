@@ -44,11 +44,40 @@ def usd(x):
     return f"${x:,.0f}"
 
 
+def report_day(post_at):
+    """The day a report belongs to. Reports go out ~18:30 Doha; a run that fires late (after midnight,
+    up to 08:00 Doha) still belongs to the previous evening's report."""
+    return (post_at - dt.timedelta(hours=8)).date()
+
+
+def already_reported(post_at):
+    """The queue/posted report file that already covers this report day, if any. GitHub sometimes fires
+    the daily cron 4-10 h late, after keepalive already started the report: that made two threads a day."""
+    day = report_day(post_at)
+    for folder in ("queue", "posted"):
+        for f in (ROOT / folder).glob("*-smartmoney-report.md"):
+            try:
+                at = dt.datetime.strptime(f.name[:15], "%Y-%m-%d-%H%M").replace(tzinfo=post_at.tzinfo)
+            except ValueError:
+                continue
+            if folder == "queue" and "\nstatus: hold" in f.read_text():
+                continue
+            if report_day(at) == day:
+                return f
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--post-at")
     ap.add_argument("--extra-trades", nargs="*", default=[])
+    ap.add_argument("--force", action="store_true", help="build even if this report day already has a report")
     a = ap.parse_args()
+    if not a.force and not a.post_at:
+        prev = already_reported(dt.datetime.now(dt.timezone(dt.timedelta(hours=3))) + dt.timedelta(minutes=70))
+        if prev:
+            print(f"report already queued/posted recently ({prev.relative_to(ROOT)}); skipping")
+            return
     files = sorted((ROOT / "smartmoney" / "trades").glob("*.jsonl"))[-2:] + [Path(p) for p in a.extra_trades]
     trades = load(files)
     price = sol_usd() or 0
