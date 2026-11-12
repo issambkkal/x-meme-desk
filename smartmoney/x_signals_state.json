@@ -10,7 +10,8 @@
   "BK8ZXzXsVLJzsDdy1paM8Dbcd3qAhMQWcSWq3M6Ypump": "2026-11-11T00:41:36.897968+03:00",
   "AQ2gmhnqAiPDd2P6jgYrrVvVh8X1de2pBKPLKQbKpump": "2026-11-11T01:21:41.358560+03:00",
   "774k3J7PCQXwn7HVeiXGqwU2rAmD76fxv1LwpLfJpump": "2026-11-12T00:04:38.532210+03:00",
-  "4rYsDHMfKmt6VuVGcM8cGzBgkZNgQT3w2DhdEmtVpump": "2026-11-12T00:04:38.532210+03:00"
+  "4rYsDHMfKmt6VuVGcM8cGzBgkZNgQT3w2DhdEmtVpump": "2026-11-12T00:04:38.532210+03:00",
+  "Ge87EtsjwRQbHaqQmKRno69RFTwh9bfSsm99XNxTpump": "2026-11-13T01:33:25.767110+03:00"
  },
  "days": {
   "2026-11-10": {
@@ -27,7 +28,7 @@
   },
   "2026-11-13": {
    "green": 0,
-   "trap": 0
+   "trap": 1
   }
  }
 }
