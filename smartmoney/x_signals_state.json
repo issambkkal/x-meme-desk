@@ -15,10 +15,6 @@
   "EFYdWBh6hQJLduR4QYnLNKLMq93PLqjjU5WwhNPgpump": "2026-11-13T01:53:24.017134+03:00"
  },
  "days": {
-  "2026-11-10": {
-   "green": 0,
-   "trap": 2
-  },
   "2026-11-11": {
    "green": 0,
    "trap": 2
@@ -30,6 +26,10 @@
   "2026-11-13": {
    "green": 0,
    "trap": 2
+  },
+  "2026-11-14": {
+   "green": 0,
+   "trap": 0
   }
  }
 }
