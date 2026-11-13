@@ -20,7 +20,7 @@ SIGNALS = ROOT / "smartmoney" / "signals.json"
 STATE = ROOT / "smartmoney" / "x_signals_state.json"
 QUEUE = ROOT / "queue"
 DOHA = dt.timezone(dt.timedelta(hours=3))
-GREEN_PER_DAY, TRAP_PER_DAY, REPEAT_HOURS = 1, 2, 48  # owner, Nov 11: cut volume
+GREEN_PER_DAY, TRAP_PER_DAY, REPEAT_HOURS = 0, 0, 48  # owner, Nov 13: no automatic signal/trap posts on X (Telegram keeps them)
 DANGER = ("already selling", "micro cap", "late", "no DEX pair", "bonding curve")
 
 

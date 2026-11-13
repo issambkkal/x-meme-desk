@@ -44,6 +44,10 @@ def usd(x):
     return f"${x:,.0f}"
 
 
+# Owner decision Nov 13 2026: the X page posts only funny economy/finance/crypto content, no automatic data threads.
+X_REPORT_ENABLED = False
+
+
 def report_day(post_at):
     """The day a report belongs to. Reports go out ~18:30 Doha; a run that fires late (after midnight,
     up to 08:00 Doha) still belongs to the previous evening's report."""
@@ -73,6 +77,9 @@ def main():
     ap.add_argument("--extra-trades", nargs="*", default=[])
     ap.add_argument("--force", action="store_true", help="build even if this report day already has a report")
     a = ap.parse_args()
+    if not X_REPORT_ENABLED and not a.force:
+        print("daily X report is switched off (owner, Nov 13 2026); use --force to build one")
+        return
     if not a.force and not a.post_at:
         prev = already_reported(dt.datetime.now(dt.timezone(dt.timedelta(hours=3))) + dt.timedelta(minutes=70))
         if prev:
