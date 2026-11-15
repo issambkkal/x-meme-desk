@@ -1,8 +1,35 @@
 {
-  "generated": "2026-11-15T13:18+03:00",
+  "generated": "2026-11-15T13:38+03:00",
   "window_hours": 6.0,
   "sol_usd": 71.89,
   "signals": [
+    {
+      "mint": "FZLgwRj7k7bESGAPMitaLGCwKtVNJNtd96gj3TjApump",
+      "symbol": "SI",
+      "name": "Star Inu",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 503.74,
+      "first_buy": "2026-11-15T08:02:18+00:00",
+      "avg_entry_usd": 1.1865219829472794e-05,
+      "price_usd": 9.041e-06,
+      "change_since_entry_pct": -23.8,
+      "liquidity_usd": 6741.66,
+      "market_cap": 8719,
+      "pair_age_h": 2.4,
+      "volume_24h": 337642.91,
+      "change_1h": -58.5,
+      "top10_pct": 68.8,
+      "red_flags": [
+        "thin liquidity ($6,742)",
+        "top-10 accounts hold 68.8% (includes pools; check on Bubblemaps)",
+        "micro cap ($8,719)",
+        "1 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/guwwewlftwffknfbe93dywzfqwx9peblh9tzdvzs9dn2",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/FZLgwRj7k7bESGAPMitaLGCwKtVNJNtd96gj3TjApump"
+    },
     {
       "mint": "6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump",
       "symbol": "TWEET",
@@ -17,9 +44,9 @@
       "change_since_entry_pct": -87.7,
       "liquidity_usd": 2134.99,
       "market_cap": 1848,
-      "pair_age_h": 1.0,
+      "pair_age_h": 1.4,
       "volume_24h": 25668.48,
-      "change_1h": -74.11,
+      "change_1h": -2.48,
       "top10_pct": 99.0,
       "red_flags": [
         "thin liquidity ($2,135)",
@@ -29,34 +56,6 @@
       ],
       "dexscreener": "https://dexscreener.com/solana/eznjiflsbn63pm1fyyhjoatd7wdtto6v5unh46kauzu8",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/6Ao4S8TEnS4Xg5Uwr5TLipxKmrub88zBs81mipUMpump"
-    },
-    {
-      "mint": "FZLgwRj7k7bESGAPMitaLGCwKtVNJNtd96gj3TjApump",
-      "symbol": "SI",
-      "name": "Star Inu",
-      "wallets": 2,
-      "core_wallets": 1,
-      "score": 3,
-      "smart_buy_usd": 503.74,
-      "first_buy": "2026-11-15T08:02:18+00:00",
-      "avg_entry_usd": 1.1865219829472794e-05,
-      "price_usd": 3.173e-05,
-      "change_since_entry_pct": 167.4,
-      "liquidity_usd": 14294.99,
-      "market_cap": 30604,
-      "pair_age_h": 2.1,
-      "volume_24h": 328255.8,
-      "change_1h": -36.02,
-      "top10_pct": 52.6,
-      "red_flags": [
-        "thin liquidity ($14,295)",
-        "top-10 accounts hold 52.6% (includes pools; check on Bubblemaps)",
-        "already +167.4% above smart entries (late)",
-        "micro cap ($30,604)",
-        "1 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/guwwewlftwffknfbe93dywzfqwx9peblh9tzdvzs9dn2",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/FZLgwRj7k7bESGAPMitaLGCwKtVNJNtd96gj3TjApump"
     }
   ]
 }
