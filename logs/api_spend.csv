@@ -153,3 +153,4 @@ date,time,kind,reads,cost_usd
 2026-11-16,03:40,scan:world,10,0.050
 2026-11-16,04:41,scan:macro,10,0.050
 2026-11-16,05:40,scan:alerts,8,0.040
+2026-11-16,08:40,scan:world,10,0.050
