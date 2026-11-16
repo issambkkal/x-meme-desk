@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-16T10:20+03:00",
+  "generated": "2026-11-16T10:40+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.66,
+  "sol_usd": 71.42,
   "signals": [
     {
       "mint": "cvkarf1CtN3tbLRk961vsaEf4T8QbnihDkCHa93pump",
@@ -10,25 +10,53 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 2118.28,
+      "smart_buy_usd": 2141.07,
       "first_buy": "2026-11-16T04:55:38+00:00",
-      "avg_entry_usd": 9.244105702230092e-05,
-      "price_usd": 4.751e-05,
-      "change_since_entry_pct": -48.6,
-      "liquidity_usd": 23459.54,
-      "market_cap": 47499,
-      "pair_age_h": 3392.5,
-      "volume_24h": 176356.93,
-      "change_1h": -1.85,
-      "top10_pct": 47.6,
+      "avg_entry_usd": 9.343532822718273e-05,
+      "price_usd": 4.769e-05,
+      "change_since_entry_pct": -49.0,
+      "liquidity_usd": 23606.34,
+      "market_cap": 47683,
+      "pair_age_h": 3392.8,
+      "volume_24h": 176487.83,
+      "change_1h": 3.16,
+      "top10_pct": 47.7,
       "red_flags": [
-        "thin liquidity ($23,460)",
-        "top-10 accounts hold 47.6% (includes pools; check on Bubblemaps)",
-        "micro cap ($47,499)",
+        "thin liquidity ($23,606)",
+        "top-10 accounts hold 47.7% (includes pools; check on Bubblemaps)",
+        "micro cap ($47,683)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/gerz5vw4sxuzkr4datnyt5chgx47gcyle5z3oezinyfj",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/cvkarf1CtN3tbLRk961vsaEf4T8QbnihDkCHa93pump"
+    },
+    {
+      "mint": "6ZBfHKe1ZSEh5H4VRFEZEKdXeT67hqvWeQSrYMAxpump",
+      "symbol": "bop",
+      "name": "bop cat",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 539.51,
+      "first_buy": "2026-11-16T07:25:25+00:00",
+      "avg_entry_usd": 3.4091357012188925e-05,
+      "price_usd": 4.359e-05,
+      "change_since_entry_pct": 27.9,
+      "liquidity_usd": 15992.61,
+      "market_cap": 43595,
+      "pair_age_h": 0.3,
+      "volume_24h": 18596.47,
+      "change_1h": -14.32,
+      "top10_pct": 47.3,
+      "red_flags": [
+        "thin liquidity ($15,993)",
+        "pair younger than 1h",
+        "top-10 accounts hold 47.3% (includes pools; check on Bubblemaps)",
+        "micro cap ($43,595)",
+        "1 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/didbgdxldz4njdrwomrz8uwa4bobfhc4zshprqes82ga",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/6ZBfHKe1ZSEh5H4VRFEZEKdXeT67hqvWeQSrYMAxpump"
     }
   ]
 }
