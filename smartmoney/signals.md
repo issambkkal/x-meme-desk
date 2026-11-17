@@ -1,29 +1,29 @@
-# Smart-money signals — 2026-11-17 07:53 Doha
+# Smart-money signals — 2026-11-17 08:14 Doha
 
-Window: last 6h · 292 buys and 201 sells by tracked wallets · SOL ≈ $73
+Window: last 6h · 304 buys and 208 sells by tracked wallets · SOL ≈ $73
 
 Research only, not financial advice. Convergence = 2+ tracked wallets bought the same token (core wallets count double). Always check red flags and the Bubblemaps link before anything.
 
+## CHAR — score 3 (2 wallets, 1 core)
+- Mint: `9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump`
+- Smart money in: $498 since 2026-11-17 02:33 UTC
+- Avg smart entry $0.00009675 → now $0.0001741 (80.0% since entry)
+- Liquidity $31,858 · MC $171,189 · age 3.1h · 24h vol $1,432,865 · 1h -54.47% · top-10 32.4%
+- Red flags: 2 tracked wallet(s) already selling
+- https://dexscreener.com/solana/j5jqhqtlclu24ztbj85oqgx2rskv1bgs7kteo8flhtgu · https://app.bubblemaps.io/sol/token/9k2nqjUrSh9p2ZBnWxNE3QRWYiLocrWZfoDm3Vdxpump
+
 ## Jojo — score 3 (2 wallets, 1 core)
 - Mint: `D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB`
-- Smart money in: $487 since 2026-11-17 01:48 UTC
-- Avg smart entry $0.0000465 → now $0.00001623 (-65.1% since entry)
-- Liquidity $8,839 · MC $15,480 · age 3.4h · 24h vol $1,219,399 · 1h -38.55% · top-10 53.8%
-- Red flags: thin liquidity ($8,839), top-10 accounts hold 53.8% (includes pools; check on Bubblemaps), micro cap ($15,480), 2 tracked wallet(s) already selling
+- Smart money in: $486 since 2026-11-17 01:48 UTC
+- Avg smart entry $0.00004641 → now $0.00001128 (-75.7% since entry)
+- Liquidity $7,178 · MC $10,762 · age 3.7h · 24h vol $1,225,412 · 1h -33.51% · top-10 58.7%
+- Red flags: thin liquidity ($7,178), top-10 accounts hold 58.7% (includes pools; check on Bubblemaps), micro cap ($10,762), 2 tracked wallet(s) already selling
 - https://dexscreener.com/solana/9rbi9qmdvwu5mznpmhur5ykhzvjzveom1jeulnkoufo8 · https://app.bubblemaps.io/sol/token/D2Zkpv4m8M9Yh7tSDDCtcyZb6WQYVKzkQjM4x5eMQDZB
 
 ## 5STAR — score 3 (2 wallets, 1 core)
 - Mint: `AjEkvX24xmzcXY7DEah8GDBzP5PeqXm9mJjXN6R3pump`
-- Smart money in: $362 since 2026-11-17 04:41 UTC
-- Avg smart entry $0.00000609 → now $0.00001793 (194.6% since entry)
-- Liquidity ? · MC $17,932 · age 0.7h · 24h vol $55,154 · 1h 336% · top-10 59.1%
-- Red flags: still on a launch bonding curve (no pool liquidity yet), pair younger than 1h, top-10 accounts hold 59.1% (includes pools; check on Bubblemaps), already +194.6% above smart entries (late), micro cap ($17,932), 2 tracked wallet(s) already selling
+- Smart money in: $361 since 2026-11-17 04:41 UTC
+- Avg smart entry $0.00000607 → now $0.00000433 (-28.7% since entry)
+- Liquidity ? · MC $4,334 · age 1.0h · 24h vol $79,358 · 1h 5.33% · top-10 94.6%
+- Red flags: still on a launch bonding curve (no pool liquidity yet), top-10 accounts hold 94.6% (includes pools; check on Bubblemaps), micro cap ($4,334), 2 tracked wallet(s) already selling
 - https://dexscreener.com/solana/2mcxv9rvrghveggwb3wypmzdbnwtlqbmhfacxxjewgmd · https://app.bubblemaps.io/sol/token/AjEkvX24xmzcXY7DEah8GDBzP5PeqXm9mJjXN6R3pump
-
-## MOON — score 2 (2 wallets, 0 core)
-- Mint: `3PNQaC87SkC2emUbBMddwWWfKFX4h5fPjGeiUNqJqboA`
-- Smart money in: $1,191 since 2026-11-16 22:59 UTC
-- Avg smart entry $0.00009763 → now $0.0000167 (-82.9% since entry)
-- Liquidity $122 · MC $16,123 · age 6.1h · 24h vol $23,501 · 1h None% · top-10 67.6%
-- Red flags: thin liquidity ($122), top-10 accounts hold 67.6% (includes pools; check on Bubblemaps), micro cap ($16,123), 1 tracked wallet(s) already selling
-- https://dexscreener.com/solana/jdf8vthv7z6hsoveq8gjvz3vlqksdklobguopbvh5ovd · https://app.bubblemaps.io/sol/token/3PNQaC87SkC2emUbBMddwWWfKFX4h5fPjGeiUNqJqboA
