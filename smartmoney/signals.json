@@ -1,6 +1,59 @@
 {
-  "generated": "2026-11-19T19:22+03:00",
+  "generated": "2026-11-19T19:46+03:00",
   "window_hours": 6.0,
-  "sol_usd": 73.54,
-  "signals": []
+  "sol_usd": 73.78,
+  "signals": [
+    {
+      "mint": "314tRMSGUN9avLGyqgwHsFFjjWiYgTyzufs6TQSLpump",
+      "symbol": "NEKOMARIO",
+      "name": "NEKOMARIO",
+      "wallets": 3,
+      "core_wallets": 0,
+      "score": 3,
+      "smart_buy_usd": 932.43,
+      "first_buy": "2026-11-19T16:36:50+00:00",
+      "avg_entry_usd": 0.00019465444507677637,
+      "price_usd": 0.000291,
+      "change_since_entry_pct": 49.5,
+      "liquidity_usd": 49141.56,
+      "market_cap": 290613,
+      "pair_age_h": 0.2,
+      "volume_24h": 911369.46,
+      "change_1h": 589,
+      "top10_pct": null,
+      "red_flags": [
+        "pair younger than 1h",
+        "3 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/6qoeu8e3e4tazic1se4adstpqasqnadi3x5rqegrz9ys",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/314tRMSGUN9avLGyqgwHsFFjjWiYgTyzufs6TQSLpump"
+    },
+    {
+      "mint": "4d9iHAm6eV4FfTvMUwpURMHVXhwu3LwEWDv18uGvxCDe",
+      "symbol": "TYO",
+      "name": "Nintendo Co Ltd",
+      "wallets": 3,
+      "core_wallets": 0,
+      "score": 3,
+      "smart_buy_usd": 358.24,
+      "first_buy": "2026-11-19T16:42:20+00:00",
+      "avg_entry_usd": 6.069737176898719e-06,
+      "price_usd": 5.88e-06,
+      "change_since_entry_pct": -3.1,
+      "liquidity_usd": 2.12,
+      "market_cap": 5881,
+      "pair_age_h": 0.0,
+      "volume_24h": 0.34,
+      "change_1h": -27.2,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($2)",
+        "pair younger than 1h",
+        "micro cap ($5,881)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/ehakcmcgq7hwhfwxhn2idwwfanmrjy93k8lx5jtgadvp",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/4d9iHAm6eV4FfTvMUwpURMHVXhwu3LwEWDv18uGvxCDe"
+    }
+  ]
 }
