@@ -1,8 +1,32 @@
 {
-  "generated": "2026-11-20T18:45+03:00",
+  "generated": "2026-11-20T19:07+03:00",
   "window_hours": 6.0,
-  "sol_usd": 68.28,
+  "sol_usd": 68.18,
   "signals": [
+    {
+      "mint": "A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump",
+      "symbol": "TOAD",
+      "name": "The Toad Pepe",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 2121.08,
+      "first_buy": "2026-11-20T15:46:45+00:00",
+      "avg_entry_usd": 0.0004011294191523282,
+      "price_usd": 0.0004401,
+      "change_since_entry_pct": 9.7,
+      "liquidity_usd": 95872.19,
+      "market_cap": 422750,
+      "pair_age_h": 2498.1,
+      "volume_24h": 31071.81,
+      "change_1h": -17.03,
+      "top10_pct": null,
+      "red_flags": [
+        "1 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/nx9dcwns3ijxm5yaxshmhe4ayjhddyygmhvcmasgfu8",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/A13oRB9FFaiUjfi6LdCg6p9ka1u8SfGkUFs4SKvPpump"
+    },
     {
       "mint": "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump",
       "symbol": "RUDY",
@@ -10,23 +34,48 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 416.58,
+      "smart_buy_usd": 415.98,
       "first_buy": "2026-11-20T10:44:58+00:00",
-      "avg_entry_usd": 4.7810914916904354e-05,
-      "price_usd": 0.0001256,
-      "change_since_entry_pct": 162.7,
-      "liquidity_usd": 35235.57,
-      "market_cap": 119881,
-      "pair_age_h": 5.0,
-      "volume_24h": 1233975.91,
-      "change_1h": 2.84,
+      "avg_entry_usd": 4.7741622779354314e-05,
+      "price_usd": 8.131e-05,
+      "change_since_entry_pct": 70.3,
+      "liquidity_usd": 27873.87,
+      "market_cap": 77595,
+      "pair_age_h": 5.3,
+      "volume_24h": 1248401.24,
+      "change_1h": -26.31,
       "top10_pct": null,
       "red_flags": [
-        "already +162.7% above smart entries (late)",
+        "thin liquidity ($27,874)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/8i183k6czxhn17umkrcr6zjc9bxgn2nnqdqanykgvko6",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump"
+    },
+    {
+      "mint": "EYX45DKQCMyCf7PtMyD9kKpokE9PVThVRbtUKPQvpump",
+      "symbol": "h\u25e1sh",
+      "name": "h\u25e1sh",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 1170.86,
+      "first_buy": "2026-11-20T14:46:55+00:00",
+      "avg_entry_usd": 8.549353686413289e-05,
+      "price_usd": 0.0001456,
+      "change_since_entry_pct": 70.3,
+      "liquidity_usd": 45.34,
+      "market_cap": 145656,
+      "pair_age_h": 1.9,
+      "volume_24h": 22.55,
+      "change_1h": 193,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($45)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/airq5qmia443ywgi4tve1lkbphdmwwujtpgc1plqs4wv",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/EYX45DKQCMyCf7PtMyD9kKpokE9PVThVRbtUKPQvpump"
     }
   ]
 }
