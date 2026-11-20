@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-20T18:04+03:00",
+  "generated": "2026-11-20T18:25+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.78,
+  "sol_usd": 68.48,
   "signals": [
     {
       "mint": "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump",
@@ -10,49 +10,23 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 431.68,
+      "smart_buy_usd": 417.79,
       "first_buy": "2026-11-20T10:44:58+00:00",
-      "avg_entry_usd": 4.954321835565536e-05,
-      "price_usd": 0.000111,
-      "change_since_entry_pct": 124.0,
-      "liquidity_usd": 32888.52,
-      "market_cap": 105968,
-      "pair_age_h": 4.3,
-      "volume_24h": 1199975.46,
-      "change_1h": -6.04,
+      "avg_entry_usd": 4.7949499192004435e-05,
+      "price_usd": 0.0001228,
+      "change_since_entry_pct": 156.1,
+      "liquidity_usd": 34774.93,
+      "market_cap": 117205,
+      "pair_age_h": 4.7,
+      "volume_24h": 1222330.37,
+      "change_1h": -16.15,
       "top10_pct": null,
       "red_flags": [
-        "already +124.0% above smart entries (late)",
+        "already +156.1% above smart entries (late)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/8i183k6czxhn17umkrcr6zjc9bxgn2nnqdqanykgvko6",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump"
-    },
-    {
-      "mint": "Axkd2GMCfA4Lehb2gQR6bG8irjwTVaQcHXxwiBNt2Rbo",
-      "symbol": "CATMARIO",
-      "name": "Cat Mario",
-      "wallets": 2,
-      "core_wallets": 1,
-      "score": 3,
-      "smart_buy_usd": 338.12,
-      "first_buy": "2026-11-20T09:19:03+00:00",
-      "avg_entry_usd": 2.655120185272545e-05,
-      "price_usd": 2.745e-05,
-      "change_since_entry_pct": 3.4,
-      "liquidity_usd": 10723.77,
-      "market_cap": 26531,
-      "pair_age_h": 17.2,
-      "volume_24h": 209076.2,
-      "change_1h": -16.03,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($10,724)",
-        "micro cap ($26,531)",
-        "2 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/e9cvw36mghrf27q3szkgtdjr4kryerq6um65mekpvuoq",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/Axkd2GMCfA4Lehb2gQR6bG8irjwTVaQcHXxwiBNt2Rbo"
     }
   ]
 }
