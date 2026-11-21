@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-21T19:38+03:00",
+  "generated": "2026-11-21T19:57+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.29,
+  "sol_usd": 70.65,
   "signals": [
     {
       "mint": "9msk9ehERMECbvsp3mvNabSXy2k7GNcrxJgdWfh7pump",
@@ -10,22 +10,48 @@
       "wallets": 3,
       "core_wallets": 1,
       "score": 4,
-      "smart_buy_usd": 682.11,
+      "smart_buy_usd": 685.6,
       "first_buy": "2026-11-21T13:23:52+00:00",
-      "avg_entry_usd": 0.00011586326493511287,
-      "price_usd": 0.0001243,
-      "change_since_entry_pct": 7.3,
-      "liquidity_usd": 33187.58,
-      "market_cap": 122292,
-      "pair_age_h": 10.0,
-      "volume_24h": 1847424.3,
-      "change_1h": -21.01,
+      "avg_entry_usd": 0.00011645667474271908,
+      "price_usd": 8.66e-05,
+      "change_since_entry_pct": -25.6,
+      "liquidity_usd": 27536,
+      "market_cap": 85203,
+      "pair_age_h": 10.3,
+      "volume_24h": 1869874.63,
+      "change_1h": -33.94,
       "top10_pct": null,
       "red_flags": [
+        "thin liquidity ($27,536)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/7dwumkzcbgem6aqmd9iaq5lmnctnmcxp8wfbuf2phxat",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/9msk9ehERMECbvsp3mvNabSXy2k7GNcrxJgdWfh7pump"
+    },
+    {
+      "mint": "EK2tRRD5jqNUxohdMjbjnJ5Q3t9TYGBkZVjtMceDpump",
+      "symbol": "Emily",
+      "name": "SuperCat",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 965.57,
+      "first_buy": "2026-11-21T12:17:53+00:00",
+      "avg_entry_usd": 4.0542728661342573e-05,
+      "price_usd": 6.223e-05,
+      "change_since_entry_pct": 53.5,
+      "liquidity_usd": 18039.79,
+      "market_cap": 59996,
+      "pair_age_h": 4.7,
+      "volume_24h": 995752.21,
+      "change_1h": 11.49,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($18,040)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/fan13yqwc3enna3rrjp1f8acwybdvmjtedk7grvlnhbx",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/EK2tRRD5jqNUxohdMjbjnJ5Q3t9TYGBkZVjtMceDpump"
     },
     {
       "mint": "ETyFuxXgThKZmWtr3rfLNJyXNU7Pbn9d5SwSxq4pW48K",
@@ -34,14 +60,14 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 422.78,
+      "smart_buy_usd": 424.94,
       "first_buy": "2026-11-21T12:22:24+00:00",
-      "avg_entry_usd": 9.440002887896127e-06,
+      "avg_entry_usd": 9.488351174133751e-06,
       "price_usd": null,
       "change_since_entry_pct": null,
       "liquidity_usd": null,
       "market_cap": null,
-      "pair_age_h": 4.3,
+      "pair_age_h": 4.6,
       "volume_24h": null,
       "change_1h": null,
       "top10_pct": null,
@@ -51,32 +77,6 @@
       ],
       "dexscreener": "https://dexscreener.com/solana/fnhxukwwnncfwf2ruqexwexnas3pbxnkskrkfxnsyxwo",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/ETyFuxXgThKZmWtr3rfLNJyXNU7Pbn9d5SwSxq4pW48K"
-    },
-    {
-      "mint": "EK2tRRD5jqNUxohdMjbjnJ5Q3t9TYGBkZVjtMceDpump",
-      "symbol": "Emily",
-      "name": "SuperCat",
-      "wallets": 2,
-      "core_wallets": 1,
-      "score": 3,
-      "smart_buy_usd": 960.65,
-      "first_buy": "2026-11-21T12:17:53+00:00",
-      "avg_entry_usd": 4.033614150892809e-05,
-      "price_usd": 4.757e-05,
-      "change_since_entry_pct": 17.9,
-      "liquidity_usd": 15555.71,
-      "market_cap": 45858,
-      "pair_age_h": 4.4,
-      "volume_24h": 988378.81,
-      "change_1h": -9.78,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($15,556)",
-        "micro cap ($45,858)",
-        "2 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/fan13yqwc3enna3rrjp1f8acwybdvmjtedk7grvlnhbx",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/EK2tRRD5jqNUxohdMjbjnJ5Q3t9TYGBkZVjtMceDpump"
     }
   ]
 }
