@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-22T18:39+03:00",
+  "generated": "2026-11-22T18:59+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.32,
+  "sol_usd": 70.29,
   "signals": [
     {
       "mint": "v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump",
@@ -10,18 +10,19 @@
       "wallets": 3,
       "core_wallets": 2,
       "score": 5,
-      "smart_buy_usd": 1541.25,
+      "smart_buy_usd": 1540.6,
       "first_buy": "2026-11-22T13:14:04+00:00",
-      "avg_entry_usd": 9.335869045342352e-05,
-      "price_usd": 0.0001758,
-      "change_since_entry_pct": 88.3,
-      "liquidity_usd": 31232.45,
-      "market_cap": 170092,
-      "pair_age_h": 2.7,
-      "volume_24h": 1226314.27,
-      "change_1h": 17.26,
+      "avg_entry_usd": 9.331886166056799e-05,
+      "price_usd": 0.0001529,
+      "change_since_entry_pct": 63.8,
+      "liquidity_usd": 29205.63,
+      "market_cap": 147910,
+      "pair_age_h": 3.1,
+      "volume_24h": 1255425.13,
+      "change_1h": 26.88,
       "top10_pct": null,
       "red_flags": [
+        "thin liquidity ($29,206)",
         "3 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/44mfbdbruzqbafw7pgrkyqgdroehnp6elvtck1bcxbcc",
@@ -34,9 +35,9 @@
       "wallets": 4,
       "core_wallets": 1,
       "score": 5,
-      "smart_buy_usd": 1127.09,
+      "smart_buy_usd": 1126.61,
       "first_buy": "2026-11-22T15:18:32+00:00",
-      "avg_entry_usd": 7.394824614412725e-05,
+      "avg_entry_usd": 7.391669825754701e-05,
       "price_usd": null,
       "change_since_entry_pct": null,
       "liquidity_usd": null,
@@ -47,36 +48,10 @@
       "top10_pct": null,
       "red_flags": [
         "no DEX pair found",
-        "1 tracked wallet(s) already selling"
+        "4 tracked wallet(s) already selling"
       ],
       "dexscreener": null,
       "bubblemaps": "https://app.bubblemaps.io/sol/token/BzPyyYCTmQNq2BcfQ4ANAvCYk54rnmQEXMFvFT8RhWMi"
-    },
-    {
-      "mint": "BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump",
-      "symbol": "RIZZMAS3",
-      "name": "RIZZMAS3",
-      "wallets": 2,
-      "core_wallets": 2,
-      "score": 4,
-      "smart_buy_usd": 305.89,
-      "first_buy": "2026-11-22T09:52:29+00:00",
-      "avg_entry_usd": 2.6682227031562183e-05,
-      "price_usd": 2.662e-05,
-      "change_since_entry_pct": -0.2,
-      "liquidity_usd": 11902.6,
-      "market_cap": 25662,
-      "pair_age_h": 15.5,
-      "volume_24h": 1920563.44,
-      "change_1h": 27.77,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($11,903)",
-        "micro cap ($25,662)",
-        "2 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/6zupz88kkbblos7shfeehbrnqogyv5zj1pzh9dtp5nda",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump"
     }
   ]
 }
