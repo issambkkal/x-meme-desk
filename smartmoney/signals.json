@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-22T17:57+03:00",
+  "generated": "2026-11-22T18:18+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.22,
+  "sol_usd": 70.038,
   "signals": [
     {
       "mint": "v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump",
@@ -10,23 +10,49 @@
       "wallets": 3,
       "core_wallets": 2,
       "score": 5,
-      "smart_buy_usd": 1539.06,
+      "smart_buy_usd": 1535.07,
       "first_buy": "2026-11-22T13:14:04+00:00",
-      "avg_entry_usd": 9.322592781057167e-05,
-      "price_usd": 0.0001381,
-      "change_since_entry_pct": 48.1,
-      "liquidity_usd": 27450.65,
-      "market_cap": 133605,
-      "pair_age_h": 2.0,
-      "volume_24h": 1119013.59,
-      "change_1h": -22.46,
+      "avg_entry_usd": 9.298429980058131e-05,
+      "price_usd": 0.000199,
+      "change_since_entry_pct": 114.0,
+      "liquidity_usd": 33166.92,
+      "market_cap": 192489,
+      "pair_age_h": 2.4,
+      "volume_24h": 1183004.77,
+      "change_1h": 33.66,
       "top10_pct": null,
       "red_flags": [
-        "thin liquidity ($27,451)",
+        "already +114.0% above smart entries (late)",
         "3 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/44mfbdbruzqbafw7pgrkyqgdroehnp6elvtck1bcxbcc",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/v4GK8f24ZJJa5qLoTJ4mJ5d6jsNUXHScwGaRHdfpump"
+    },
+    {
+      "mint": "BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump",
+      "symbol": "RIZZMAS3",
+      "name": "RIZZMAS3",
+      "wallets": 2,
+      "core_wallets": 2,
+      "score": 4,
+      "smart_buy_usd": 304.66,
+      "first_buy": "2026-11-22T09:52:29+00:00",
+      "avg_entry_usd": 2.6575224926572128e-05,
+      "price_usd": 2.372e-05,
+      "change_since_entry_pct": -10.7,
+      "liquidity_usd": 11179.88,
+      "market_cap": 22866,
+      "pair_age_h": 15.2,
+      "volume_24h": 1919717.43,
+      "change_1h": 5.01,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($11,180)",
+        "micro cap ($22,866)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/6zupz88kkbblos7shfeehbrnqogyv5zj1pzh9dtp5nda",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/BQcV4Ryfu9bZK8egAF89AhkojdJqAaDt4xTFwUQ2pump"
     }
   ]
 }
