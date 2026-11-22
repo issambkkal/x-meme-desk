@@ -1,33 +1,8 @@
 {
-  "generated": "2026-11-22T09:18+03:00",
+  "generated": "2026-11-22T09:37+03:00",
   "window_hours": 6.0,
-  "sol_usd": 68.93,
+  "sol_usd": 68.94,
   "signals": [
-    {
-      "mint": "3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump",
-      "symbol": "Bigfoot",
-      "name": "Bigfoot",
-      "wallets": 2,
-      "core_wallets": 1,
-      "score": 3,
-      "smart_buy_usd": 1606.18,
-      "first_buy": "2026-11-22T00:21:16+00:00",
-      "avg_entry_usd": 0.00012581333262595506,
-      "price_usd": 0.0001213,
-      "change_since_entry_pct": -3.6,
-      "liquidity_usd": 26360.07,
-      "market_cap": 117269,
-      "pair_age_h": 16.5,
-      "volume_24h": 1613764.24,
-      "change_1h": -3.73,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($26,360)",
-        "2 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/75gt1hbmhtljv4anizrjz2ojmsm6xesilok6255euxnu",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/3b7WvfRxRaoMuq4j6JWJzrL5mym3Km3QzfX5dqCopump"
-    },
     {
       "mint": "CboJZy9E1E9dwnvXHZSoAENZH1uabg2hC3RsoLpapump",
       "symbol": "CHILLMAS",
@@ -35,20 +10,20 @@
       "wallets": 2,
       "core_wallets": 0,
       "score": 2,
-      "smart_buy_usd": 329.74,
+      "smart_buy_usd": 329.78,
       "first_buy": "2026-11-22T00:51:13+00:00",
-      "avg_entry_usd": 1.1823157540850616e-05,
-      "price_usd": 5.344e-06,
-      "change_since_entry_pct": -54.8,
-      "liquidity_usd": 3893.23,
-      "market_cap": 5014,
-      "pair_age_h": 5.5,
-      "volume_24h": 92529.33,
-      "change_1h": -22.14,
+      "avg_entry_usd": 1.1824872782043253e-05,
+      "price_usd": 4.68e-06,
+      "change_since_entry_pct": -60.4,
+      "liquidity_usd": 3566.04,
+      "market_cap": 4391,
+      "pair_age_h": 5.8,
+      "volume_24h": 92912.88,
+      "change_1h": -23.48,
       "top10_pct": null,
       "red_flags": [
-        "thin liquidity ($3,893)",
-        "micro cap ($5,014)"
+        "thin liquidity ($3,566)",
+        "micro cap ($4,391)"
       ],
       "dexscreener": "https://dexscreener.com/solana/cihuzdmgfhqa3oucwi141zpkkwqpefqub4akxnfhqz66",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/CboJZy9E1E9dwnvXHZSoAENZH1uabg2hC3RsoLpapump"
