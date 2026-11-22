@@ -1,32 +1,6 @@
 {
-  "generated": "2026-11-22T09:37+03:00",
+  "generated": "2026-11-22T09:56+03:00",
   "window_hours": 6.0,
-  "sol_usd": 68.94,
-  "signals": [
-    {
-      "mint": "CboJZy9E1E9dwnvXHZSoAENZH1uabg2hC3RsoLpapump",
-      "symbol": "CHILLMAS",
-      "name": "Chillmas",
-      "wallets": 2,
-      "core_wallets": 0,
-      "score": 2,
-      "smart_buy_usd": 329.78,
-      "first_buy": "2026-11-22T00:51:13+00:00",
-      "avg_entry_usd": 1.1824872782043253e-05,
-      "price_usd": 4.68e-06,
-      "change_since_entry_pct": -60.4,
-      "liquidity_usd": 3566.04,
-      "market_cap": 4391,
-      "pair_age_h": 5.8,
-      "volume_24h": 92912.88,
-      "change_1h": -23.48,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($3,566)",
-        "micro cap ($4,391)"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/cihuzdmgfhqa3oucwi141zpkkwqpefqub4akxnfhqz66",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/CboJZy9E1E9dwnvXHZSoAENZH1uabg2hC3RsoLpapump"
-    }
-  ]
+  "sol_usd": 69.12,
+  "signals": []
 }
