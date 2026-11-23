@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-23T10:00+03:00",
+  "generated": "2026-11-23T10:19+03:00",
   "window_hours": 6.0,
-  "sol_usd": 71.96,
+  "sol_usd": 72.074,
   "signals": [
     {
       "mint": "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ",
@@ -10,47 +10,22 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 1299.57,
+      "smart_buy_usd": 1301.63,
       "first_buy": "2026-11-23T01:56:20+00:00",
-      "avg_entry_usd": 0.00021440583120064516,
-      "price_usd": 0.0001461,
-      "change_since_entry_pct": -31.9,
-      "liquidity_usd": 38960.82,
-      "market_cap": 139190,
-      "pair_age_h": 1082.2,
-      "volume_24h": 370313.22,
-      "change_1h": 0.84,
+      "avg_entry_usd": 0.00021474549580260282,
+      "price_usd": 0.0001443,
+      "change_since_entry_pct": -32.8,
+      "liquidity_usd": 38786.6,
+      "market_cap": 137522,
+      "pair_age_h": 1082.5,
+      "volume_24h": 370425.44,
+      "change_1h": -2.15,
       "top10_pct": null,
       "red_flags": [
         "1 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/cb4gfrgeitfu5qtxfrmiqzsavpwgbd3heor4cs2jfpn",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ"
-    },
-    {
-      "mint": "FMWYmSLD4eNQrvxrXWsTf7HEsNQYqSCqzPbdEUqNpump",
-      "symbol": "RIEMANN",
-      "name": "The Riemann Hypothesis",
-      "wallets": 2,
-      "core_wallets": 0,
-      "score": 2,
-      "smart_buy_usd": 405.45,
-      "first_buy": "2026-11-23T01:10:41+00:00",
-      "avg_entry_usd": 7.297488837647259e-05,
-      "price_usd": 7.099e-05,
-      "change_since_entry_pct": -2.7,
-      "liquidity_usd": 1269.78,
-      "market_cap": 69363,
-      "pair_age_h": 63.9,
-      "volume_24h": 2108.13,
-      "change_1h": 26.85,
-      "top10_pct": null,
-      "red_flags": [
-        "thin liquidity ($1,270)",
-        "1 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/4qmscswwphwytkcpmemouh3r47hkpunmlzu8lfkr8dls",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/FMWYmSLD4eNQrvxrXWsTf7HEsNQYqSCqzPbdEUqNpump"
     }
   ]
 }
