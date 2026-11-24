@@ -1,6 +1,79 @@
 {
-  "generated": "2026-11-24T12:31+03:00",
+  "generated": "2026-11-24T12:52+03:00",
   "window_hours": 6.0,
   "sol_usd": 70.83,
-  "signals": []
+  "signals": [
+    {
+      "mint": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+      "symbol": "Cupsey",
+      "name": "Cupsey",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 522.13,
+      "first_buy": "2026-11-24T09:37:59+00:00",
+      "avg_entry_usd": 0.0017786024379990574,
+      "price_usd": 0.001865,
+      "change_since_entry_pct": 4.9,
+      "liquidity_usd": 188807.94,
+      "market_cap": 1865242,
+      "pair_age_h": 7382.9,
+      "volume_24h": 51140.36,
+      "change_1h": -5.7,
+      "top10_pct": null,
+      "red_flags": [],
+      "dexscreener": "https://dexscreener.com/solana/dpzkojvewah1wpchd3gwkeegm7g2mxkbw48urniagbvx",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump"
+    },
+    {
+      "mint": "5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat",
+      "symbol": "Scamsem",
+      "name": "Scamsem",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 644.2,
+      "first_buy": "2026-11-24T09:10:33+00:00",
+      "avg_entry_usd": 5.421516893437501e-05,
+      "price_usd": 0.0001569,
+      "change_since_entry_pct": 189.4,
+      "liquidity_usd": 71512.44,
+      "market_cap": 156960,
+      "pair_age_h": 0.7,
+      "volume_24h": 476804.3,
+      "change_1h": 50.23,
+      "top10_pct": null,
+      "red_flags": [
+        "pair younger than 1h",
+        "already +189.4% above smart entries (late)",
+        "1 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/dpbnua2ajjwwt94p3wxrdummamcdnu68qttr41qjearw",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/5JWeGmA9z6yHd5F9P6B23A8wthho8BpZuDmQv5DfLoat"
+    },
+    {
+      "mint": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+      "symbol": "HOGE",
+      "name": "Hogecoin",
+      "wallets": 2,
+      "core_wallets": 0,
+      "score": 2,
+      "smart_buy_usd": 365.83,
+      "first_buy": "2026-11-24T04:07:53+00:00",
+      "avg_entry_usd": 0.0007677528455003025,
+      "price_usd": 0.0007161,
+      "change_since_entry_pct": -6.7,
+      "liquidity_usd": 107397.28,
+      "market_cap": 684207,
+      "pair_age_h": 218.9,
+      "volume_24h": 429140.87,
+      "change_1h": -10.89,
+      "top10_pct": null,
+      "red_flags": [
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/7cnc9ggegzeffk8flxiyuhdtmeefpqzond56u1mxhnor",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump"
+    }
+  ]
 }
