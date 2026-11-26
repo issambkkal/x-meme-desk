@@ -5,19 +5,20 @@
 mode: auto
 
 # true = never call X, just log what would be posted (also forced when .env has no keys)
-dry_run: false
+dry_run: true   # Nov 26 2026: X automation switched off by the owner
+mentions_enabled: false   # Nov 26 2026: X automation switched off by the owner
 
 # A queued post must wait this long before it can go out,
 # so you can open the queue and delete it or set status: hold.
 min_lead_minutes: 60
 
-max_posts_per_day: 4   # owner, Nov 11: fewer, better posts (trap watches + receipts only)
-max_replies_per_day: 40
+max_posts_per_day: 0   # Nov 26 2026: X automation switched off by the owner
+max_replies_per_day: 0   # Nov 26 2026: X automation switched off by the owner
 tip_pause_until: 2026-11-15   # X blocks crypto addresses for 7 days after app authorization
 min_gap_minutes: 60
 
 # Automatic reposts (only accounts with repost_ok: true in watchlist.yaml)
-max_reposts_per_day: 2
+max_reposts_per_day: 0   # Nov 26 2026: X automation switched off by the owner
 min_repost_gap_minutes: 60
 
 # Preferred time slots used by the drafting task to pick post_at.

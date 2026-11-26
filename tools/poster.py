@@ -211,6 +211,8 @@ def status(config):
 def main():
     args = set(sys.argv[1:])
     config = load_config()
+    if config.get('max_posts_per_day') == 0 and config.get('dry_run'):
+        return print('poster: switched off in config')
     load_dotenv(ROOT / ".env")
     if "--status" in args:
         return status(config)

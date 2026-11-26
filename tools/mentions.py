@@ -92,6 +92,9 @@ def queue_reply(tid, text, now):
 
 
 def main():
+    from xlib import load_config
+    if load_config().get('mentions_enabled', True) is False:
+        return print('mentions: switched off in config')
     load_dotenv(ROOT / ".env")
     keys = [os.environ.get(k) for k in ("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET")]
     if not all(keys):
