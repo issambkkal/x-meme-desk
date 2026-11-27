@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T10:21+03:00",
+  "generated": "2026-11-27T10:38+03:00",
   "window_hours": 6.0,
-  "sol_usd": 72.89,
+  "sol_usd": 72.94,
   "signals": [
     {
       "mint": "J2We8huLbXG4Ueij766B6Yzjg3Ktf2qH5zhaD3cDpump",
@@ -10,16 +10,16 @@
       "wallets": 4,
       "core_wallets": 0,
       "score": 4,
-      "smart_buy_usd": 526.23,
+      "smart_buy_usd": 526.59,
       "first_buy": "2026-11-27T03:05:34+00:00",
-      "avg_entry_usd": 6.7366835000095165e-06,
+      "avg_entry_usd": 6.741304630137113e-06,
       "price_usd": 2.609e-06,
       "change_since_entry_pct": -61.3,
       "liquidity_usd": 2394.09,
       "market_cap": 2610,
-      "pair_age_h": 4.2,
+      "pair_age_h": 4.5,
       "volume_24h": 67196.86,
-      "change_1h": 24.88,
+      "change_1h": 27.4,
       "top10_pct": null,
       "red_flags": [
         "thin liquidity ($2,394)",
@@ -28,32 +28,6 @@
       ],
       "dexscreener": "https://dexscreener.com/solana/av2zw7km2kcrpt2urqp4f2nfmgaujafrv7k3k7cfdlpc",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/J2We8huLbXG4Ueij766B6Yzjg3Ktf2qH5zhaD3cDpump"
-    },
-    {
-      "mint": "2rAvVu6ReabE9UebCBFS3MwDLu7jbgHaFSKot4kXpump",
-      "symbol": "ROCKER",
-      "name": "Rockercoin",
-      "wallets": 3,
-      "core_wallets": 0,
-      "score": 3,
-      "smart_buy_usd": 301.88,
-      "first_buy": "2026-11-27T01:38:15+00:00",
-      "avg_entry_usd": 5.613311683908974e-06,
-      "price_usd": 2.015e-06,
-      "change_since_entry_pct": -64.1,
-      "liquidity_usd": null,
-      "market_cap": 2015.02,
-      "pair_age_h": 5.7,
-      "volume_24h": 8761.65,
-      "change_1h": null,
-      "top10_pct": null,
-      "red_flags": [
-        "still on a launch bonding curve (no pool liquidity yet)",
-        "micro cap ($2,015)",
-        "3 tracked wallet(s) already selling"
-      ],
-      "dexscreener": "https://dexscreener.com/solana/emdy42jksid9x7azspavsq5k3mkeqy8zbqlre1w4vje4",
-      "bubblemaps": "https://app.bubblemaps.io/sol/token/2rAvVu6ReabE9UebCBFS3MwDLu7jbgHaFSKot4kXpump"
     }
   ]
 }
