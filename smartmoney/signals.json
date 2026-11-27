@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-27T20:12+03:00",
+  "generated": "2026-11-27T20:33+03:00",
   "window_hours": 6.0,
-  "sol_usd": 71.92,
+  "sol_usd": 71.75,
   "signals": [
     {
       "mint": "7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump",
@@ -10,23 +10,74 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 507.61,
+      "smart_buy_usd": 506.41,
       "first_buy": "2026-11-27T13:21:18+00:00",
-      "avg_entry_usd": 7.45603213577722e-05,
-      "price_usd": 0.0001999,
-      "change_since_entry_pct": 168.1,
-      "liquidity_usd": 33803.42,
-      "market_cap": 199572,
-      "pair_age_h": 4.0,
-      "volume_24h": 1372051.29,
-      "change_1h": -12.66,
+      "avg_entry_usd": 7.438408033120348e-05,
+      "price_usd": 0.0001377,
+      "change_since_entry_pct": 85.1,
+      "liquidity_usd": 28038.62,
+      "market_cap": 137478,
+      "pair_age_h": 4.3,
+      "volume_24h": 1403920.92,
+      "change_1h": -25.9,
       "top10_pct": null,
       "red_flags": [
-        "already +168.1% above smart entries (late)",
+        "thin liquidity ($28,039)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/aso1pdfe7jqwlt2vdt4ry1qwubitduqhwrwtsd2vv2ps",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/7Y2CVbnqZRvR5RUvEJ9RQ73fZEfv7ybNcysytAepump"
+    },
+    {
+      "mint": "BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump",
+      "symbol": "HOLD",
+      "name": "HOLD",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 1334.23,
+      "first_buy": "2026-11-27T16:12:13+00:00",
+      "avg_entry_usd": 8.095681832743312e-05,
+      "price_usd": 5.138e-05,
+      "change_since_entry_pct": -36.5,
+      "liquidity_usd": 16721.1,
+      "market_cap": 51384,
+      "pair_age_h": 19.7,
+      "volume_24h": 1245219.39,
+      "change_1h": -56.57,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($16,721)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/hmuaeubteldjzmchup4zzwoz9dexlirhffgaqced9udr",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/BuNeErf9FjL6dgzE74S21Qm9EeBaYMJXSW4A8ihxpump"
+    },
+    {
+      "mint": "FedzZEWJF8w8gxqLRxthVwpirp9uZsJDCo9ym2mfLoat",
+      "symbol": "Bitcorn",
+      "name": "Bitcorn",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 580.91,
+      "first_buy": "2026-11-27T17:15:13+00:00",
+      "avg_entry_usd": 6.23848882200462e-05,
+      "price_usd": 7.562e-05,
+      "change_since_entry_pct": 21.2,
+      "liquidity_usd": 1095.58,
+      "market_cap": 75624,
+      "pair_age_h": 0.5,
+      "volume_24h": 168.85,
+      "change_1h": -17.1,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($1,096)",
+        "pair younger than 1h",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/hsnxp8uxs1zh9yuiw8afveasvphwhsdkjhdnlskismjn",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/FedzZEWJF8w8gxqLRxthVwpirp9uZsJDCo9ym2mfLoat"
     }
   ]
 }
