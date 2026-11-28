@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T16:11+03:00",
+  "generated": "2026-11-28T16:31+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.74,
+  "sol_usd": 70.68,
   "signals": [
     {
       "mint": "89zUaXTdFc2kkvMS9MbPL78x368UviTHQ9yVKYTLpump",
@@ -10,24 +10,50 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 354.24,
+      "smart_buy_usd": 353.94,
       "first_buy": "2026-11-28T07:56:20+00:00",
-      "avg_entry_usd": 1.0148642052454361e-05,
-      "price_usd": 4.234e-06,
-      "change_since_entry_pct": -58.3,
-      "liquidity_usd": 5331.4,
-      "market_cap": 4224,
-      "pair_age_h": 6671.5,
-      "volume_24h": 58255.58,
-      "change_1h": 1.37,
+      "avg_entry_usd": 1.0140034213563394e-05,
+      "price_usd": 5.551e-06,
+      "change_since_entry_pct": -45.3,
+      "liquidity_usd": 6093.86,
+      "market_cap": 5537,
+      "pair_age_h": 6671.8,
+      "volume_24h": 58776.99,
+      "change_1h": 12.96,
       "top10_pct": null,
       "red_flags": [
-        "thin liquidity ($5,331)",
-        "micro cap ($4,224)",
+        "thin liquidity ($6,094)",
+        "micro cap ($5,537)",
         "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/6srzrazepkhrgpyjghwzt9qahglzn6aagmohyjzkqmwi",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/89zUaXTdFc2kkvMS9MbPL78x368UviTHQ9yVKYTLpump"
+    },
+    {
+      "mint": "7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump",
+      "symbol": "Kibo",
+      "name": "\u30ad\u30dc\u30a6",
+      "wallets": 2,
+      "core_wallets": 1,
+      "score": 3,
+      "smart_buy_usd": 314.69,
+      "first_buy": "2026-11-28T09:43:32+00:00",
+      "avg_entry_usd": 3.0407745967270823e-05,
+      "price_usd": 3.106e-05,
+      "change_since_entry_pct": 2.1,
+      "liquidity_usd": 12706.02,
+      "market_cap": 31060,
+      "pair_age_h": 32.0,
+      "volume_24h": 447925.68,
+      "change_1h": -6.88,
+      "top10_pct": null,
+      "red_flags": [
+        "thin liquidity ($12,706)",
+        "micro cap ($31,060)",
+        "2 tracked wallet(s) already selling"
+      ],
+      "dexscreener": "https://dexscreener.com/solana/hj4afisw1oo8hvmyxl2qjjnav4y25nthse2lcpcreqtu",
+      "bubblemaps": "https://app.bubblemaps.io/sol/token/7XSYaJygcuNe6Q3kPvwsJpg4ZrFL1AEUFb8kCuzppump"
     }
   ]
 }
