@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-28T15:51+03:00",
+  "generated": "2026-11-28T16:11+03:00",
   "window_hours": 6.0,
-  "sol_usd": 70.79,
+  "sol_usd": 70.74,
   "signals": [
     {
       "mint": "89zUaXTdFc2kkvMS9MbPL78x368UviTHQ9yVKYTLpump",
@@ -10,21 +10,21 @@
       "wallets": 2,
       "core_wallets": 1,
       "score": 3,
-      "smart_buy_usd": 354.49,
+      "smart_buy_usd": 354.24,
       "first_buy": "2026-11-28T07:56:20+00:00",
-      "avg_entry_usd": 1.0155815251530172e-05,
-      "price_usd": 6.715e-06,
-      "change_since_entry_pct": -33.9,
-      "liquidity_usd": 6710.29,
-      "market_cap": 6699,
-      "pair_age_h": 6671.2,
-      "volume_24h": 57029.5,
-      "change_1h": 66.1,
+      "avg_entry_usd": 1.0148642052454361e-05,
+      "price_usd": 4.234e-06,
+      "change_since_entry_pct": -58.3,
+      "liquidity_usd": 5331.4,
+      "market_cap": 4224,
+      "pair_age_h": 6671.5,
+      "volume_24h": 58255.58,
+      "change_1h": 1.37,
       "top10_pct": null,
       "red_flags": [
-        "thin liquidity ($6,710)",
-        "micro cap ($6,699)",
-        "1 tracked wallet(s) already selling"
+        "thin liquidity ($5,331)",
+        "micro cap ($4,224)",
+        "2 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/6srzrazepkhrgpyjghwzt9qahglzn6aagmohyjzkqmwi",
       "bubblemaps": "https://app.bubblemaps.io/sol/token/89zUaXTdFc2kkvMS9MbPL78x368UviTHQ9yVKYTLpump"
