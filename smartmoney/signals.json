@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-28T15:31+03:00",
+  "generated": "2026-11-28T15:51+03:00",
   "window_hours": 6.0,
   "sol_usd": 70.79,
   "signals": [
@@ -13,17 +13,17 @@
       "smart_buy_usd": 354.49,
       "first_buy": "2026-11-28T07:56:20+00:00",
       "avg_entry_usd": 1.0155815251530172e-05,
-      "price_usd": 4.441e-06,
-      "change_since_entry_pct": -56.3,
-      "liquidity_usd": 5459.02,
-      "market_cap": 4430,
-      "pair_age_h": 6670.8,
-      "volume_24h": 55203.57,
-      "change_1h": 9.85,
+      "price_usd": 6.715e-06,
+      "change_since_entry_pct": -33.9,
+      "liquidity_usd": 6710.29,
+      "market_cap": 6699,
+      "pair_age_h": 6671.2,
+      "volume_24h": 57029.5,
+      "change_1h": 66.1,
       "top10_pct": null,
       "red_flags": [
-        "thin liquidity ($5,459)",
-        "micro cap ($4,430)",
+        "thin liquidity ($6,710)",
+        "micro cap ($6,699)",
         "1 tracked wallet(s) already selling"
       ],
       "dexscreener": "https://dexscreener.com/solana/6srzrazepkhrgpyjghwzt9qahglzn6aagmohyjzkqmwi",
